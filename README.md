@@ -1,1 +1,2 @@
-# rinatoptimus.github.io - директория для моих статичных сайтов
+# rinatoptimus.github.io
+#### Директория для моих статичных сайтов

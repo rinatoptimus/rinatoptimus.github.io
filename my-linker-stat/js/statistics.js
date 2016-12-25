@@ -4,7 +4,7 @@
 data = [
   {label: "Европа", value: 75},
   {label: "Казань", value: 614},
-  {label: "Снакт-Петербург", value: 621},
+  {label: "Санкт-Петербург", value: 621},
   {label: "Сочи", value: 326},
   {label: "Екатеринбург", value: 191},
   {label: "Нижний Новгород", value: 193},

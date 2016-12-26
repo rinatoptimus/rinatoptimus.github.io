@@ -1,6 +1,3 @@
-/**
- * Created by rinat_y on 12/26/16.
- */
 data = {
     names: [
         "(1) Европа",
@@ -36,52 +33,51 @@ data = {
     ]
 };
 
-// sum begin
-//console.log(data.days);
+// code for displaying sum begins
 var sum = data.days;
 var result = sum.reduce(function(a, b) {
     return a + b;
 }, 0);
 document.getElementById('sum').innerHTML = result;
-// sum end
+// sum ends
 
-// color  bars begin
-var randomColor = (function(){
+// code for color bars begins
+var randomColor = (function() {
     var golden_ratio_conjugate = 0.618033988749895;
     var h = Math.random();
 
-    var hslToRgb = function (h, s, l){
+    var hslToRgb = function(h, s, l) {
         var r, g, b;
 
-        if(s == 0){
+        if (s == 0) {
             r = g = b = l; // achromatic
-        }else{
-            function hue2rgb(p, q, t){
-                if(t < 0) t += 1;
-                if(t > 1) t -= 1;
-                if(t < 1/6) return p + (q - p) * 6 * t;
-                if(t < 1/2) return q;
-                if(t < 2/3) return p + (q - p) * (2/3 - t) * 6;
+        } else {
+            function hue2rgb(p, q, t) {
+                if (t < 0) t += 1;
+                if (t > 1) t -= 1;
+                if (t < 1 / 6) return p + (q - p) * 6 * t;
+                if (t < 1 / 2) return q;
+                if (t < 2 / 3) return p + (q - p) * (2 / 3 - t) * 6;
                 return p;
             }
 
             var q = l < 0.5 ? l * (1 + s) : l + s - l * s;
             var p = 2 * l - q;
-            r = hue2rgb(p, q, h + 1/3);
+            r = hue2rgb(p, q, h + 1 / 3);
             g = hue2rgb(p, q, h);
-            b = hue2rgb(p, q, h - 1/3);
+            b = hue2rgb(p, q, h - 1 / 3);
         }
 
-        return '#'+Math.round(r * 255).toString(16)+Math.round(g * 255).toString(16)+Math.round(b * 255).toString(16);
+        return '#' + Math.round(r * 255).toString(16) + Math.round(g * 255).toString(16) + Math.round(b * 255).toString(16);
     };
 
-    return function(){
+    return function() {
         h += golden_ratio_conjugate;
         h %= 1;
         return hslToRgb(h, 0.5, 0.60);
     };
 })();
-// color bars end
+// color bars ends
 
 var newData = [];
 data.names.forEach(function(d, i) {
@@ -126,7 +122,7 @@ var tip = d3.tip()
     .attr('class', 'd3-tip')
     .offset([-10, 0])
     .html(function(d) {
-        return d.days + " заявок";
+        return d.days + " шт.";
     })
 
 var svg = d3.select(".container")
@@ -140,23 +136,38 @@ svg.call(tip);
 
 var barWidth = width / data.days.length;
 
-svg.selectAll("rect")
+var bars = svg.selectAll(".bar")
     .data(newData)
-    .enter().append("rect")
-// this might be affected:
+    .enter().append("g")
+    .attr("class", "bar")
+    // this might be affected:
     .attr("transform", function(d, i) {
         return "translate(" + i * barWidth + ",0)";
-    })
+    });
+
+bars.append("rect")
     .attr("y", function(d) {
         return y(d.days);
     })
     .attr("height", function(d) {
         return height - y(d.days) + 1;
     })
-    .style({fill: randomColor})  // color  bars
+    .style({
+        fill: randomColor
+    }) // color  bars
     .attr("width", barWidth - 1)
     .on('mouseover', tip.show)
     .on('mouseout', tip.hide);
+
+bars.append("text")
+    .text(function(d) {
+        return d.days;
+    })
+    .attr("y", function(d) {
+        return y(d.days);
+    })
+    .attr("x", barWidth / 2)
+    .style("text-anchor", "middle");
 
 svg.append("g")
     .attr("class", "x axis")
@@ -177,13 +188,75 @@ svg.append("g")
     .attr("dy", "-6em")
     .attr("dx", "-15em")
     .style("text-anchor", "end")
-    .text("Заявок");
+    .text("Заявки");
+
+// tried to add numbers:
+/*svg.selectAll("text")
+ .data(data.names)
+ .enter()
+ .append("text")
+ .text(function(d){return d;
+ })
+ .attr("text-anchor", "middle")
+ .attr("x", function(d, i) {
+ return i * (w / data.days.length) + (w / data.days.length - barPadding) / 2;
+ })
+ .attr("y", function(d) {
+ return h - (d * 4) + 14;
+ })
+
+ .attr("font-family", "sans-serif")
+ .attr("font-size", "11px")
+ .attr("fill", "green");*/
+
+
+/*svg.selectAll("text")
+ .data(data.days)
+ .enter().append("text")
+ .attr("x", x)
+ .attr("y", function(d){ return y(d) + y.rangeBand()/2; } )
+ .attr("dx", -5)
+ .attr("dy", ".36em")
+ .attr("text-anchor", "end")
+ .text(String);*/
+
+/*svg.selectAll(".text")
+ .data(data)
+ .enter()
+ .append("text")
+ .attr("class","label")
+ .attr("x", (function(d) { return xScale(d.names) + xScale.rangeBand() / 2 ; }  ))
+ .attr("y", function(d) { return yScale(d.days) + 1; })
+ .attr("dy", ".75em")
+ .text(function(d) { return d.days; });*/
+svg.selectAll("text").
+data(data).
+enter().
+append("svg:text").
+attr("x", function(datum, index) {
+    return x(index) + barWidth;
+}).
+attr("y", function(datum) {
+    return height - y(datum.days);
+}).
+attr("dx", -barWidth / 2).
+attr("dy", "1.2em").
+attr("text-anchor", "middle").
+text(function(datum) {
+    return datum.days;
+}).
+attr("fill", "white");
+
+svg.append("text")
+    .attr("transform", "translate(" + (width / 2) + " ," + (height + margin.bottom) + ")")
+    .style("text-anchor", "middle")
+    .text("Города");
+//
 
 var sortOrder = false;
-
 var sortBars = function() {
 
-    if (sortOrder){
+    if (sortOrder) {
         var sorted = newData.sort(function(a, b) {
             return d3.descending(a.days, b.days);
         });
@@ -196,7 +269,7 @@ var sortBars = function() {
     x.domain(sorted.map(function(d) {
         return d.name;
     }))
-    svg.selectAll("rect")
+    svg.selectAll(".bar")
         .sort(function(a, b) {
             if (sortOrder) {
                 return d3.descending(a.days, b.days);
@@ -219,7 +292,7 @@ var sortBars = function() {
         .attr("transform", "rotate(-50)")
         .delay(delay);
 
-    transition.selectAll("rect")
+    transition.selectAll(".bar")
         .attr("transform", function(d, i) {
             return "translate(" + i * barWidth + ",0)";
         });

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>D3js</title>
+     <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<style>
+
+
+</style>
+
+<div class="container">
+    <h2>Визуализация данных My Linker</h2>
+    <p>Всего заявок: </p><span id="sum"></span> штук.
+    <br><br>
+    <div class="btn-group" data-toggle="buttons">
+        <label class="btn btn-primary active">
+            <input type="radio" name="options" id="chronological" autocomplete="off" checked> Сбросить
+        </label>
+        <label class="btn btn-primary">
+            <input type="radio" name="options" id="descending" autocomplete="off"> Сортировать
+        </label>
+    </div>
+    <br><br>
+
+    <script src="js/d3.min.js"></script>
+    <script src="js/d3.tip.js"></script>
+    <script src="js/jquery-2.4.1.min.js"></script>
+    <script src="js/stat.js"></script>
+</body>
+</html>

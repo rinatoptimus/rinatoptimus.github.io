@@ -1,9 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  width: 960px;
+  //width: 960px;
   height: 700px;
   position: relative;
 }
+
+/**/
+.header {
+  width: 100%;
+  height: 1000px;
+  background: url('../img/bg.jpg') no-repeat;
+}
+.repeat2 {
+  //width: 100px;
+  height: 600px;
+  background-image:
+
+    repeating-linear-gradient(180deg, rgba(215, 215, 215, 0) 37px, rgba(204, 207, 213, 0) 38px, #000 13px, #000 39px);
+}
+/**/
 
 svg {
   width: 100%;

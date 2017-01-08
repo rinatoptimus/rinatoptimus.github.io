@@ -1,0 +1,113 @@
+.slick-prev {
+  display: block;
+  left: 25px;
+  z-index: 5;
+  @include phone-xl {
+    display: none;
+  }
+}
+.slick-next {
+  display: block;
+  right: 15px;
+  @include phone-xl {
+    display: none !important;
+  }
+}
+.slick-slide {
+  img {
+    width: 80%;
+    margin: 0 auto;
+    @include phone-xl {
+      width: 100%;
+    }
+  }
+}
+.slick-dotted.slick-slider {
+  margin-bottom: 100px;
+}
+.slick-dots {
+  bottom: -60px;
+    li {
+      height: 30px;
+      width: 30px;
+      border: 1px solid grey;
+      border-radius: 50%;
+    }
+}
+li.slick-active {
+  background-color: $main;
+}
+
+// arrows
+.box {
+  width: auto;
+  height: 400px;
+  margin: 4em 20px;
+  border: 1px dashed;
+  position: relative;
+}
+
+.line-arrow {
+  position: absolute;
+  overflow: hidden;
+  display: inline-block;
+  font-size: 12px; /*set the size for arrow*/
+  width: 2.5em;
+  height: 2.5em;
+  margin-top: -2em;
+  top: 50%;
+}
+
+.line-arrow.left {
+  border-top: 15px solid #a9a9a9;
+  border-left: 15px solid #a9a9a9;
+  transform: rotate(-54deg) skew(-20deg);
+  left: 20px;
+}
+
+.line-arrow.right {
+  border-top: 1px solid #a9a9a9;
+  border-right: 1px solid #a9a9a9;
+  transform: rotate(54deg) skew(20deg);
+  right: 20px;
+}
+
+.line-arrow:active,
+.line-arrow.active {
+  border-width: 2px;
+}
+
+.square {
+  top: auto;
+  bottom: 10px;
+}
+
+.square.left {
+  transform: rotate(-45deg);
+}
+
+.square.right {
+  transform: rotate(45deg);
+}
+
+//arrows second variant
+.arrow {
+  display: block;
+  width: 45px;
+  height: 70px;
+  @include phone-xl {
+    display: none !important;
+  }
+}
+.l {
+  z-index: 5;
+  top: 50%;
+  position: absolute;
+  background: url('../img/arrow-left.png') no-repeat;
+}
+.r {
+  right: 0;
+  position: absolute;
+  top: 50%;
+  background: url('../img/arrow-right.png') no-repeat;
+}

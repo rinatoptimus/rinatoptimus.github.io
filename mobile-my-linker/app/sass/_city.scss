@@ -1,0 +1,80 @@
+.btn-find-city {
+  margin-bottom:10px;
+  font-size: 3em;
+  font-weight: 600;
+}
+.price-per-day-city {
+  margin-top: 20px;
+  font-size: 2em;
+  color: $main;
+}
+.btn-enhanced-city {
+  margin-bottom: 20px;
+}
+.quantity-offers {
+  margin-top: 20px;
+  margin-left: 10px;
+  font-size: 2em;
+}
+.input-date-city {
+  margin-left: 10px;
+  @include phone-xl {
+    margin-left: 0;
+  }
+}
+.td-guests {
+  width: 25%;
+}
+.calendar-city {
+  @include phone-xl {
+    display: none;
+  }
+}
+
+// range slider
+.priceRangeInfo{
+  position: relative;
+  height: 30px;
+  margin-top: 60px;
+}
+.priceRangeInfo label{
+  position: absolute;
+  top: -30px;
+  left: 10px;
+}                            /* moves label field */
+.priceRangeInfo #buying_slider_min{
+  top: -40px;
+  position: absolute;
+
+}       /* moves first input field */
+.priceRangeInfo #buying_slider_max{
+  top: -40px;
+  position: absolute;
+  left: 170px;
+}      /* move second input field */
+.priceRangeInfo div.ui-slider{
+  position: absolute;
+}                   /* move both sliders - adressing 1st slider with CSS is hard */
+.priceRangeInfo div:last-child{
+  position: absolute;
+  left: 0px;
+}
+
+input[type=range] {
+  width: 73%;
+}
+
+input[type=range] {
+  -webkit-appearance: none;
+  background-color: $black;
+  height: 2px;
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  //background-color: red;
+  background: url('../img/slider-range-arrow.png') no-repeat;
+  width: 58px;
+  height: 66px;
+  margin-top: 64px;
+
+}

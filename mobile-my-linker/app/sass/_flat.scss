@@ -1,0 +1,365 @@
+div.speech-blue {
+  background-color: $main;
+  color: $white;
+}
+div.speech-blue:after {
+  border-color: $main transparent transparent $main;
+}
+.speech-blue-text {
+  margin-top: -20px;
+  font-size: 3.5vw;
+}
+.location {
+  float: left;
+  width: 50px;
+  height: 72px;
+  margin-right: 15px;
+  background: url('../img/location.png') no-repeat;
+  @include phone {
+    display: none;
+  }
+}
+.location-text {
+  font-size: 5vw;
+  color: $main;
+  @include phone-md {
+    font-size: 4vw;
+  }
+}
+.location-city {
+  line-height: 0;
+  margin-top: 5vw;
+}
+.location-street {
+  line-height: 2;
+}
+.price-text {
+  font-size: 2.6em;
+  font-weight: bold;
+  color: $bright;
+  @include phone-md {
+    font-size: 1.5em;
+  }
+}
+.price {
+  font-size: 40px;
+  @include phone-md {
+    font-size: 30px;
+  }
+  @include phone {
+    font-size: 25px;
+  }
+}
+.rouble-sign {
+  font-size: 40px;
+  @include phone-md {
+    font-size: 30px;
+  }
+  @include phone {
+    font-size: 25px;
+  }
+}
+
+.container-tabs {
+  margin-top: 14em;
+}
+.container-thumbnail {
+  margin: {
+    left: 0;
+    right: 0;
+  };
+}
+.col-person {
+  margin-bottom: 20px;
+}
+.thumbnail-avatar {
+  width: 18%;
+  float: left;
+  margin-right: 6vw;
+  border:2px solid $black;
+  border-radius: 25px;
+}
+.thumbnail {
+  display: inline-flex;
+  flex-direction: column;
+  width: 100%;
+  padding-top: 20px;
+}
+.person-name {
+  margin-top: 5vw;
+  list-style: none;
+  font-size: 2.6em;
+  line-height: 6vw;
+  color: $main;
+
+  @include phone-lg {
+    font-size: 2em;
+  }
+  @include phone-md {
+    font-size: 1em;
+  }
+  @include phone {
+    margin-top: 1vw;
+  }
+}
+.owner-name {
+
+}
+.owner-status {
+
+}
+.bottom-btns-block {
+  display: flex;
+  @include phone {
+    flex-direction: column;
+  }
+}
+.btn-block+.btn-block {
+  margin-top: 0;
+  @include phone {
+    margin-top: 10px;
+  }
+}
+.show-all-variants {
+  font-size: 20px;
+  font-weight: 400;
+  text-decoration: underline;
+  color: $main;
+  @include phone {
+    font-size: 18px;
+  }
+  @include phone-mini {
+    font-size: 15px;
+  }
+}
+.price-per-day {
+  font-size: 3em;
+  color: $main;
+  @include phone-lg {
+    font-size: 1.5em;
+  }
+}
+.price-digits {
+  font-size: 1em;
+  font-weight: 600;
+  color: $orange;
+}
+.price-rouble {
+  font-size: 1em;
+  color: $orange;
+}
+.date-container {
+  display: flex;
+  margin-top: 20px;
+}
+.date-inputs-flat {
+  display: flex;
+  flex-direction: column;
+}
+.collapse-date {
+  margin-left: 50px;
+  @include phone-lg {
+    margin-left: 0;
+  }
+}
+.calendar-flat {
+  width: 20%;
+  margin-top: 30px;
+}
+.input-in-date {
+  margin-bottom: 15px;
+}
+.flat-descr {
+  font-size: 2em;
+  @include phone-md {
+    font-size: 20px;
+  }
+  @include phone {
+    font-size: 15px;
+  }
+}
+.table {
+  margin-top: 15px;
+    tbody {
+      tr {
+        .flat-data-guests {
+          vertical-align: middle;
+        }
+        .flat-data {
+          border-top: none;
+          font-size: 3em;
+          @include phone-lg {
+            font-size: 1em;
+          }
+        }
+      }
+    }
+}
+.multiply {
+  margin-top: 0;
+  @include phone-lg {
+    margin-top: 12px;
+  }
+}
+
+.guests-figure-date {
+  float: left;
+  width: 41px;
+  height: 55px;
+  background-size: 70%;
+}
+.thumbnail-btn-enhanced {
+  margin-left: auto;
+  display: block;
+}
+.book {
+  @include phone-md {
+    font-size: 1.7em;
+    font-weight: 600;
+  }
+}
+.call {
+  @include phone-md {
+    font-size: 1.3em;
+    font-weight: 600;
+  }
+}
+.write {
+  @include phone-md {
+    font-size: 1.3em;
+    font-weight: 600;
+  }
+}
+.btn-order-call {
+  @include phone-md {
+    font-size: 1.3em;
+    font-weight: 600;
+  }
+}
+.btn-order-call {
+  margin-top: 0;
+  margin-right: 0;
+  margin-left: 10px;
+  @include phone {
+    margin-top: 10px;
+    margin-left: 0;
+  }
+}
+.btns-list {
+  list-style: none;
+}
+.additional-info-title {
+  font-size: 2.6em;
+  font-weight: bold;
+  color: $bright;
+  @include phone-md {
+    font-size: 1.5em;
+  }
+}
+.lead {
+  margin-bottom: 0;
+  font-size: 30px;
+  font-weight: 600;
+  color: $black;
+  @include phone {
+    font-size: 15px;
+  }
+}
+.sub-lead {
+  font-size: 2em;
+  color: $text-secondary;
+  @include phone {
+    font-size: 1em;
+  }
+}
+.btn-parameters, .btn-near, .btn-by-price {
+  border-radius: 18px;
+  border: 2px solid transparent;
+  font-size: 2em;
+  background-color: transparent;
+  @include phone {
+    font-size: 1em;
+  }
+  &:focus {
+    border-color: $orange;
+    background-color: transparent;
+  }
+  &:active {
+    background-color: transparent;
+  }
+  &:hover {
+    background-color: transparent;
+  }
+}
+
+.ads-alike {
+  margin-top: 30px;
+  font-size: 2.6em;
+  font-weight: bold;
+  color: $bright;
+  @include phone-md {
+    font-size: 1.5em;
+  }
+}
+.ads, .ad-data {
+  list-style: none;
+}
+.ad-data {
+  @include phone-md {
+    text-align: center;
+  }
+}
+.ad-container {
+  clear: both;
+  @include phone-md {
+    margin-bottom: 10px;
+  }
+}
+.ad-city, .ad-flats, .ad-price {
+  font-size: 2em;
+  @include phone {
+    font-size: 1em;
+  }
+}
+.ad-price {
+  font-weight: 600;
+  color: $orange;
+}
+.img-container {
+  position: relative;
+  width: 250px;
+  @include phone-md {
+    margin: 0 auto;
+  }
+}
+.ad-picture {
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  @include phone-md {
+    float: none;
+    margin-bottom: 0;
+  }
+}
+.ad-badge {
+  width: 180px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 5px;
+  font-size: 1.3em;
+  font-weight: 600;
+  color: $white;
+  text-align: center;
+  border-radius: 12px 0 12px 0;
+  border: 2px solid $white;
+}
+.ad-badge-recommend {
+  background-color: $main;
+}
+.ad-badge-premium {
+  background-color: $badge-yellow;
+}
+.ad-badge-low-price {
+  background-color: $bright;
+}

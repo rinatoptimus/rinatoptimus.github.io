@@ -1,0 +1,267 @@
+.header-book {
+  height: 110px;
+}
+.row-date {
+  margin-bottom: 2em;
+}
+.media-book {
+  @include phone-md {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.breadcrumb-container {
+  margin-top: 8em;
+    .breadcrumb {
+      padding: 20px 15px;
+      border-radius: 0;
+      background-color: $bg-light;
+    }
+}
+.title-book {
+  margin-bottom: 0.8em;
+  font-size: 2.5em;
+  font-weight: 600;
+  color: $main;
+  @include phone-lg {
+    font-size: 1.5em;
+  }
+}
+.navigation {
+  top: 0;
+}
+.menu-icon {
+  top: 15px;
+}
+.breadcrumb>li+li:before {
+  font-size: 1.5em;
+  color: $black;
+}
+.breadcrumb-link {
+  font-size: 1.4em;
+  color: $black;
+  @include phone-lg {
+    font-size: 1em;
+  }
+  @include phone {
+    font-size: 10px;
+  }
+}
+.order-number {
+  background-color: ORANGE;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  font-size: 45px;
+
+  margin: 0 auto;
+  text-align: center;
+  color: $white;
+}
+
+.media-body-book {
+  @include phone-xl {
+    width: 100%;
+  }
+  .media-heading-book {
+    margin-top: 0.4em;
+    margin-bottom: 5px;
+    font-size: 2em;
+    line-height: 1.5em;
+    @include phone-lg {
+      font-size: 17px;
+    }
+  }
+  .input-group-book {
+    margin-bottom: 5px;
+    .form-control-book {
+      border-radius: 5px;
+      @include phone-lg {
+        //width: 5.3%;
+      }
+    }
+    .input-group-btn {
+      .btn-calendar-icon {
+        width: 40px;
+        height: 34px;
+        margin-left: 10px;
+        border: none;
+        background-color: grey;
+      }
+    }
+  }
+}
+.choose-date-title {
+  font-size: 2em;
+  color: $main;
+  @include phone-lg {
+    font-size: 1em;
+  }
+}
+.date-sub-text {
+  font-size: 2em;
+  @include phone-lg {
+    font-size: 1em;
+  }
+}
+.media-left {
+  @include phone {
+    display: block;
+  }
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"] + .label-book {
+  color: #292321;
+  font-family: Arial, sans-serif;;
+}
+
+input[type="radio"] + .label-book span {
+  display: inline-block;
+  width: 19px;
+  height: 19px;
+  margin: -1px 4px 0 0;
+  vertical-align: middle;
+  cursor: pointer;
+  border-radius: 50%;
+}
+input[type="radio"] + .label-book span {
+  background-color: #fff;
+  border: 1px solid $black;
+}
+input[type="radio"]:checked + .label-book span {
+  background-color: $main;
+}
+input[type="radio"] + .label-book span,
+input[type="radio"]:checked + .label-book span {
+  transition: background-color 0.1s linear;
+}
+.container-radio {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 3em;
+}
+.block-radio {
+  display:flex;
+  flex-direction:column;
+  @include phone-lg {
+    display: block;
+    float: left;
+  }
+}
+.block-radio-sms {
+  @include phone-lg {
+    margin: 0 3em 0;
+  }
+}
+.label-book {
+  display: flex;
+  flex-direction: column-reverse;
+}
+input[type="radio"] + .label-book .label-span {
+  margin: 90px auto 0;
+}
+.label-watsupp {
+  width: 100px;
+  height: 140px;
+  background: url('../img/watsupp.png') no-repeat;
+  background-size: 90%;
+  @include phone-md {
+    width: 19vw;
+    height: 35vw;
+  }
+}
+.label-sms {
+  width: 100px;
+  height: 140px;
+  background: url('../img/sms.png') no-repeat;
+  background-size: 90%;
+  @include phone-md {
+    width: 19vw;
+    height: 35vw;
+  }
+}
+.label-telegram {
+  width: 100px;
+  height: 140px;
+  background: url('../img/telegram.png') no-repeat;
+  background-size: 90%;
+  @include phone-md {
+    width: 19vw;
+    height: 35vw;
+  }
+}
+
+// checkbox
+label.btn span {
+  font-size: 1.5em;
+  @include phone {
+    font-size: 18px;
+  }
+  @include phone-mini {
+    font-size: 15px;
+  }
+}
+label.btn input[type="checkbox"] ~ i.fa.fa-square-o{
+  color: #c8c8c8;    display: inline;
+}
+label.btn input[type="checkbox"] ~ i.fa.fa-check-square-o{
+  display: none;
+}
+label.btn input[type="checkbox"]:checked ~ i.fa.fa-square-o{
+  display: none;
+}
+label.btn input[type="checkbox"]:checked ~ i.fa.fa-check-square-o{
+  color: $bright;    display: inline;
+}
+label.btn:hover input[type="checkbox"] ~ i.fa {
+  color: grey;
+}
+.fa-2x {
+  font-size: 3em;
+}
+.fa-check-square {
+  font-size: 3em;
+}
+label.btn input[type="checkbox"] ~ i.fa.fa-square-o {
+  margin-right: 6px;
+}
+.checkbox-book {
+  @include phone-lg {
+    clear: both;
+  }
+}
+.checkbox-book input[type="checkbox"] {
+  visibility: hidden;
+}
+.btn:active {
+  box-shadow: none;
+}
+.checkbox-book label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 0;
+}
+
+.under-label-text {
+  font-size: 1.5em;
+}
+.under-label-price {
+  font-size: 2.5em;
+  font-weight: 600;
+  color: $orange;
+}
+.under-label-blue {
+  color: $main;
+}
+.btn-book {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-size: 30px;
+  font-weight: 600;
+  background-color: $main;
+}

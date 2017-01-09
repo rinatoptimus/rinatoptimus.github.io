@@ -607,6 +607,7 @@ div.speech-blue:after {
   line-height: 2; }
 
 .price-text {
+  float: left;
   font-size: 2.6em;
   font-weight: bold;
   color: #6CF223; }
@@ -631,6 +632,21 @@ div.speech-blue:after {
   @media (max-width: 376px) {
     .rouble-sign {
       font-size: 25px; } }
+
+.slider-interriors {
+  clear: both; }
+
+.rouble-green {
+  display: inline-block;
+  width: 43px;
+  height: 46px;
+  margin-top: 10px;
+  margin-left: 10px;
+  background: url("../img/rouble-green.png") no-repeat;
+  background-size: 70%; }
+
+.rouble-yellow-flat {
+  vertical-align: middle; }
 
 .container-tabs {
   margin-top: 14em; }

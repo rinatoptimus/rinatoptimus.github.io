@@ -1040,6 +1040,9 @@ input[type="range"]::-webkit-slider-thumb {
   height: 66px;
   margin-top: 64px; }
 
+.input-guests-city {
+  top: 0; }
+
 .rouble {
   font-family: "ALS Rubl"; }
 

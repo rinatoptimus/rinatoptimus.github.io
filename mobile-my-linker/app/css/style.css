@@ -1,4 +1,10 @@
 @charset "UTF-8";
+@font-face {
+  font-family: "ALS Rubl";
+  src: url("../fonts/rouble.otf");
+  font-style: normal;
+  font-weight: normal; }
+
 .navigation .menu-icon {
   font-size: 30px;
   line-height: 1em;
@@ -1006,6 +1012,9 @@ input[type="range"]::-webkit-slider-thumb {
   width: 58px;
   height: 66px;
   margin-top: 64px; }
+
+.rouble {
+  font-family: "ALS Rubl"; }
 
 .header-book {
   height: 110px; }

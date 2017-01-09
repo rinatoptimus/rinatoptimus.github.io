@@ -1089,7 +1089,10 @@ input[type="range"]::-webkit-slider-thumb {
 .media-body-book .input-group-book {
   margin-bottom: 5px; }
   .media-body-book .input-group-book .form-control-book {
-    display: block;
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
     -webkit-border-radius: 5px;
             border-radius: 5px; }
   .media-body-book .input-group-book .input-group-btn .btn-calendar-icon {

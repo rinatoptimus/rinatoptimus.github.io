@@ -75,6 +75,7 @@
   .input-group-book {
     margin-bottom: 5px;
     .form-control-book {
+      display: block;
       border-radius: 5px;
       @include phone-lg {
         //width: 5.3%;

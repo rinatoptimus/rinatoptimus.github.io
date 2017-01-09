@@ -298,6 +298,7 @@ div.speech:after {
   margin-top: 20px;
 }
 .guests-text {
+  float: left;
   font-size: 40px;
 }
 .guests-figure {
@@ -306,7 +307,13 @@ div.speech:after {
   height: 73px;
   background: url('../img/guests-figure.png') no-repeat;
 }
-
+.input-guests {
+  width: 10%;
+  top: 35px;
+  left: 10px;
+  padding: 22px 5px 20px;
+  font-size: 40px;
+}
 
 .btn-find {
   width: 100%;

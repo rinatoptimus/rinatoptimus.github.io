@@ -354,7 +354,7 @@ div.speech:after {
 
 .guests-figure {
   display: inline-block;
-  width: 30px;
+  width: 40px;
   height: 73px;
   background: url("../img/guests-figure.png") no-repeat; }
 
@@ -362,7 +362,7 @@ div.speech:after {
   width: 10%;
   top: 35px;
   left: 10px;
-  font-size: 40px;
+  font-size: 30px;
   height: 43px;
   padding: 5px;
   line-height: 2px; }

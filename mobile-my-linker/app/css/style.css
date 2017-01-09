@@ -807,7 +807,8 @@ div.speech-blue:after {
 
 .thumbnail-btn-enhanced {
   margin-left: auto;
-  display: block; }
+  display: block;
+  text-align: right; }
 
 @media (max-width: 456px) {
   .book {

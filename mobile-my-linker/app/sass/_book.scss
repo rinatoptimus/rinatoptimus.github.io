@@ -80,6 +80,10 @@
       @include phone-lg {
         //width: 5.3%;
       }
+      .form-control-book[type=date]::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        display: none;
+      }
     }
     .input-group-btn {
       .btn-calendar-icon {

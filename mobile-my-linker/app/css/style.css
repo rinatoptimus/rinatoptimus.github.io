@@ -362,8 +362,10 @@ div.speech:after {
   width: 10%;
   top: 35px;
   left: 10px;
-  padding: 22px 5px 20px;
-  font-size: 40px; }
+  font-size: 40px;
+  height: 43px;
+  padding: 5px;
+  line-height: 2px; }
 
 .btn-find {
   width: 100%;

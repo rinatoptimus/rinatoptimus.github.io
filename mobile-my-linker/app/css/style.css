@@ -324,8 +324,8 @@ div.speech:after {
 
 .calendar {
   display: block;
-  width: 117px;
-  height: 108px;
+  width: 120px;
+  height: 111px;
   margin-right: 15px;
   background: url("../img/calend.png") no-repeat; }
   @media (max-width: 571px) {
@@ -1113,6 +1113,14 @@ input[type="range"]::-webkit-slider-thumb {
     border: none;
     background-color: grey; }
 
+.rouble-yellow {
+  display: inline-block;
+  width: 43px;
+  height: 46px;
+  background: url("../img/rouble-yellow.png") no-repeat;
+  background-size: 70%;
+  margin-top: 6px; }
+
 .choose-date-title {
   font-size: 2em;
   color: #00398B; }
@@ -1295,14 +1303,18 @@ label.btn input[type="checkbox"] ~ i.fa.fa-square-o {
   padding-left: 0; }
 
 .under-label-text {
+  clear: both;
   font-size: 1.5em; }
 
 .under-label-price {
+  float: left;
+  margin-right: 15px;
   font-size: 2.5em;
   font-weight: 600;
   color: #FFAB1F; }
 
 .under-label-blue {
+  clear: both;
   color: #00398B; }
 
 .btn-book {

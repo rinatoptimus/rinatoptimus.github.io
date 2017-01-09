@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mobile My linker</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+    <link rel="stylesheet" href="app/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="top-bar">
+                <nav class="navigation active">
+                    <a href="#" class="menu-icon">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                    <ul class="main-navigation">
+                        <li><a href="#" class="current">Создать объявление</a></li>
+                        <li><a href="#">Регистрация</a></li>
+                        <li><a href="#">Войти</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <header class="nav-down">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-xs-12 col-top">
+                    <ul class="filter-list">
+                        <li>
+                            <a href="#" class="logo"></a>
+                        </li>
+                        <li class="pull-right">
+                            <div class="filter-icon mark"></div>
+                            <a href="#">8 800 505 34 90</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container container-wide container-image">
+            <div class="row">
+                <div class="col-sm-12 col-xs-12">
+                    <form action="" method="POST">
+                        <div class="form-group speech speech-blue">
+                            <!--<input type="text" class="form-control form-control-destination" id="destination" placeholder="Куда вы хотите поехать?">-->
+                            <p class="speech-blue-text">Подберём жильё посуточно в Казани за 5 минут</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--<div class="container container-tags">-->
+        <!--<div class="row">-->
+            <!--<div class="col-sm-12 col-xs-12">-->
+                <!--<ul class="tags">-->
+                    <!--<li><i class="fa fa-times fa-1" aria-hidden="true"></i> Казань</li>-->
+                    <!--<li><i class="fa fa-times fa-1" aria-hidden="true"></i> Ново-Савиновский</li>-->
+                    <!--<li><i class="fa fa-times fa-1" aria-hidden="true"></i> 1 комната</li>-->
+                <!--</ul>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+
+    <div class="container container-tabs">
+        <div class="row">
+            <div class="col-sm-12 col-xs-12">
+                <div class="location"></div>
+                <p class="location-text location-city">в Казани <span>19:00 22 декабря</span></p>
+                <p class="location-text location-street">ул. Чистопольская, 5</p>
+                <div id="responsiveTabsDemo">
+                    <ul>
+                        <li><a href="#tab-1">Описание</a></li>
+                        <li><a href="#tab-2">Карта</a></li>
+                    </ul>
+
+                    <div id="tab-1">
+                        <p class="price-text">Цена за сутки: <span class="price">1 500</span> <span class="rouble-sign">&#8381;</span></p>
+                        <a class="arrow l"></a>
+                        <div class="your-class">
+                            <div>
+                                <img src="app/img/interriors/1.jpg" alt="" title="">
+                            </div>
+                            <div>
+                                <img src="app/img/interriors/2.jpg" alt="" title="">
+                            </div>
+                            <div>
+                                <img src="app/img/interriors/3.jpg" alt="" title="">
+                            </div>
+                        </div>
+                        <a class="arrow r"></a>
+                    </div>
+                    <div id="tab-2">Карта</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="#" id="back-to-top"></a>
+    <div class="container container-thumbnail">
+        <div class="row">
+            <div class="col-sm-12 col-xs-12">
+                <div href="#" class="thumbnail">
+                    <div class="col-md-12 col-xs-12 col-person">
+                        <img class="thumbnail-avatar" src="http://i.imgur.com/Hw1dyoP.png" alt="Generic placeholder thumbnail" />
+                        <ul class="person-name">
+                            <li class="owner-name">Ильфат</li>
+                            <li class="owner-status">(частное лицо)</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-12 col-xs-12">
+                        <p>
+                            <button type="button" class="btn btn-primary btn-lg btn-block book">Забронировать</button>
+                        </p>
+                        <p>
+                            <button type="button" class="btn btn-success btn-lg btn-block call">Позвонить</button>
+                        </p>
+                        <p class="bottom-btns-block">
+                            <button type="button" class="btn btn-warning btn-lg btn-block write">Написать</button>
+                            <button type="button" class="btn btn-warning btn-lg btn-block btn-order-call">Заказать звонок</button>
+                        </p>
+                    </div>
+                    <button type="button" class="btn btn-default btn-enhanced-search thumbnail-btn-enhanced" data-toggle="collapse" data-target="#demo">
+                        <i class="fa fa-caret-down fa-2" aria-hidden="true"></i>
+                    </button>
+                </div>
+                <div id="demo" class="collapse">
+                    <a class="show-all-variants" href="#">Просмотреть все варианты хозяина</a>
+                    <p class="price-per-day">Цена за сутки: <span class="price-digits">18 000</span> <span class="price-rouble">&#8381;</span></p>
+                    <div class="date-container">
+                        <div class="calendar calendar-flat"></div>
+                        <div class="block-date-inputs">
+                            <form action="" method="">
+                                <label for="" class="dates-label collapse-date">Дата:</label>
+                                <div class="date-inputs date-inputs-flat">
+                                    <input type="date" id="" class="form-control form-control-date input-in input-in-date" aria-describedby="helpBlock">
+                                    <input type="date" id="" class="form-control form-control-date" aria-describedby="helpBlock2">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <table class="table">
+                        <tbody>
+                        <tr>
+                            <td class="flat-data flat-data-guests"><p>Гостей</p></td>
+                            <td class="flat-data flat-data-guests"><span class="guests-figure guests-figure-date"></span> <p class="multiply">x4</p></td>
+                        </tr>
+                        <tr>
+                            <td class="flat-data">Базовая</td>
+                            <td class="flat-data">330 x1ночь</td>
+                        </tr>
+                        <tr>
+                            <td class="flat-data">Предоплата</td>
+                            <td class="flat-data">330 &#8381;</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="flat-descr">1-комнатная квартира Площадь: 32 кв.м. Спальных мест: 2+1+1. Этаж: 7/9, есть лифт.</p>
+                <button type="button" class="btn btn-default btn-enhanced-search thumbnail-btn-enhanced" data-toggle="collapse" data-target="#demo2">
+                    <i class="fa fa-caret-down fa-2" aria-hidden="true"></i>
+                </button>
+                <div id="demo2" class="collapse">
+                    qwreawefweg awerg hge gaerg esarg Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </div>
+                <div class="additional-info">
+                    <h4 class="additional-info-title">Дополнительная информация</h4>
+                    <p class="lead">Тип жилья</p>
+                    <p class="sub-lead">Дом</p>
+
+                    <p class="lead">Тип размещения</p>
+                    <p class="sub-lead">Дом/квартира целиком</p>
+
+                    <p class="lead">Вмещает гостей</p>
+                    <p class="sub-lead">20+</p>
+
+                    <p class="lead">Удобства</p>
+                    <p class="sub-lead">Телевизор</p>
+                    <p class="sub-lead">Кухня</p>
+
+                    <p class="lead">Дополнительно</p>
+                    <p class="sub-lead">Джакузи</p>
+                    <p class="sub-lead">Стиральная машина</p>
+
+                    <p class="lead">Минимальная продолжительность бронирования</p>
+                    <p class="sub-lead">1</p>
+
+                    <h4 class="ads-alike">Похожие объявления</h4>
+                    <ul class="btns-list">
+                        <li><button type="button" class="btn btn-default btn-sm btn-parameters">Пор параметрам</button></li>
+                        <li><button type="button" class="btn btn-default btn-sm btn-near">Рядом</button></li>
+                        <li><button type="button" class="btn btn-default btn-sm btn-by-price">По цене</button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-xs-12">
+                <ul class="ads">
+                    <li>
+                        <div class="ad-container">
+                            <div class="img-container">
+                                <img class="img-responsive ad-picture" src="app/img/interriors/1sm.jpg" alt="" title="">
+                                <div class="ad-badge ad-badge-recommend text-uppercase">Рекомендуем</div>
+                            </div>
+
+
+                            <ul class="ad-data">
+                                <li class="ad-city">Казань, ул. Чистопольская</li>
+                                <li class="ad-flats">1 комната</li>
+                                <li class="ad-price">1 500</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="ad-container">
+                            <div class="img-container">
+                                <img class="img-responsive ad-picture" src="app/img/interriors/2sm.jpg" alt="" title="">
+                                <div class="ad-badge ad-badge-premium text-uppercase">Премиум</div>
+                            </div>
+                            <ul class="ad-data">
+                                <li class="ad-city">Казань, ул. Чистопольская</li>
+                                <li class="ad-flats">1 комната</li>
+                                <li class="ad-price">2 000</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="ad-container">
+                            <div class="img-container">
+                                <img class="img-responsive ad-picture" src="app/img/interriors/3sm.jpg" alt="" title="">
+                                <div class="ad-badge ad-badge-low-price text-uppercase">Низкая цена</div>
+                            </div>
+                            <ul class="ad-data">
+                                <li class="ad-city">Казань, ул. Чистопольская</li>
+                                <li class="ad-flats">1 комната</li>
+                                <li class="ad-price">1 500</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="ad-container">
+                            <div class="img-container">
+                                <img class="img-responsive ad-picture" src="app/img/interriors/2sm.jpg" alt="" title="">
+                                <div class="ad-badge ad-badge-premium text-uppercase">Премиум</div>
+                            </div>
+                            <ul class="ad-data">
+                                <li class="ad-city">Казань, ул. Чистопольская</li>
+                                <li class="ad-flats">1 комната</li>
+                                <li class="ad-price">2 000</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="logotypes">
+        <div class="container">
+            <div class="row">
+                <div class="logos-block">
+                    <div class="ak-bars"></div>
+                    <div class="visa"></div>
+                    <div class="alpha"></div>
+                    <div class="mastercard"></div>
+                    <div class="psb"></div>
+                    <div class="sber"></div>
+                    <div class="yandex"></div>
+                    <div class="kiwi"></div>
+                    <div class="webmoney"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-xs-12">
+                    <ul class="footer-nav">
+                        <li><a href="#">Для собственников</a></li>
+                        <li><a href="#">Правила сайта</a></li>
+                        <li><a href="#">Наша команда</a></li>
+                        <li><a href="#">Блог</a></li>
+                        <li><a href="#">Отзывы</a></li>
+                        <li><a href="#">Карта сайта</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+<script src="app/js/singlenav.js"></script>
+<script src="app/js/offscreen-nav.js"></script>
+
+<script src="app/js/hide-on-scroll.js"></script>
+<script src="app/js/jquery.responsiveTabs.js"></script>
+<script src="app/js/responsive-tabs-init.js"></script>
+
+<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+<script src="app/js/slider.js"></script>
+
+<script src="app/js/scroll-top.js"></script>
+</body>
+</html>

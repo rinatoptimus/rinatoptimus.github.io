@@ -1098,7 +1098,7 @@ input[type="range"]::-webkit-slider-thumb {
 .media-body-book .input-group-book {
   margin-bottom: 5px; }
   .media-body-book .input-group-book .form-control-book {
-    min-width: 100%;
+    display: block;
     -webkit-border-radius: 5px;
             border-radius: 5px; }
     .media-body-book .input-group-book .form-control-book .form-control-book[type=date]::-webkit-inner-spin-button {

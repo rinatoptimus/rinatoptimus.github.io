@@ -1043,6 +1043,22 @@ input[type="range"]::-webkit-slider-thumb {
 .input-guests-city {
   top: 0; }
 
+.col-dates-city {
+  margin-top: 40px; }
+
+.location-city-city {
+  margin-top: 2vw;
+  margin-bottom: 40px; }
+
+.select-city {
+  display: inline-block;
+  width: 30%;
+  vertical-align: middle;
+  height: 45px;
+  padding: 0;
+  font-size: 30px;
+  color: #00398B; }
+
 .rouble {
   font-family: "ALS Rubl"; }
 

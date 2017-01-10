@@ -1,0 +1,275 @@
+body {
+  font-family: 'Roboto', 'Arial', sans-serif;
+}
+ul {
+  padding: 0;
+}
+ul li {
+  list-style: none;
+}
+
+.logo {
+  width: 197px;
+  height: 66px;
+  background: url('../img/my-linker.png') no-repeat;
+  text-indent: -3333px;
+}
+.navbar-custom {
+  padding: {
+    top: 20px;
+    bottom: 20px;
+  };
+  border-radius: 0;
+  border-bottom: 2px solid $grey;
+}
+.navbar-default .navbar-nav>li>a.service-name {
+  font-family: 'Roboto', 'Arial', sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  color: $main;
+}
+.service-name-right {
+  margin-top: 20px;
+}
+.call-to-action {
+  max-width: 780px;
+  margin: 0 auto;
+  font-size: 22px;
+}
+
+.map-first {
+  width: 100%;
+  height: 700px;
+  background: url('../img/map-first.png') no-repeat;
+
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: contain;
+  //background-size: 55%;
+}
+
+.form-group {
+  .input-search-city {
+    height: 50px;
+    border-radius: 10px;
+    font-size: 25px;
+    font-style: italic;
+  }
+}
+.search-block {
+  margin: 18em auto 0;
+  @include small-devices {
+    text-align: center;
+  }
+  @include phone {
+    text-align: center;
+  }
+}
+.btn-search {
+  margin-left: -45px;
+  z-index: 10;
+  position: relative;
+  padding: {
+    left: 45px;
+    right: 45px;
+  }
+  border-radius: 25px;
+  border: none;
+  border-bottom: 2px solid $btn-border;
+  background-color: $yellow;
+  font-size: 1.3em;
+  &:hover {
+    background-color: $btn-hover;
+  }
+  @include small-devices {
+    margin-left: 0;
+  }
+}
+
+// checkbox begin
+label.with-square-checkbox {
+  cursor: pointer;
+  span {
+    margin-left: 5px;
+  }
+}
+label.with-square-checkbox span {
+  line-height: 24px;
+}
+label.with-square-checkbox span::before {
+  margin-right: 4px;
+  padding-left: 1px;
+  width: 21px;
+  height: 21px;
+  border: 1px solid $black;
+  display: inline-block;
+  line-height: 15px;
+  content: '';
+  float: left;
+  background-color: $yellow;
+}
+label.with-square-checkbox input[type="checkbox"] {
+  display: none;
+}
+label.with-square-checkbox input[type="checkbox"]:checked + span::before {
+  padding-top: 2px;
+  font-family: 'Glyphicons Halflings';
+  content: '\e013';
+  color: $black;
+  font-size: 16px;
+}
+main {
+  width: 300px;
+  margin: 8px auto;
+}
+li {
+  list-style-type: none;
+}
+// checkbox end
+.checkbox-block {
+
+}
+
+.link-agreement {
+  color: $black;
+  text-decoration: underline;
+  font-style: italic;
+  &:hover {
+    color: $black;
+    text-decoration: none;
+  }
+}
+.agree-checkbox {
+  font-size: 20px;
+}
+
+.process {
+  padding: {
+    top: 0;
+    bottom: 20px;
+  };
+  border-bottom: 2px solid $grey;
+}
+
+.result {
+  padding-bottom: 15px;
+  background-color: $yellow;
+}
+.result-title {
+  font-weight: 600;
+}
+.congratulation {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.description {
+  //padding-top: 90px;
+  padding-bottom: 10px;
+  font-size: 12px;
+}
+.danger {
+  width: 100%;
+  height: 128px;
+  background: url(../img/danger.png) no-repeat;
+  background-position-x: 50%;
+}
+.descr-text {
+  max-width: 610px;
+  margin: 0 auto 15px;
+}
+
+.get-offer {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.time-limit {
+  font-size: 12px;
+}
+.col-find {
+  padding-left: 0;
+}
+
+.share {
+  max-width: 185px;
+}
+.soc-list {
+  li {
+    float: left;
+  }
+}
+.soc-list-second {
+  clear: both;
+}
+.icon {
+  width: 62px;
+  height:61px;
+  display: block;
+}
+.fb {
+  background: url('../img/fb.png') no-repeat;
+  background-size: 55%;
+  &:hover {
+    opacity: 0.7;
+  }
+}
+.ok {
+  background: url('../img/ok.png') no-repeat;
+  background-size: 55%;
+  &:hover {
+    opacity: 0.7;
+  }
+}
+.vk {
+  background: url('../img/vk.png') no-repeat;
+  background-size: 55%;
+  &:hover {
+    opacity: 0.7;
+  }
+}
+.tw {
+  background: url('../img/tw.png') no-repeat;
+  background-size: 55%;
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.map-second-block {
+  border-bottom: 2px solid $grey;
+}
+
+.leave-mail {
+  max-width: 320px;
+  margin: 0 auto 10px;
+}
+.contacts-input {
+  font-style: italic;
+}
+.btn-contacts {
+  margin-left: 0;
+  margin-top: 20px;
+  padding: {
+    top: 0;
+    bottom: 0;
+    left: 25px;
+    right: 25px;
+  };
+}
+
+.description, .get-offer, .contacts {
+  border-bottom: 2px solid $grey;
+  background-color: $bg-grey;
+}
+.col-sale-input {
+  @include small-devices {
+    text-align: center;
+  }
+}
+
+footer {
+  padding-top: 40px;
+  padding-bottom: 50px;
+  background-color: $bg-blue;
+}

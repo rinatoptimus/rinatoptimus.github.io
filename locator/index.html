@@ -2,77 +2,120 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta name="title" content="" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link rel="shortcut icon" href="favicon.ico" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Locator</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="app/css/style.css">
+
 </head>
 <body>
     <nav class="navbar navbar-default navbar-custom">
         <div class="container">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
+                <!--<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">-->
+                    <!--<span class="sr-only">Toggle navigation</span>-->
+                    <!--<span class="icon-bar"></span>-->
+                    <!--<span class="icon-bar"></span>-->
+                    <!--<span class="icon-bar"></span>-->
+                <!--</button>-->
                 <a class="navbar-brand logo" href="#">MyLinker</a>
             </div>
-            <div id="navbar" class="navbar-collapse collapse">
-                <ul class="nav navbar-nav navbar-right service-name-right">
-                    <li><a class="service-name" href="../navbar/">GayLocator</a></li>
+            <!--<div id="navbar" class="navbar-collapse collapse">-->
+                <!--<ul class="nav navbar-nav navbar-right service-name-right">-->
+                    <!--<li><a class="service-name" href="../navbar/">GayLocator</a></li>-->
+                <!--</ul>-->
+            <!--</div>-->
+            <p class="text-right pull-right">
+            <ul class="nav navbar-nav navbar-right service-name-right">
+                <li><a class="service-name" href="../navbar/">GayLocator</a></li>
                 </ul>
-            </div><!--/.nav-collapse -->
+            </p>
         </div>
     </nav>
 
     <div class="container">
-        <row>
+        <div class="row">
             <div class="col-lg-12 text-center">
-                <h4><strong>Узнай, сколько геев живет в городах России!</strong></h4>
+                <h4 class="title-know"><strong>Узнай, сколько геев живет в городах России!</strong></h4>
                 <p class="call-to-action">MyLinker провел масштабное исследование по поиску гомосексуалистов, и теперь ты можешь узнать, сколько их сейчас находится в любом городе.</p>
-            </div>
-        </row>
-    </div>
-
-    <div class="map-first">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="col-lg-12 col-xs-12 search-block">
-                        <form class="form-group" action="" method="POST">
-                            <div class="form-group form-group-lg col-xs-12 col-sm-8 col-md-9 col-lg-6 col-lg-offset-3 col-sm-offset-1">
-                                <label for="" class="sr-only">Найти</label>
-                                <input type="text" class="form-control col-lg-6 col-xs-12 input-search-city" name="" id="" placeholder="Введите город">
-                            </div>
-                            <button type="submit" class="btn btn-default btn-lg btn-search">Узнать</button>
-                        </form>
-                    </div>
-                    <!--<div class="checkbox col-lg-offset-6 col-lg-4 col-xs-12 checkbox-block">-->
-                        <!--<input type="checkbox"> Я согласен с <a class="link-agreement" href="#">условиями</a>-->
-                    <!--</div>-->
-
-                    <div class="checkbox col-lg-offset-6 col-lg-4 col-xs-12 checkbox-block">
-                        <label class='with-square-checkbox'>
-                            <input type='checkbox'>
-                            <span class="agree-checkbox"> Я согласен(-на) с <a class="link-agreement" href="#">условиями</a></span>
-                        </label>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
+
+
+
+
+
+    <div class="map-first">
+
+
+
+
+        <div class="wrap" style="width: 1300px;position: relative;border: 1px solid red;margin: 0 auto;">
+            <div class="scanner"></div>
+            <p>sdfgsdfgsrhseh</p>
+        </div>
+
+
+
+        <!-- Чтоб форма не уезжала из сканнера, попробовать закомментить блок 1 и раскомментить блок 2-->
+        <!-- блок 1 начало -->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-xs-12 search-block">
+                    <form class="form-group form-find" action="" method="POST">
+                        <div class="form-group form-group-lg">
+                            <label class='pull-right with-square-checkbox'>
+                                <input type='checkbox' checked="true">
+                                <span class="agree-checkbox"> Я согласен(-на) с <a class="link-agreement" href="#">условиями</a></span>
+                            </label>
+                            <label for="" class="sr-only">Найти</label>
+                            <input type="text" class="form-control col-lg-6 col-xs-12 input-search-city" name="" id="" placeholder="Введите город">
+                        </div>
+                        <button type="submit" class="btn btn-default btn-lg btn-search btn-search-top">Узнать</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- блок 1 конец -->
+
+    </div>
+
+    <!-- блок 2 начало -->
+    <!--<div class="container">-->
+        <!--<div class="row">-->
+
+            <!--<div class="col-lg-12 col-xs-12 search-block">-->
+                <!--<form class="form-group form-find" action="" method="POST">-->
+                    <!--<div class="form-group form-group-lg">-->
+                        <!--<label class='pull-right with-square-checkbox'>-->
+                            <!--<input type='checkbox' checked="true">-->
+                            <!--<span class="agree-checkbox"> Я согласен(-на) с <a class="link-agreement" href="#">условиями</a></span>-->
+                        <!--</label>-->
+                        <!--<label for="" class="sr-only">Найти</label>-->
+                        <!--<input type="text" class="form-control col-lg-6 col-xs-12 input-search-city" name="" id="" placeholder="Введите город">-->
+                    <!--</div>-->
+                    <!--<button type="submit" class="btn btn-default btn-lg btn-search btn-search-top">Узнать</button>-->
+                <!--</form>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!-- блок 2 конец -->
 
     <div class="process">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <p>Вычисляем количество запросов <span class="text-uppercase">"Порно"</span> за последующий месяц <span>567 836</span></p>
-                    <p>Вычисляем количество запросов <span class="text-uppercase">"Порно-Геи"</span> за последующий месяц <span>7 546 238</span></p>
-                    <p>Уточняем количество жителей города <span>947 294</span></p>
-                    <p>Составляем полученные данные <span>457 842</span></p>
+                    <p class="process-text">Вычисляем количество запросов <span class="text-uppercase">"Порно"</span> за последующий месяц <span>567 836</span></p>
+                    <p class="process-text">Вычисляем количество запросов <span class="text-uppercase">"Порно-Геи"</span> за последующий месяц <span>7 546 238</span></p>
+                    <p class="process-text">Уточняем количество жителей города <span>947 294</span></p>
+                    <p class="process-text">Составляем полученные данные <span>457 842</span></p>
                 </div>
             </div>
         </div>
@@ -83,7 +126,7 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="result-title">В <span class="result-city">Омске</span> <span class="result-number">343 543</span> геев</h2>
-                    <p class="congratulation">Поздравляем! В городе снижена активность геев.</p>
+                    <p class="congratulation">Ой-ой! В городе много геев!</p>
                 </div>
             </div>
         </div>
@@ -92,33 +135,50 @@
     <div class="description">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
-                    <div class="danger"></div>
-                </div>
                 <div class="col-lg-12 text-center">
-                    <p class="descr-text">Снимая квартиру через такие западные сервисы как: Airbnb, Homoway, Roommania, Tripping, ты подвергаешься большому риску. Вряд ли захочется убаюкивать своего малыша в кроватке, в которой до Вас резвились геи.</p>
-                    <p class="descr-text">В ноябре сервис Airbnb провел чистку и удплил всех собственников, которые отказывались сдавать жилье гомосексуалистам. Эти собственники перешли к нам)</p>
+                    <div class="danger"></div>
+                    <p class="time-limit">Мы поможем отбиваться от геев в случае пиковой активности!</p>
+                    <p class="time-limit">Получи инструкцию от MyLinker.ru</p>
+                    <!--<p class="time-limit">До 14 февраля получи скидку, арендуя квартиру на MyLinker.ru</p>-->
+
+                    <form class="form-group form-search" action="" method="">
+                        <div class="form-group form-group-lg col-lg-offset-1 col-xs-12 col-sm-12 col-md-12 col-lg-8 col-find">
+                            <label for="" class="sr-only">Найти</label>
+                            <input type="email" class="form-control col-lg-3 col-xs-12 input-get-instruction" name="" id="" placeholder="Введите email">
+                        </div>
+                        <button type="submit" class="btn btn-default btn-lg btn-search btn-search-get">Получить инструкцию</button>
+                    </form>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="get-offer">
+    <div class="result">
         <div class="container">
             <div class="row">
-                <div class="col-lg-9 col-sale-input">
-                    <p class="time-limit">Мы поможем отбиваться от геев в случае пиковой активности!</p>
-                    <p class="time-limit">Получи инструкцию от MyLinker.ru</p>
+                <div class="col-lg-12">
+                    <h2 class="result-title res-title-second">В <span class="result-city">Омске</span> <span class="result-number">343 543</span> геев</h2>
+                    <p class="congratulation congratulation-second">Поздравляем! В городе снижена активность геев.</p>
+                </div>
+            </div>
+        </div>
+        <div class="checked"></div>
+    </div>
+    <div class="description description-second">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-sale-input">
                     <p class="time-limit">До 14 февраля получи скидку, арендуя квартиру на MyLinker.ru</p>
                     <form class="form-group" action="" method="">
-                        <div class="form-group form-group-lg col-xs-12 col-sm-8 col-md-6 col-lg-6 col-find">
+                        <div class="form-group form-group-lg col-xs-12 col-sm-12 col-md-12 col-lg-8 col-find">
                             <label for="" class="sr-only">Найти</label>
-                            <input type="email" class="form-control col-lg-3 col-xs-12" name="" id="" placeholder="Введите email">
+                            <input type="email" class="form-control col-lg-3 col-xs-12 input-get-instr" name="" id="" placeholder="Введите email">
                         </div>
-                        <button type="submit" class="btn btn-default btn-lg btn-search">Получить скидку</button>
+                        <button type="submit" class="btn btn-default btn-lg btn-search btn-search-second">Получить скидку</button>
                     </form>
+                    <div class="less-more"></div>
                 </div>
-                <div class="col-lg-3 socials">
+                <div class="col-lg-4 socials">
                     <p class="share">Поделиться в социальных сетях</p>
                     <ul class="soc-list">
                         <li><a class="icon fb" href="#"></a></li>
@@ -128,6 +188,17 @@
                         <li><a class="icon vk" href="#"></a></li>
                         <li><a class="icon tw" href="#"></a></li>
                     </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="get-offer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <p class="descr-text">Снимая квартиру через такие западные сервисы как: Airbnb, Homoway, Roommania, Tripping, ты подвергаешься большому риску. Вряд ли захочется убаюкивать своего малыша в кроватке, в которой до Вас резвились геи.</p>
+                    <p class="descr-text">В ноябре сервис Airbnb провел чистку и удалил всех собственников, которые отказывались сдавать жилье гомосексуалистам. Эти собственники перешли к нам)</p>
                 </div>
             </div>
         </div>
@@ -144,25 +215,19 @@
         </div>
     </div>
 
-    <div class="contacts">
+    <div class="enter-mail">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 text-center">
-                    <p class="leave-mail">Оставь свою почту, и мы пришлем тебе скидку на проживание в городе до 14 февраля.</p>
-                    <p>Правило простое:</p>
-                    <p><strong>"Меньше геев - больше скидка!"</strong></p>
-                    <p>:)</p>
-                </div>
-                <div class="col-lg-6 text-center">
-                    <p>До 14 февраля получи скидку, арендуя квартиру на MyLinker.ru</p>
-                    <form action="" method="POST">
-                        <div class="form-group">
-                            <div class="col-md-8 col-md-offset-2">
-                                <input class="form-control col-lg-6 col-xs-12 contacts-input" type="email" placeholder="Введите email">
-                                <button type="submit" class="btn btn-default btn-md btn-search btn-contacts">Получить скидку</button>
-                            </div>
-                        </div>
+                <div class="col-lg-offset-3 col-lg-6 text-center">
+                    <p class="leave-mail-text">Оставь свою почту и мы пришлем тебе письмо со скидкой на проживание в этом городе. Акция действует до 14 февраля.</p>
+                    <p class="simple-rule">Правило простое:</p>
+                    <p class="less-more-rule"><strong>"Меньше геев - больше скидка!"</strong></p>
+                    <p class="smile">:)</p>
+                    <form action="" method="">
+                        <input class="form-control input-lg input-leave-mail" type="email" placeholder="Введите email">
+                        <button type="submit" class="btn btn-default btn-lg btn-bottom">Получить скидку</button>
                     </form>
+                    <div class="map-second"></div>
                 </div>
             </div>
         </div>
@@ -172,11 +237,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <p>За основу взято популярность запросов "Порно", "Порно геи" и численность города. Для получения цифр использовался сервис Wordstat</p>
-                    <p>Для начала мы высчитывали между запросом порно и численностью населения, эти цифры помогли нам понять, какоек количество запросов в разрезе на одного пользователя. Полдученный результат умножили на количество запросов "Порно геи". Использовались данные за ноябрь 2016 г.</p>
-                    <p>Важно понимать, что в расмете не участвуют запросы через VPN.</p>
-                    <p>Результаты иссиледования носят ознакомительный характер.</p>
-                    <p>Те, кто оскорбился данными результатами, звоните и жалуйтесь.</p>
+                    <p class="footer-text">За основу взято популярность запросов "Порно", "Порно геи" и численность города. Для получения цифр использовался сервис Wordstat.</p>
+                    <p class="footer-text">Для начала мы высчитывали между запросом порно и численностью населения, эти цифры помогли нам понять, какоек количество запросов в разрезе на одного пользователя. Полученный результат умножили на количество запросов "Порно геи". Использовались данные за ноябрь 2016 г.</p>
+                    <p class="footer-text">Важно понимать, что в расмете не участвуют запросы через VPN.</p>
+                    <p class="footer-text">Результаты иссиледования носят ознакомительный характер.</p>
+                    <p class="footer-text">Те, кто оскорбился данными результатами, звоните и жалуйтесь.</p>
                 </div>
             </div>
         </div>
@@ -184,5 +249,6 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
 </body>
 </html>

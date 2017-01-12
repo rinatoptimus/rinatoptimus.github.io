@@ -7,6 +7,57 @@ ul {
 ul li {
   list-style: none;
 }
+input {
+  color: #5d5d5d;
+}
+input[type="text"]::-webkit-input-placeholder {
+  color: $input-text;
+}
+input[type="email"]::-webkit-input-placeholder {
+  color: $input-text;
+}
+
+.container {
+  .navbar-header {
+    @include small-devices {
+      margin: 0 auto;
+    }
+  }
+}
+
+input[type="text"]:-moz-placeholder { /* Firefox 18- */
+  color: $input-text;
+}
+input[type="text"]::-moz-placeholder { /* Firefox 18- */
+  color: $input-text;
+}
+input[type="email"]:-moz-placeholder { /* Firefox 18- */
+  color: $input-text;
+}
+
+input[type="email"]::-moz-placeholder {  /* Firefox 19+ */
+  color: $input-text;
+}
+
+input[type="text"]:-ms-input-placeholder {
+  color: $input-text;
+}
+input[type="email"]:-ms-input-placeholder {
+  color: $input-text;
+}
+
+input[type="text"]:focus::-webkit-input-placeholder {color: transparent}
+input[type="email"]:focus::-webkit-input-placeholder {color: transparent}
+
+input[type="text"]:focus::-moz-placeholder          {color: transparent}
+input[type="email"]:focus::-moz-placeholder          {color: transparent}
+input[type="text"]:focus:-moz-placeholder          {color: transparent}
+input[type="email"]:focus:-moz-placeholder          {color: transparent}
+
+input[type="text"]:focus:-ms-input-placeholder      {color: transparent}
+input[type="email"]:focus:-ms-input-placeholder      {color: transparent}
+
+input::-webkit-input-placeholder       {text-indent: 0px;   transition: text-indent 0.3s ease;}
 
 .logo {
   width: 197px;
@@ -17,14 +68,20 @@ ul li {
 .navbar-custom {
   padding: {
     top: 20px;
-    bottom: 20px;
+    bottom: 51px;
   };
+  margin-top: 54px;
   border-radius: 0;
   border-bottom: 2px solid $grey;
+  background-color: $white;
+  border: none;
+  @include medium-desktop-lg {
+    margin-top: 15px;
+  }
 }
 .navbar-default .navbar-nav>li>a.service-name {
   font-family: 'Roboto', 'Arial', sans-serif;
-  font-size: 30px;
+  font-size: 40px;
   font-weight: 600;
   color: $main;
 }
@@ -32,33 +89,55 @@ ul li {
   margin-top: 20px;
 }
 .call-to-action {
-  max-width: 780px;
-  margin: 0 auto;
-  font-size: 22px;
+  max-width: 815px;
+  margin: 25px auto 0;
+  font-size: 23px;
+  @include phone-lg {
+    font-size: 15px;
+  }
 }
 
+.title-know {
+  margin-top: 30px;
+  font-size: 40px;
+  @include phone-lg {
+    font-size: 20px;
+  }
+}
 .map-first {
   width: 100%;
   height: 700px;
   background: url('../img/map-first.png') no-repeat;
-
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
   background-size: contain;
   //background-size: 55%;
+  @include medium-desktop {
+    height: 400px;
+  }
+  @include phone {
+    height: 295px;
+  }
 }
 
 .form-group {
   .input-search-city {
-    height: 50px;
+    height: 70px;
     border-radius: 10px;
-    font-size: 25px;
+    font-size: 32px;
     font-style: italic;
+    @include phone {
+      height: 55px;
+      font-size: 20px;
+    }
   }
 }
 .search-block {
-  margin: 18em auto 0;
+  margin: 20em auto 0;
+  @include medium-desktop-lg {
+    margin: 6em auto 0;
+  }
   @include small-devices {
     text-align: center;
   }
@@ -66,24 +145,93 @@ ul li {
     text-align: center;
   }
 }
+.form-find {
+  width: 70%;
+  position: relative;
+  margin: 0 auto;
+  @include medium-desktop-lg {
+    width: 100%;
+  }
+}
+.form-group-lg {
+  .input-get-instruction {
+    height: 63px;
+    border-radius: 15px;
+    border: none;
+    font-size: 30px;
+    font-style: italic;
+  }
+}
+
 .btn-search {
-  margin-left: -45px;
+  margin-left: -105px;
   z-index: 10;
   position: relative;
   padding: {
-    left: 45px;
-    right: 45px;
+    left: 25px;
+    right: 25px;
   }
   border-radius: 25px;
   border: none;
   border-bottom: 2px solid $btn-border;
   background-color: $yellow;
-  font-size: 1.3em;
+  font-size: 1.5em;
+
+
+
+  margin-left: -105px;
+  z-index: 10;
+  position: relative;
+  padding-left: 35px;
+  padding-right: 35px;
+  -webkit-border-radius: 25px;
+  border-radius: 40px;
+  border: none;
+  font-size: 2.7em;
+
+  position: absolute;
+  right: 150px;
   &:hover {
     background-color: $btn-hover;
   }
-  @include small-devices {
+  @include large-desktop {
     margin-left: 0;
+  }
+  @include medium-desktop-lg {
+    position: absolute;
+    //top: 15px;
+  }
+  @include medium-desktop {
+    margin-left: -105px;
+    position: relative;
+    margin: 0 auto 20px;
+    display: block;
+    top: 15px;
+  }
+  @include phone {
+    right: 0;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: 10px;
+    font-size: 1.7em;
+  }
+}
+
+.btn-search-top {
+  padding-left: 95px;
+  padding-right: 95px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  right: -25px;
+  top: 29px;
+  font-size: 50px;
+  @include medium-desktop {
+    right: 0;
+  }
+  @include phone {
+    padding-left: 35px;
+    padding-right: 35px;
+    font-size: 25px;
   }
 }
 
@@ -142,31 +290,49 @@ li {
 }
 .agree-checkbox {
   font-size: 20px;
+  @include phone {
+    font-size: 15px;
+  }
 }
 
 .process {
   padding: {
     top: 0;
-    bottom: 20px;
+    bottom: 40px;
   };
   border-bottom: 2px solid $grey;
 }
+.process-text {
+  padding-bottom: 15px;
+  font-size: 17px;
+}
 
 .result {
-  padding-bottom: 15px;
+  padding-top: 10px;
+  padding-bottom: 25px;
   background-color: $yellow;
 }
 .result-title {
+  font-size: 55px;
   font-weight: 600;
+  @include phone-lg {
+    font-size: 25px;
+  }
 }
+
 .congratulation {
-  font-size: 18px;
+  font-size: 27px;
   font-weight: 600;
+  @include large-desktop {
+    font-size: 18px;
+  }
 }
 
 .description {
   //padding-top: 90px;
-  padding-bottom: 10px;
+  padding-bottom: 40px;
+  //margin-top: 10px;
+  background-color: $bg-grey;
   font-size: 12px;
 }
 .danger {
@@ -174,25 +340,105 @@ li {
   height: 128px;
   background: url(../img/danger.png) no-repeat;
   background-position-x: 50%;
+  @include phone {
+    height: 80px;
+    background-size: 80%;
+  }
 }
 .descr-text {
-  max-width: 610px;
+  max-width: 900px;
   margin: 0 auto 15px;
+  font-size: 20px;
 }
 
 .get-offer {
   padding-top: 40px;
   padding-bottom: 40px;
+  border-bottom: 2px solid $grey;
 }
 .time-limit {
-  font-size: 12px;
+  font-size: 22px;
+}
+.form-search {
+  width: 75%;
+  margin: 50px auto 0;
+  @include large-desktop {
+    width: 90%;
+  }
+  @include medium-desktop-lg {
+    width: 100%;
+    right: 10px;
+  }
+  @include phone-lg {
+    width: 100%;
+  }
 }
 .col-find {
   padding-left: 0;
+  margin-left: 0;
+}
+
+.description-second {
+  padding-top: 80px;
+  padding-bottom: 30px;
+}
+.checked {
+  width: 419px;
+  height: 242px;
+  background: url('../img/checked.png') no-repeat;
+  position: absolute;
+  //right: 80px;
+  right: 22%;
+  margin-top: -120px;
+  @include large-desktop-lg {
+    right: 10%;
+  }
+  @include large-desktop {
+    right: 0;
+    opacity: 0.7;
+  }
+  @include medium-desktop-lg {
+    margin-top: -60px;
+    background-size: 70%;
+    opacity: 0.7;
+  }
+  //@include phone-lg {
+  //  right: 20px;
+  //}
+  @include phone-lg {
+    width: 230px;
+    background-size: 90%;
+    //right: -105px;
+    margin-top: -25px;
+  }
+}
+.less-more {
+  margin-top: 95px;
+  width: 613px;
+  height: 159px;
+  background: url('../img/less-more.png') no-repeat;
+  @include small-devices {
+    display: none;
+  }
 }
 
 .share {
-  max-width: 185px;
+  //max-width: 185px;
+  font-size: 22px;
+  @include large-desktop {
+    margin-right: 20px;
+  }
+}
+.socials {
+  padding-left: 95px;
+  @include large-desktop {
+    display: flex;
+    margin-top: 50px;
+  }
+  @include small-devices {
+    flex-direction: column;
+    padding-left: 20px;
+  }
 }
 .soc-list {
   li {
@@ -205,39 +451,41 @@ li {
 .icon {
   width: 62px;
   height:61px;
+  margin-right: 40px;
+  margin-bottom: 35px;
   display: block;
 }
 .fb {
   background: url('../img/fb.png') no-repeat;
-  background-size: 55%;
+  //background-size: 55%;
   &:hover {
     opacity: 0.7;
   }
 }
 .ok {
   background: url('../img/ok.png') no-repeat;
-  background-size: 55%;
+  //background-size: 55%;
   &:hover {
     opacity: 0.7;
   }
 }
 .vk {
   background: url('../img/vk.png') no-repeat;
-  background-size: 55%;
+  //background-size: 55%;
   &:hover {
     opacity: 0.7;
   }
 }
 .tw {
   background: url('../img/tw.png') no-repeat;
-  background-size: 55%;
+  //background-size: 55%;
   &:hover {
     opacity: 0.7;
   }
 }
 
 .map-second-block {
-  border-bottom: 2px solid $grey;
+  //border-bottom: 2px solid $grey;
 }
 
 .leave-mail {
@@ -258,7 +506,7 @@ li {
   };
 }
 
-.description, .get-offer, .contacts {
+.contacts {
   border-bottom: 2px solid $grey;
   background-color: $bg-grey;
 }
@@ -269,7 +517,155 @@ li {
 }
 
 footer {
-  padding-top: 40px;
-  padding-bottom: 50px;
+  padding-top: 80px;
+  padding-bottom: 70px;
   background-color: $bg-blue;
+  color: $white;
+}
+.footer-text {
+  padding-bottom: 20px;
+  font-size: 20px;
+}
+
+.form-group-lg {
+  .input-get-instr {
+    height: 63px;
+    padding: 10px 16px;
+    font-size: 30px;
+    border-radius: 15px;
+    font-style: italic;
+    border: none;
+  }
+}
+.btn-search-second {
+  right: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  @include large-desktop {
+    right: 0;
+  }
+}
+.res-title-second, .congratulation-second {
+  margin-left: 85px;
+  @include small-devices {
+    margin-left: 0;
+    font-size: 25px;
+  }
+}
+
+.btn-search-get {
+  right: 150px;
+  @include large-desktop {
+    right: 35px;
+  }
+  @include medium-desktop-lg {
+    right: 0;
+  }
+  @include phone-lg {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 1.7em;
+  }
+}
+.enter-mail {
+  padding-top: 55px;
+  padding-bottom: 55px;
+  background-color: $bg-grey;
+}
+.leave-mail-text {
+  font-size: 17px;
+}
+.simple-rule {
+  font-size: 23px;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  font-size: 23px;
+}
+.less-more-rule {
+  font-size: 25px;
+}
+.smile {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  font-size: 25px;
+}
+.input-leave-mail {
+  height: 60px;
+  padding-left: 20px;
+  border-radius: 13px;
+  border: none;
+  font-size: 28px;
+  font-style: italic;
+}
+.btn-bottom {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 33px;
+  padding-right: 33px;
+  margin-top: 55px;
+  border: none;
+  background-color: $yellow;
+  border-radius: 33px;
+  font-size: 35px;
+  &:hover {
+    background-color: $btn-hover;
+  }
+  @include phone {
+    margin-top: 25px;
+    font-size: 25px;
+  }
+}
+
+
+
+
+// scanner
+.scanner {
+  //margin-left: 800px;
+  width: 100px;
+  height: 700px;
+  background: red;
+  position: relative;
+  -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
+  animation: mymove 5s infinite;
+
+
+  //background: rgba(255,255,255,1);
+  //background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(47,235,30,1) 100%);
+  //background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,255,255,1)), color-stop(100%, rgba(47,235,30,1)));
+  //background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(47,235,30,1) 100%);
+  //background: -o-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(47,235,30,1) 100%);
+  //background: -ms-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(47,235,30,1) 100%);
+  //background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(47,235,30,1) 100%);
+  //filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#2feb1e', GradientType=1 );
+  background: rgba(255,255,255,0);
+  background: -moz-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(93,239,80,1) 95%, rgba(47,235,30,1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,255,255,0)), color-stop(95%, rgba(93,239,80,1)), color-stop(100%, rgba(47,235,30,1)));
+  background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(93,239,80,1) 95%, rgba(47,235,30,1) 100%);
+  background: -o-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(93,239,80,1) 95%, rgba(47,235,30,1) 100%);
+  background: -ms-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(93,239,80,1) 95%, rgba(47,235,30,1) 100%);
+  background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(93,239,80,1) 95%, rgba(47,235,30,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#2feb1e', GradientType=1 );
+}
+
+/* Safari 4.0 - 8.0 */
+//@-webkit-keyframes mymove {
+//  from {right: 0;}
+//  to {right: -1300px;}
+//}
+//
+//@keyframes mymove {
+//  from {right: 0;}
+//  to {right: -1300px;}
+//}
+
+
+@-webkit-keyframes mymove {
+  from {right: 0;}
+  to {right: -1300px;}
+}
+
+@keyframes mymove {
+  from {right: 0;}
+  to {right: -1200px;}
 }

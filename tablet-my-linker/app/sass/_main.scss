@@ -1,0 +1,943 @@
+body {
+  font-family: 'Roboto', 'Arial', sans-serif;
+}
+//button::-moz-focus-inner {
+//  border: 0;
+//}
+//button:focus {outline:none;}
+//
+//:focus {outline:none;border:0;}
+//:active {outline:none;border:0;}
+//button:active {outline:none;border:0;}
+//a, a:visited, a:focus, a:active, a:hover{
+//  outline:0 none !important;
+//}
+a, a:visited, a:focus, a:active, a:hover
+button, button:visited, button:focus, button:active, button:hover {
+  outline:0 none !important;
+}
+
+.container {
+  //width: 95%;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.container-wide {
+  width: 100%;
+  padding: {
+    left: 0;
+    right: 0;
+  }
+}
+
+.container-image {
+  margin: {
+    top: -2vw;
+    left: 0;
+    right: 0;
+  }
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  padding-bottom: 5px;
+  background-color: $white;
+  transition: top 0.2s ease-in-out;
+
+  height: 172px;
+  padding-top: 15px;
+}
+
+.navigation {
+  top: 12px;
+}
+.nav-up {
+  top: -171px;
+  @include phone-md {
+    //margin-top: -192px;
+    margin-top: -330px;
+  }
+}
+
+.img-header {
+  width: 100%;
+  height: 8vw;
+  text-align: center;
+  background: url('../img/pattern.svg') no-repeat;
+  h1 {
+    padding-top: 2vw;
+    font-size: 1.4rem;
+    color: $title;
+  }
+}
+
+.filter-list {
+  display: flex;
+  float: left;
+  list-style: none;
+  @include phone-xl {
+    flex-direction: column;
+    width: 100%;
+  }
+    li {
+      @include phone-xl {
+        text-align: center;
+      }
+    }
+
+
+    li:first-child {
+      @include phone-xl {
+        order: 1;
+      }
+    }
+    li:nth-child(2) {
+      @include phone-xl {
+        order: 3;
+      }
+    }
+    li:nth-child(3) {
+      @include phone-xl {
+        order: 4;
+      }
+    }
+    li:nth-child(4) {
+      @include phone-xl {
+        order: 2;
+      }
+    }
+
+
+
+    .logo {
+      display: block;
+      width: 125px;
+      height: 44px;
+      margin: {
+        left: 0;
+        top: 2px;
+      }
+      background: url('../img/my-linker.png') no-repeat;
+      background-size: 100%;
+      @include phone-xl {
+        margin-left: auto;
+        margin-top: -11px;
+        background-size: 80%;
+      }
+      //@include phone-xl {
+      //  background-size: 80%;
+      //}
+    }
+    .filter-icon {
+      float: left;
+      height: 31px;
+      margin-right: 10px;
+      margin-top: 21px;
+    }
+    a {
+      display: inline-block;
+      margin-top: 20px;
+      text-decoration: none;
+      color: $main-two;
+      font-size: 18px;
+      font-family: 'Roboto', 'Arial', sans-serif;
+      font-weight: 600;
+
+      //margin-right: 20px;
+      @include tablet {
+        //margin-right: 30px;
+      }
+      @include phone-xl {
+        margin-right: auto;
+        margin-top: 15px;
+        //margin-left: 35px;
+      }
+      @include phone-md {
+        margin-top: 17px;
+      }
+    }
+    .mark {
+      display: block;
+      width: 20px;
+      //margin-left: 93px;
+      margin-left: auto;
+      background: url('../img/phone.png') no-repeat;
+      background-size: 100%;
+      @include phone-xl {
+        display: none;
+      }
+      @include phone-lg {
+        display: none;
+      }
+    }
+    .magnifier {
+      width: 31px;
+      background: url('../img/magnifier.png') no-repeat;
+    }
+  }
+  .pull-right {
+    @include phone-lg {
+      float: left!important;
+    }
+}
+
+.container-tags {
+  margin-top: 20vw;
+}
+
+.tags {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  li {
+    float: left;
+    padding-right: 7px;
+    list-style: none;
+    font-size: 13px;
+    .fa-times {
+      font-size: 10px;
+      color: $tags-icon;
+    }
+  }
+}
+
+.appartements-list {
+  li {
+    //display: inline-block;
+    margin-bottom: 0;
+    list-style: none;
+    img {
+      float: left;
+      margin: {
+        top: 10px;
+      }
+      padding: {
+        right: 10px;
+      }
+    }
+    ul {
+      .appartement-address {
+        margin-top: 20px;
+      }
+    }
+  }
+}
+
+.appartment-description {
+  overflow: hidden;
+  list-style: none;
+}
+
+// NEW STYLES
+
+ul {
+  padding: 0;
+}
+.col-top {
+  padding: {
+    left: 5px;
+    right: 5px;
+  }
+}
+
+// input search
+::-webkit-input-placeholder,
+::-moz-placeholder,
+:-ms-input-placeholder {
+  font-family: 'Roboto', 'Arial', sans-serif;
+  font-style: italic;
+}
+.form-control-destination {
+  height: 60px;
+  box-shadow: none;
+  font-size: 30px;
+  font-style: italic;
+  color: $light;
+  @include phone-md {
+    font-size: 20px;
+    height: 31px;
+  }
+}
+
+div.speech-blue {
+  background-color: $main;
+  color: $white;
+}
+div.speech {
+  position: relative;
+  height: 35px;
+  //width: 95%;
+  //margin: 5px auto 0;
+  margin-top: 10px;
+  text-align: center;
+  //line-height: 100px;
+  //background-color: #fff;
+  border: 2px solid $main;
+  border-radius: 5px;
+  @include phone-lg {
+    //height: 50px;
+  }
+  @include phone {
+    height: 35px;
+    line-height: 75px;
+  }
+}
+div.speech:before {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 3px;
+  top: -15px;
+  border: 10px solid;
+  border-color: $main transparent transparent $main;
+  transform: rotate(180deg);
+}
+div.speech:after {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 7px;
+  top: -15px;
+  border: 8px solid;
+  border-color: $white transparent transparent $white;
+  transform: rotate(180deg);
+}
+
+// container-dates
+.container-dates {
+  //margin-top: 5px;
+  //@include phone-lg {
+  //  margin-top: 14em;
+  //}
+}
+.col-dates {
+  display: flex;
+  flex-direction: column;
+}
+.top-bar {
+  display: flex;
+  flex-direction: column;
+}
+.block-date-inputs {
+  display: flex;
+  flex-direction: column;
+  //width: 80%;
+  width: 75%;
+
+  margin-bottom: 20px;
+
+  @include phone-lg {
+    width: 100%;
+  }
+}
+.dates-label {
+  color: $main-three;
+  font-size: 20px;
+  font-weight: 400;
+}
+.date-inputs {
+  display: flex;
+  @include phone-xl {
+    flex-direction: row;
+  }
+}
+.calendar {
+  display: block;
+  width: 120px;
+  height: 111px;
+  //margin-right: 15px;
+  background: url('../img/calend.png') no-repeat;
+
+  display: block;
+  width: 115%;
+  height: 50px;
+  background: url(../img/calend.png) no-repeat;
+  background-size: 90%;
+  margin-top: 20px;
+
+
+
+
+  width: 50px;
+  height: 46px;
+  background: url(../img/calend.png) no-repeat;
+  display: block;
+  /* width: 115%; */
+  /* height: 50px; */
+  background: url(../img/calend.png) no-repeat;
+  background-size: 100%;
+  margin-top: 17px;
+  margin-right: 23px;
+
+
+
+  @include phone-lg {
+    display: none;
+  }
+}
+.form-control-date {
+  height: 30px;
+  font-size: 20px;
+  font-family: 'Roboto', 'Arial', sans-serif;
+  font-style: italic;
+  color: $light;
+
+  max-width: 170px;
+  font-size: 14px;
+}
+.input-in {
+  margin-right: 15px;
+  @include phone-xl {
+    margin-bottom: 10px;
+  }
+}
+
+.container-guests {
+  margin-top: 20px;
+}
+.guests-text {
+  float: left;
+  font-size: 24px;
+  @include tablet {
+    margin: 0;
+    margin-left: auto;
+  }
+}
+.guests-figure {
+  display: inline-block;
+  width: 40px;
+  height: 73px;
+  background: url('../img/guests-figure.png') no-repeat;
+}
+.input-guests-tablet {
+  width: 20%;
+  top: 35px;
+  left: 10px;
+  //padding: 22px 5px 20px;
+  font-size: 30px;
+  height: 43px;
+  padding: 5px;
+  line-height: 2px;
+  @include tablet {
+    margin-right: auto;
+  }
+}
+
+.btn-find {
+  width: 100%;
+  border: none;
+  box-shadow: none;
+  background-image: none;
+  border-radius: 8px;
+  font-size: 30px;
+  font-weight: 600;
+  text-shadow: none;
+}
+
+.container-enhanced-search {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.btn-enhanced-search {
+  padding-left: 0;
+  background-image: none;
+  border: none;
+  box-shadow: none;
+  font-size: 28px;
+  color: $main;
+  &:focus {
+    background-color: transparent;
+    background-image: none;
+    border: none;
+    box-shadow: none;
+  }
+  @include phone-lg {
+    font-size: 23px;
+  }
+  @include phone {
+    font-size: 23px;
+  }
+}
+
+
+.city-block {
+  position: relative;
+  margin-bottom: 20px;
+  .item {
+    width: 100%;
+    border-radius: 10px;
+  }
+}
+.city-statistics {
+  position: absolute;
+  z-index: 5;
+  bottom: 5px;
+  right: 20px;
+  color: $white;
+}
+.city-name {
+  height: 20px;
+  font-size: 25px;
+  font-weight: 600;
+  color: $white;
+  @include phone-lg {
+    font-size: 30px;
+  }
+}
+.quantity {
+  font-size: 20px;
+  font-weight: 400;
+  color: $white;
+  @include phone-lg {
+    font-size: 20px;
+  }
+}
+
+
+.logotypes {
+  padding: 10px 0 10px;;
+  background-color: $bg;
+}
+.ak-bars {
+  width: 80px;
+  height: 40px;
+  margin: 0 5px 0;
+  float: left;
+  background: url(../img/logotypes/akb.png) no-repeat;
+  background-size: 100%;
+  @include phone-md {
+    float: none;
+    margin: 0 5px;
+  }
+}
+.visa {
+  width: 80px;
+  height: 40px;
+  margin: 0 5px 0;
+  float: left;
+  background: url(../img/logotypes/visa.png) no-repeat;
+  background-size: 100%;
+  @include phone-md {
+    float: none;
+    margin: 0 5px;
+
+  }
+}
+.alpha {
+  height: 40px;
+  margin: 0 5px 0;
+  float: left;
+  background: url(../img/logotypes/a.png) no-repeat;
+  background-size: 100%;
+  width: 26px;
+  @include phone-md {
+    float: none;
+    margin: 0 5px;
+  }
+}
+.mastercard {
+  height: 40px;
+  margin: 0 5px 0;
+  float: left;
+  background: url(../img/logotypes/mastercard.png) no-repeat;
+  background-size: 100%;
+  width: 55px;
+  @include phone-md {
+    float: none;
+    margin: 0 5px;
+  }
+}
+.psb {
+  height: 40px;
+  margin: 0 5px 0;
+  float: left;
+  background: url(../img/logotypes/psb.png) no-repeat;
+  background-size: 100%;
+  width: 40px;
+  @include phone-md {
+    float: none;
+    margin: 0 5px;
+  }
+}
+.sber {
+  height: 40px;
+  margin: 0 5px 0;
+  float: left;
+  background: url(../img/logotypes/sber.png) no-repeat;
+  background-size: 100%;
+  width: 40px;
+  @include phone-md {
+    float: none;
+    margin: 0 5px;
+  }
+}
+.yandex {
+  height: 40px;
+  margin: 0 5px 0;
+  float: left;
+  background: url(../img/logotypes/yandex.png) no-repeat;
+  background-size: 100%;
+  width: 100px;
+  @include phone-md {
+    float: none;
+    margin: 0 5px;
+  }
+}
+.kiwi {
+  height: 40px;
+  margin: 0 5px 0;
+  float: left;
+  background: url(../img/logotypes/kiwi.png) no-repeat;
+  background-size: 100%;
+  width: 35px;
+  @include phone-md {
+    float: none;
+    margin: 0 5px;
+  }
+}
+.webmoney {
+  height: 40px;
+  margin: 0 5px 0;
+  float: left;
+  background: url(../img/logotypes/web.png) no-repeat;
+  background-position: 50% 25%;
+  background-size: 100%;
+  width: 110px;
+  @include phone-md {
+    float: none;
+    margin: 0 5px;
+    background-size: 70%;
+  }
+}
+.logos-block {
+  max-width: 735px;
+
+  display: flex;
+  justify-content: space-between;
+  @include phone-md {
+    padding-top: 15px;
+  }
+}
+
+footer {
+  padding-top: 50px;
+  padding-bottom: 30px;
+  background-color: $bg-dark;
+}
+.footer-nav {
+  li {
+    padding-bottom: 10px;
+    list-style: none;
+    a {
+      font-size: 40px;
+      color: $white;
+      @include phone-lg {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+// scroll top
+#back-to-top {
+  position: fixed;
+  bottom: 15%;
+  left: 40px;
+  z-index: 9999;
+  width: 111px;
+  height: 111px;
+  text-align: center;
+  line-height: 30px;
+  background: #f5f5f5;
+  color: #444;
+  cursor: pointer;
+  border: 0;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: opacity 0.2s ease-out;
+  opacity: 0;
+  background: url('../img/arrow-top.png') no-repeat;
+}
+#back-to-top.show {
+  opacity: 1;
+}
+#content {
+  height: 2000px;
+}
+
+
+// TABLET STYLES
+.row-top {
+  @include phone-lg {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.date-block {
+  display: flex;
+  @include tablet {
+    margin: 0 auto;
+  }
+}
+.guests-block {
+  display: flex;
+}
+.tablet-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px 0;
+  @include phone-xl {
+    flex-direction: column;
+  }
+}
+.row-cities {
+  margin-top: 20px;
+}
+.city-block {
+  width: 49%;
+  @include phone-xl {
+    width: 98%;
+    margin: 0 auto 20px;
+  }
+}
+.quantity-offers {
+  padding-left: 3px;
+}
+.container-tabs {
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+.collapse-custom {
+  margin-bottom: 20px;
+}
+.div.speech-blue {
+  background-color: $main;
+  color: $white;
+}
+div.speech-blue:after {
+  border-color: $main transparent transparent $main;
+}
+.speech-blue-text {
+  //margin-top: -33px;
+  margin-top: 6px;
+  font-size: 14px;
+  @include phone-xl {
+    font-size: 15px;
+  }
+  @include phone-lg {
+    margin-top: 8px;
+    font-size: 12px;
+  }
+}
+
+
+.location-block {
+  display: flex;
+  @include tablet {
+    margin: 0 auto;
+  }
+}
+.location {
+  float: left;
+  margin-right: 15px;
+  background: url('../img/location.png') no-repeat;
+
+  width: 25px;
+  height: 35px;
+  background-size: 100%;
+  margin-top: 12px;
+  @include phone-lg {
+    display: none;
+  }
+  @include phone {
+    display: none;
+  }
+}
+.location-city-city {
+  margin-top: 2vw;
+  margin-bottom: 40px;
+}
+.select-city-tablet {
+  display: inline-block;
+  width: 40%;
+  vertical-align: middle;
+  height: 28px;
+  padding: 0;
+  margin-right: 15px;
+  font-size: 15px;
+  color: $main;
+  border: none;
+  box-shadow: none;
+  text-decoration: underline;
+  @include phone-lg {
+    width: 35%;
+    //margin-bottom: 40px;
+  }
+}
+.location-text {
+  font-size: 15px;
+  color: $main;
+  //@include phone-lg {
+  //  display: flex;
+  //  flex-direction: column;
+  //  font-size: 13px;
+  //}
+}
+.location-city {
+  line-height: 0;
+  margin-top: 5vw;
+}
+.location-city-city {
+  margin-top: 2vw;
+  margin-bottom: 40px;
+}
+
+// main page
+.header-tablet {
+  height: 125px;
+}
+.container-image-tablet {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.row-cities-tablet {
+  margin-top: 45px;
+  @include phone-xl {
+    margin-top: 20px;
+  }
+}
+.destination-main {
+  height: 31px;
+  font-size: 15px;
+}
+div.speech-tablet {
+  width: 65%;
+  float: left;
+  @include phone-xl {
+    width: 64%;
+    margin: 15px auto 15px;
+  }
+  @include phone-lg {
+    width: 62%;
+  }
+}
+.container-buttons, .container-wide {
+  background-color: $white;
+}
+div.speech-tablet:before {
+  left: 4px;
+  top: -20px;
+}
+div.speech-tablet:after {
+  left: 6px;
+  top: -15px;
+}
+.btn-create {
+  margin-top: 13px;
+  margin-left: 40px;
+  @include phone-xl {
+    margin-left: 0;
+  }
+  @include phone-xl {
+    margin: 10px 0 10px;
+    width: 80%;
+  }
+}
+.btn-login {
+  margin-top: 13px;
+  margin-right: 12px;
+  margin-left: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+  @include phone-xl {
+    //padding-left: 15px;
+    //padding-right: 15px;
+    margin: 10px 0 10px;
+    width: 80%;
+  }
+}
+.btn-redirect {
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 29%;
+  padding-top: 2px;
+  padding-bottom: 3px;
+  background-color: $orange;
+  border: none;
+  font-size: 20px;
+  font-weight: 600;
+  color: $white;
+  @include phone-xl {
+    margin: 0 auto 15px;
+    width: 64%;
+  }
+}
+.search-direction {
+  @include phone-xl {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.container-items {
+  @include phone-xl {
+    //margin-top: 200px;
+    margin-top: 200px;
+  }
+}
+.filter-list-tablet {
+  li {
+    a {
+      margin-top: 16px;
+      font-size: 20px;
+      color: $main;
+      @include tablet {
+        font-size: 18px;
+      }
+      @include phone-xl {
+        margin-top: -4px;
+      }
+    }
+  }
+}
+
+// city page
+.filter-list {
+  .logo-city {
+    margin-top: 5px;
+  }
+}
+.city-block-middle {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.phone-top {
+  @include phone-xl {
+    margin-left: auto;
+  }
+}
+.ad-badge {
+  width: 180px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 5px;
+  font-size: 1.3em;
+  font-weight: 600;
+  color: $white;
+  text-align: center;
+  border-radius: 12px 0 12px 0;
+  border: 2px solid $white;
+}
+.ad-badge-recommend {
+  background-color: $main;
+}
+.ad-badge-premium {
+  background-color: $badge-yellow;
+}
+.ad-badge-low-price {
+  background-color: $bright;
+}

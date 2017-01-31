@@ -1,0 +1,60 @@
+//@media(min-width:1400px){
+//  .container{
+//    max-width: 1400px;
+//  }
+//}
+//@media(min-width:1500px){
+//  .container{
+//    max-width: 1400px
+//  }
+//}
+.container {
+  //border: 1px solid red;
+}
+
+.block-header-left {
+  display: flex;
+}
+.logo {
+  display: block;
+  float: left;
+  width: 165px;
+  height:64px;
+  background: url('../img/logo.png') no-repeat;
+}
+.geo-mark {
+  width: 22px;
+  height: 28px;
+  background: url('../img/geo-mark.png') no-repeat;
+}
+.select-header {
+  width: 60%;
+}
+.navbar-toggle {
+  .icon-bar-custom {
+    background-color: $main;
+  }
+}
+.bg-header {
+  width: 100%;
+  height: 130px;
+  background: url(../img/bg-header.jpg) no-repeat;
+  background-size: contain;
+}
+
+.row-location {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.block-tabs {
+  border-top: 1px solid grey;
+  margin-top: 50px;
+}
+.container-tabs {
+  margin-top: -41px;
+}
+.slider {
+  width: 500px;
+  height: 400px;
+  background-color: $grey;
+}

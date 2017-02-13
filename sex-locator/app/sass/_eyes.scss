@@ -1,0 +1,75 @@
+.eyes {
+  margin-top: -40px;
+  overflow: hidden;
+  background-color: $skin;
+}
+.shadow {
+  width: 50%;
+  height: 405px;
+  float: left;
+  padding-top: 60px;
+  background-color: $shadow;
+  border-top-right-radius: 200px;
+}
+.skin {
+  width: 50%;
+  height: 405px;
+  float: right;
+  padding-top: 60px;
+  background-color: $skin;
+}
+.eye-left {
+  width: 388px;
+  height: 304px;
+  background: url('../img/eye-left.png') no-repeat;
+}
+.eye-right {
+  width: 388px;
+  height: 304px;
+  background: url('../img/eye-right.png') no-repeat;
+}
+
+
+
+// eyes animation
+#follower{
+  position: relative;
+  width: 675px;
+  height: 132px;
+  border-radius: 50px;
+}
+.eye {
+  width: 15px;
+  height: 15px;
+  background-color: black;
+  border-radius: 15px;
+  position: absolute;
+}
+.left {
+  left: 0;
+  width: 141px;
+  height: 140px;
+  background: url('../img/pupil-left.png') no-repeat;
+  background-size: 80%;
+}
+.right {
+  right: 0;
+  width: 141px;
+  height: 140px;
+  background: url('../img/pupil-right.png') no-repeat;
+  background-size: 80%;
+}
+.centerdiv {
+  width:200px;
+  margin-left:auto;
+  margin-right:auto;
+  position:relative;
+}
+.cont {
+  width: 712px;
+  height: 165px;
+  position: absolute;
+  top: 148px;
+  left: -260px;
+  overflow: hidden;
+}

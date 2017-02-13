@@ -1,0 +1,95 @@
+.mouth {
+  overflow: hidden;
+  background-color: $skin;
+    .shadow {
+      border-radius: 0;
+    }
+}
+.shadow-dark {
+  background-color: $shadow-dark;
+}
+.skin-dark {
+  background-color: $skin-dark;
+}
+.mouth-search {
+  position: absolute;
+  width: 760px;
+  height: 1043px;
+  left: 30%;
+  background: url('../img/mouth-search.jpg') no-repeat;
+    form {
+      width: 975px;
+      margin-left: -60px;
+    }
+}
+.mouth-shadow, .mouth-skin {
+  height: 1043px;
+}
+.btn-search {
+  margin-left: 140px;
+  padding: 5px 105px;
+  background-color: $bg-red;
+  border-radius: 10px;
+  font-size: 61px;
+  font-weight: bold;
+  color: $white;
+
+  margin-left: 143px;
+  padding: 5px 105px;
+}
+
+// CHECKBOXES
+
+.list-checkboxes {
+  padding-left: 0;
+  float: left;
+    li {
+      list-style: none;
+    }
+}
+input[type=radio]{display:none;}
+input[type=radio] + label.btn{
+  padding: 15px 17px;
+  margin: 5px 10px;
+  display: inline-block;
+  font-weight: 700;
+  outline: none;
+  position: relative;
+  transition: all 0.3s;
+  background: $white;
+  color: #fff;
+  box-shadow: 0 4px $blue-dark;
+  transition: none;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+
+  border: 2px solid $blue-dark;
+  width: 392px;
+  text-align: left;
+  font-size: 25px;
+  color: $blue-dark;
+}
+
+input[type=radio] + label.btn:hover{
+  box-shadow: 0 2px $blue-dark;
+  top: 2px;
+}
+
+input[type=radio]:checked + label.btn{
+  box-shadow: 0 0 #ab3c3c;
+  top: 6px;
+}
+
+.fa-venus {
+  margin-right: 30px;
+  transform: rotate(105deg);
+  font-size: 53px;
+  color: $symbol-female;
+}
+.fa-mars {
+  margin-right: 30px;
+  transform: rotate(-10deg);
+  font-size: 53px;
+  color: $symbol-male;
+}

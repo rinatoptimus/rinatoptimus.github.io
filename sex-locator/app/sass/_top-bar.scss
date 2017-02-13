@@ -1,0 +1,20 @@
+.top-bar {
+  padding-top: 71px;
+  padding-bottom: 71px;
+  background-color: $bg-main;
+}
+.top-bar-divider {
+  height: 40px;
+  background-color: $grey-dark;
+  opacity: 0.55;
+}
+.logo-my-linker {
+  width: 237px;
+  height: 81px;
+  background: url('../img/logo-my-linker.png') no-repeat;
+}
+.logo-pharm-linker {
+  width: 237px;
+  height: 81px;
+  background: url('../img/logo-pharm-linker.png') no-repeat;
+}

@@ -1,8 +1,17 @@
 .mouth {
+  position: relative;
   overflow: hidden;
   background-color: $skin;
     .shadow {
       border-radius: 0;
+    }
+    form {
+      position: absolute;
+      top: 67px;
+      right: 0;
+      left: 0;
+      margin: auto;
+      max-width: 1200px;
     }
 }
 .shadow-dark {
@@ -13,17 +22,21 @@
 }
 .mouth-search {
   position: absolute;
-  width: 760px;
+  max-width: 760px;
   height: 1043px;
   left: 30%;
   background: url('../img/mouth-search.jpg') no-repeat;
-    form {
-      width: 975px;
-      margin-left: -60px;
-    }
 }
 .mouth-shadow, .mouth-skin {
   height: 1043px;
+}
+.form-horizontal .search-input-label {
+  text-align: left;
+}
+.search-input-label {
+  text-align: left;
+  font-size: 30px;
+  color: $blue-dark;
 }
 .btn-search {
   margin-left: 140px;
@@ -33,9 +46,20 @@
   font-size: 61px;
   font-weight: bold;
   color: $white;
-
   margin-left: 143px;
   padding: 5px 105px;
+}
+.form-inline {
+  .search-city {
+    max-width: 392px;
+    margin-left: 5px;
+    padding: 3px 17px;
+    height: 68px;
+    border: 3px solid $blue-dark;
+    border-radius: 10px;
+    font-size: 30px;
+    color: $blue-dark;
+  }
 }
 
 // CHECKBOXES
@@ -45,11 +69,17 @@
   float: left;
     li {
       list-style: none;
+        label {
+          span {
+            position: absolute;
+            top: 15px;
+          }
+        }
     }
 }
 input[type=radio]{display:none;}
 input[type=radio] + label.btn{
-  padding: 15px 17px;
+  padding: 3px 17px;
   margin: 5px 10px;
   display: inline-block;
   font-weight: 700;
@@ -65,7 +95,7 @@ input[type=radio] + label.btn{
   cursor: pointer;
 
   border: 2px solid $blue-dark;
-  width: 392px;
+  max-width: 392px;
   text-align: left;
   font-size: 25px;
   color: $blue-dark;
@@ -88,7 +118,7 @@ input[type=radio]:checked + label.btn{
   color: $symbol-female;
 }
 .fa-mars {
-  margin-right: 30px;
+  margin-right: 22px;
   transform: rotate(-10deg);
   font-size: 53px;
   color: $symbol-male;

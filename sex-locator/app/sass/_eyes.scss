@@ -10,6 +10,11 @@
   padding-top: 60px;
   background-color: $shadow;
   border-top-right-radius: 200px;
+  @include large-desktop-lg {
+    .col-lg-offset-6 {
+      margin-left: 45%;
+    }
+  }
 }
 .skin {
   width: 50%;
@@ -17,6 +22,11 @@
   float: right;
   padding-top: 60px;
   background-color: $skin;
+  .col-lg-offset-1 {
+    @include large-desktop-lg {
+      margin-left: 11.333333%;
+    }
+  }
 }
 .eye-left {
   width: 388px;
@@ -32,11 +42,66 @@
 
 
 // eyes animation
+
+//#follower{
+//  position: relative;
+//  width: 675px;
+//  height: 132px;
+//  border-radius: 50px;
+//}
+//.eye {
+//  width: 15px;
+//  height: 15px;
+//  background-color: black;
+//  border-radius: 15px;
+//  position: absolute;
+//}
+//.left {
+//  left: 0;
+//  width: 141px;
+//  height: 140px;
+//  background: url('../img/pupil-left.png') no-repeat;
+//  background-size: 80%;
+//}
+//.right {
+//  right: 0;
+//  width: 141px;
+//  height: 140px;
+//  background: url('../img/pupil-right.png') no-repeat;
+//  background-size: 80%;
+//}
+//.centerdiv {
+//  width: 200px;
+//  margin-left:auto;
+//  margin-right:auto;
+//  position:relative;
+//}
+//.cont {
+//  width: 712px;
+//  height: 165px;
+//  position: absolute;
+//  top: 148px;
+//  left: -260px;
+//  overflow: hidden;
+//}
+
+
 #follower{
   position: relative;
   width: 675px;
   height: 132px;
   border-radius: 50px;
+
+  width: 35vw;
+  @include large-desktop-lg {
+    width: 37vw;
+  }
+  @include large-desktop-xs {
+    width: 38vw;
+  }
+  @include large-desktop-mini {
+    width: 37vw;
+  }
 }
 .eye {
   width: 15px;
@@ -60,16 +125,36 @@
   background-size: 80%;
 }
 .centerdiv {
-  width:200px;
+  width: 200px;
   margin-left:auto;
   margin-right:auto;
   position:relative;
 }
 .cont {
-  width: 712px;
+  //width: 712px;
   height: 165px;
   position: absolute;
   top: 148px;
   left: -260px;
   overflow: hidden;
+
+  //width: 40vw;
+  //left: -13vw;
+  width: 41vw;
+  left: -13vw;
+  @include large-desktop-lg {
+    width: 39.2vw;
+    left: -12vw;
+  }
+  @include large-desktop-sm {
+    width: 40vw;
+    left: -11.2vw;
+  }
+  @include large-desktop-xs {
+    left: -10vw;
+  }
+  @include large-desktop-mini {
+    width: 42vw;
+    left: -10.5vw;
+  }
 }

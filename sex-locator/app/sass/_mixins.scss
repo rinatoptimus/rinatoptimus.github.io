@@ -5,6 +5,10 @@ $phone-md: 455px;
 $phone-lg: 570px;
 $phone-xl: 700px;
 $tablet: 767px;
+$large-desktop-mini: 1500px;
+$large-desktop-xs: 1500px;
+$large-desktop-sm: 1600px;
+$large-desktop-lg: 1700px;
 
 @mixin phone-mini {
   @media (max-width: #{$phone-mini + 1px}) {
@@ -53,6 +57,27 @@ $tablet: 767px;
 }
 @mixin large-desktop {
   @media (max-width: #{$large-desktop + 1px}) {
+    @content;
+  }
+}
+@mixin large-desktop-lg {
+  @media (max-width: #{$large-desktop-lg + 1px}) {
+    @content;
+  }
+}
+
+@mixin large-desktop-mini {
+  @media (max-width: #{$large-desktop-mini - 1px}) {
+    @content;
+  }
+}
+@mixin large-desktop-xs {
+  @media (max-width: #{$large-desktop-xs - 1px}) {
+    @content;
+  }
+}
+@mixin large-desktop-sm {
+  @media (max-width: #{$large-desktop-sm + 1px}) {
     @content;
   }
 }

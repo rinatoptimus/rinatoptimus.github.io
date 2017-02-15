@@ -1,16 +1,43 @@
 .block-btn-yes {
+  padding-top: 37px;
+  padding-bottom: 20px;
   background-color: $bg-main;
 }
 .btn-yes {
   font-size: 50px;
   color: $btn-yes-text;
 }
+.yes-btn-text-first {
+  height: 50px;
+}
 .yes-btn-text {
+  //margin-top: 60px;
+  //line-height: 27px;
   font-size: 50px;
+  font-family: "CenturyGothicRegular", Arial, sans-serif;
+  @include phone-md {
+    font-size: 30px;
+  }
 }
 .btn-yes-first {
+  margin-top: -3px;
+  padding: 28px 176px;
   background-color: $btn-yes-first;
+  border: none;
+  border-radius: 10px;
+  &:hover {
+    background-color: $btn-red-hover;
+    color: $white;
+  }
 }
 .btn-yes-second {
+  margin-top: -3px;
+  padding: 28px 176px;
   background-color: $btn-yes-second;
+  border: none;
+  border-radius: 10px;
+  &:hover {
+    background-color: $btn-red-hover;
+    color: $white;
+  }
 }

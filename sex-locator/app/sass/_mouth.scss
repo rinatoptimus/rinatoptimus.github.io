@@ -2,7 +2,8 @@
   position: relative;
   overflow: hidden;
   background-color: $skin;
-    .shadow {
+    .bg-shadow {
+      height: 1077px;
       border-radius: 0;
     }
     form {
@@ -22,13 +23,26 @@
 }
 .mouth-search {
   position: absolute;
-  max-width: 760px;
-  height: 1043px;
+  width: 760px;
+  //height: 1043px;
+  height: 1077px;
   left: 30%;
   background: url('../img/mouth-search.jpg') no-repeat;
+  background-size: cover;
+  //display: none;
+}
+.mouth-lot {
+  position: relative;
+  max-width: 1200px;
+  height: 1043px;
+  margin: 0 auto;
+  background: url('../img/mouth-lot.jpg') no-repeat;
+  background-size: contain;
+  display: none;
 }
 .mouth-shadow, .mouth-skin {
-  height: 1043px;
+  //height: 1043px;
+  height: 1077px;
 }
 .form-horizontal .search-input-label {
   text-align: left;
@@ -36,35 +50,84 @@
 .search-input-label {
   text-align: left;
   font-size: 30px;
+  font-family: Roboto, Arial, sans-serif;
+  font-weight: 500;
+  line-height: 40px;
   color: $blue-dark;
 }
+.bitch, .dude {
+  font-weight: 500;
+}
 .btn-search {
-  margin-left: 140px;
-  padding: 5px 105px;
-  background-color: $bg-red;
+  margin-top: 133px;
+  padding: 2px 167px;
+  background-color: $btn-yes-first;
   border-radius: 10px;
+  font-family: "CenturyGothicRegular";
   font-size: 61px;
   font-weight: bold;
   color: $white;
-  margin-left: 143px;
-  padding: 5px 105px;
+  border: none;
+  &:hover {
+    background-color: $btn-red-hover;
+    color: $white;
+  }
+}
+.speech-bubble-lot {
+  position: relative;
+  //top: 15em;
+  //left: 11em;
+    p {
+      position: absolute;
+      //top: 11vw;
+      //left: 8vw;
+      font-size: 3.4em;
+      font-family: "CenturyGothicRegular";
+      top: 4.2em;
+      left: 2.75em;
+      @include speech-bubble-break {
+        top: 4em;
+        font-size: 4vw;
+      }
+      @include tablet {
+        font-size: 3.7vw;
+      }
+      @include phone-lg {
+        top: 3em;
+        font-size: 3.5vw;
+      }
+      @include phone-md {
+        top: 2em;
+      }
+      @include phone {
+        top: 1em;
+      }
+        span {
+          font-size: 60px;
+          color: $btn-yes-first;
+        }
+    }
 }
 .form-inline {
   .search-city {
     max-width: 392px;
-    margin-left: 5px;
+    margin-left: -53px;
     padding: 3px 17px;
     height: 68px;
     border: 3px solid $blue-dark;
     border-radius: 10px;
-    font-size: 30px;
+    font-size: 39px;
     color: $blue-dark;
   }
+  .search-city::-webkit-input-placeholder {color:$blue-dark;}
+  .search-city::-moz-placeholder          {color:$blue-dark;}/* Firefox 19+ */
+  .search-city:-moz-placeholder           {color:$blue-dark;}/* Firefox 18- */
+  .search-city:-ms-input-placeholder      {color:$blue-dark;}
 }
 
 // CHECKBOXES
-
 .list-checkboxes {
+  margin-left: -63px;
   padding-left: 0;
   float: left;
     li {
@@ -76,6 +139,9 @@
           }
         }
     }
+    li:first-child {
+      margin-bottom: 10px;
+    }
 }
 input[type=radio]{display:none;}
 input[type=radio] + label.btn{
@@ -85,17 +151,17 @@ input[type=radio] + label.btn{
   font-weight: 700;
   outline: none;
   position: relative;
-  transition: all 0.3s;
+  //transition: all 0.3s;
   background: $white;
-  color: #fff;
+  //color: $white;
   box-shadow: 0 4px $blue-dark;
   transition: none;
-  border: none;
+  //border: none;
   border-radius: 10px;
   cursor: pointer;
 
-  border: 2px solid $blue-dark;
-  max-width: 392px;
+  border: 3px solid $blue-dark;
+  width: 392px;
   text-align: left;
   font-size: 25px;
   color: $blue-dark;
@@ -122,4 +188,53 @@ input[type=radio]:checked + label.btn{
   transform: rotate(-10deg);
   font-size: 53px;
   color: $symbol-male;
+}
+.me {
+  float: left;
+  font-size: 54px;
+  font-family: Roboto, Arial, sans-serif;
+  font-weight: 500;
+  color: $blue-dark;
+}
+.label-sex {
+  margin-right: 26px;
+  margin-left: -53px;
+}
+.form-group-how-many {
+  margin-top: 136px;
+}
+.form-group-which-city {
+  margin-top: 140px;
+}
+.label-city {
+  margin-top: -15px;
+}
+
+/* ------------------- Чекбокс Я ------------------- */
+.radiobutton-custom {
+  padding: 27px 44px;
+  border: 3px solid $blue-dark;
+  background-position: 55% 45%;
+  background-color: $white;
+  border-radius: 10px;
+  border-bottom: 6px solid $blue-dark;
+  &:hover {
+    margin-top: 3px;
+    border-bottom: 3px solid $blue-dark;
+  }
+}
+label > input{ /* HIDE RADIO */
+  visibility: hidden; /* Makes input not-clickable */
+  position: absolute; /* Remove input from document flow */
+}
+label > input + img{
+  cursor:pointer;
+  border: 3px solid transparent;
+}
+label > input:checked + img{
+  border: 3px solid $btn-yes-first;
+  &:hover {
+    margin-top: 0;
+    border-bottom: 3px solid $btn-yes-first;
+  }
 }

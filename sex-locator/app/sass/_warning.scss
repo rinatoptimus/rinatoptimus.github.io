@@ -1,22 +1,31 @@
 .warning {
   padding-top: 16px;
-  padding-bottom: 58px;
+  padding-bottom: 17px;
   background-color: $bg-main;
-}
-.warning {
   font-size: 24px;
-  //font-weight: bold;
+  font-family: "CenturyGothicRegular", Arial, sans-serif;
+  font-weight: bold;
+}
+.warning-text {
+  max-width: 850px;
+  margin: 0 auto 37px;
+  font-size: 16px;
+  color: $warning-text;
+}
+.btn-not-adult {
+  margin-left: 43px;
 }
 .btn-adult, .btn-not-adult {
-  width: 310px;
-  padding: 3px 6px;
-  border: 2px solid $red-border;
+  max-width: 310px;
+  margin-bottom: 40px;
+  padding: 3px 38px;
+  border: 3px solid $red-border;
   border-radius: 10px;
   font-size: 24px;
   font-family: 'Roboto', 'Arial', sans-serif;
   color: $grey-dark;
   &:hover {
     background-color: $btn-hover-border;
-    border: 2px solid $red-border;
+    border: 3px solid $red-border;
   }
 }

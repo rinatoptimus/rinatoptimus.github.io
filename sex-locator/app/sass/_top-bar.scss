@@ -2,6 +2,10 @@
   padding-top: 71px;
   padding-bottom: 71px;
   background-color: $bg-main;
+  @include phone-xl {
+    padding-top: 23px;
+    padding-bottom: 0;
+  }
 }
 .top-bar-divider {
   height: 40px;
@@ -12,9 +16,29 @@
   width: 237px;
   height: 81px;
   background: url('../img/logo-my-linker.png') no-repeat;
+  @include phone-xl {
+    background-size: 70%;
+  }
+  @include phone-md {
+    height: 65px;
+    background-size: 50%;
+  }
+  @include phone {
+    background-size: 40%;
+  }
 }
 .logo-pharm-linker {
   width: 237px;
   height: 81px;
   background: url('../img/logo-pharm-linker.png') no-repeat;
+  @include phone-xl {
+    background-size: 70%;
+  }
+  @include phone-md {
+    height: 65px;
+    background-size: 50%;
+  }
+  @include phone {
+    background-size: 40%;
+  }
 }

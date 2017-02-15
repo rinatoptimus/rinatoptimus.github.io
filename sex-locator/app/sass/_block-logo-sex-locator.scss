@@ -1,14 +1,22 @@
+.row-lottery-logo {
+  padding-top: 103px;
+  padding-bottom: 103px;
+}
 .block-logo-sex-locator {
-  background-color: $bg-red;
+  //background-color: $btn-yes-first;
   border-radius: 5px;
 }
 .logo-sex-locator {
   margin: 0 auto;
-  max-width: 313px;
-  height: 112px;
-  background: url('../img/logo-sex-locator.png') no-repeat;
+  max-width: 360px;
+  height: 135px;
+  background: url("../img/logo-sex-locator.png") no-repeat;
+  background-size: contain;
 }
-p {
+.know {
+  padding-top: 9px;
+  padding-bottom: 5px;
   font-size: 30px;
+  font-family: "CenturyGothicRegular";
   color: $black-lighter;
 }

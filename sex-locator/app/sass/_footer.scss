@@ -201,14 +201,50 @@
     }
 }
 
+// для responsive подвала
+html,body{
+  height: 100%;
+  width: 100%;
+}
+.wrap{
+  position: relative;
+  z-index: auto;
+  width: 100%;
+  max-width: 1920px;
+  height: 100%;
+  margin: 0 auto;
+}
+#main{
+  width: 100%;
+  text-align: center;
+}
 
+img{
+  width: 100%;
+  margin: auto;
+  vertical-align: middle;
+}
 
-
-
-//.leg {
-//  max-width: 1392px;
-//  height: 226px;
-//  margin: 0 auto;
-//  background: url("../img/leg.png") no-repeat;
-//  background-size: contain;
-//}
+.bg-body {
+  height: auto;
+}
+.footer-bottom {
+  margin-top: -226px;
+  @include bg-body {
+    border-top: 60px solid $white;
+  }
+  @include bg-footer {
+    margin-top: -196px;
+  }
+  @include bg-footer-first {
+    margin-top: -185px;
+  }
+}
+.block-win {
+  margin-top: 200px;
+}
+.leggy {
+  @include leggy {
+    visibility: hidden;
+  }
+}

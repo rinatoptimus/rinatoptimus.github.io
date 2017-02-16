@@ -6,8 +6,12 @@ $phone-lg: 570px;
 $phone-xl: 700px;
 $tablet: 767px;
 
+$bg-footer-first: 1070px;
 $speech-bubble-break: 1170px;
 $break-twelve: 1200px;
+$bg-footer: 1372px;
+$bg-body: 1392px;
+$leggy: 1400px;
 $large-desktop-mini: 1500px;
 $large-desktop-xs: 1500px;
 $large-desktop-sm: 1600px;
@@ -70,7 +74,11 @@ $large-desktop-lg: 1700px;
 }
 
 
-
+@mixin bg-footer-first {
+  @media (max-width: #{$bg-footer-first + 1px}) {
+    @content;
+  }
+}
 @mixin speech-bubble-break {
   @media (max-width: #{$speech-bubble-break + 1px}) {
     @content;
@@ -78,6 +86,21 @@ $large-desktop-lg: 1700px;
 }
 @mixin break-twelve {
   @media (max-width: #{$break-twelve - 1px}) {
+    @content;
+  }
+}
+@mixin bg-footer {
+  @media (max-width: #{$bg-footer - 1px}) {
+    @content;
+  }
+}
+@mixin bg-body {
+  @media (max-width: #{$bg-body + 1px}) {
+    @content;
+  }
+}
+@mixin leggy {
+  @media (max-width: #{$leggy - 1px}) {
     @content;
   }
 }

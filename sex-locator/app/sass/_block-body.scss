@@ -1,10 +1,19 @@
 .bg-body {
-  max-width: 1390px;
-  height: 1068px;
-  background: url('../img/body.png') no-repeat;
+  //max-width: 1392px;
+  //height: 1064px;
+  //margin: 0 auto;
+  //background: url('../img/body.png') no-repeat;
+  //background-size: contain;
+  max-width: 1392px;
+  height: 1064px;
+  margin: 0 auto;
+  background: url('../img/body2.png') no-repeat;
+  background-size: contain;
 }
 .skirt {
-  max-width: 910px;
-  height: 755px;
+  max-width: 1404px;
+  height: 752px;
+  margin: 0 auto;
   background: url('../img/skirt.png') no-repeat;
+  background-size: contain;
 }

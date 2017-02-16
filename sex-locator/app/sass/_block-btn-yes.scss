@@ -7,21 +7,53 @@
   font-size: 50px;
   color: $btn-yes-text;
 }
+.block-interest {
+  margin-top: 6px;
+  margin-left: 36px;
+  @include break-twelve {
+    margin-left: 0;
+  }
+}
+p.dont-miss {
+  font-size: 45px;
+  @include tablet {
+    text-align: center;
+  }
+  @include break-twelve {
+    font-size: 35px;
+  }
+  @include phone-md {
+    font-size: 30px;
+  }
+}
 .yes-btn-text-first {
   height: 50px;
+  @include tablet {
+    text-align: center;
+  }
+  @include break-twelve {
+    font-size: 35px;
+  }
 }
 .yes-btn-text {
   //margin-top: 60px;
   //line-height: 27px;
   font-size: 50px;
   font-family: "CenturyGothicRegular", Arial, sans-serif;
+  @include tablet {
+    text-align: center;
+  }
+  @include break-twelve {
+    font-size: 35px;
+  }
   @include phone-md {
     font-size: 30px;
   }
 }
 .btn-yes-first {
-  margin-top: -3px;
-  padding: 28px 176px;
+  margin-top: 3px;
+  margin-left: 42px;
+  padding: 33px 190px;
   background-color: $btn-yes-first;
   border: none;
   border-radius: 10px;
@@ -29,15 +61,34 @@
     background-color: $btn-red-hover;
     color: $white;
   }
+  @include break-twelve {
+    margin-top: 25px;
+    margin-left: 42px;
+    padding: 15px 90px;
+    font-size: 35px;
+  }
+  @include tablet {
+    display: block;
+    margin: 0 auto;
+  }
 }
 .btn-yes-second {
+  //margin-top: -3px;
+  //padding: 28px 176px;
   margin-top: -3px;
-  padding: 28px 176px;
+  margin-left: 42px;
+  padding: 33px 190px;
   background-color: $btn-yes-second;
   border: none;
   border-radius: 10px;
   &:hover {
     background-color: $btn-red-hover;
     color: $white;
+  }
+  @include break-twelve {
+    margin-top: 25px;
+    margin-left: 42px;
+    padding: 15px 90px;
+    font-size: 35px;
   }
 }

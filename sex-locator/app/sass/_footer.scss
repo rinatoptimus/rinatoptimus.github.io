@@ -1,4 +1,7 @@
 .footer-bottom {
+  margin-top: -226px;
+  z-index: -10;
+  position: relative;
   padding-top: 40px;
   padding-bottom: 60px;
   background-color: $bg-blue;
@@ -197,3 +200,15 @@
       font-size: 53px;
     }
 }
+
+
+
+
+
+//.leg {
+//  max-width: 1392px;
+//  height: 226px;
+//  margin: 0 auto;
+//  background: url("../img/leg.png") no-repeat;
+//  background-size: contain;
+//}

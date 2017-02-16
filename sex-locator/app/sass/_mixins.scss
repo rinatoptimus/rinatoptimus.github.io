@@ -7,6 +7,7 @@ $phone-xl: 700px;
 $tablet: 767px;
 
 $speech-bubble-break: 1170px;
+$break-twelve: 1200px;
 $large-desktop-mini: 1500px;
 $large-desktop-xs: 1500px;
 $large-desktop-sm: 1600px;
@@ -72,6 +73,11 @@ $large-desktop-lg: 1700px;
 
 @mixin speech-bubble-break {
   @media (max-width: #{$speech-bubble-break + 1px}) {
+    @content;
+  }
+}
+@mixin break-twelve {
+  @media (max-width: #{$break-twelve - 1px}) {
     @content;
   }
 }

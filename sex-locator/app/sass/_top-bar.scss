@@ -4,6 +4,10 @@
   background-color: $bg-main;
   @include phone-xl {
     padding-top: 23px;
+    padding-bottom: 10px;
+  }
+  @include phone-md {
+    padding-top: 23px;
     padding-bottom: 0;
   }
 }
@@ -16,29 +20,35 @@
   width: 237px;
   height: 81px;
   background: url('../img/logo-my-linker.png') no-repeat;
+  //background-size: contain;
   @include phone-xl {
-    background-size: 70%;
+    //background-size: 70%;
+    width: auto;
+    background-size: contain;
   }
-  @include phone-md {
-    height: 65px;
-    background-size: 50%;
-  }
-  @include phone {
-    background-size: 40%;
-  }
+  //@include phone-md {
+  //  height: 65px;
+  //  background-size: 50%;
+  //}
+  //@include phone {
+  //  background-size: 40%;
+  //}
 }
 .logo-pharm-linker {
   width: 237px;
   height: 81px;
   background: url('../img/logo-pharm-linker.png') no-repeat;
+  //background-size: contain;
   @include phone-xl {
-    background-size: 70%;
+    //background-size: 70%;
+    width: auto;
+    background-size: contain;
   }
-  @include phone-md {
-    height: 65px;
-    background-size: 50%;
-  }
-  @include phone {
-    background-size: 40%;
-  }
+  //@include phone-md {
+  //  height: 65px;
+  //  background-size: 50%;
+  //}
+  //@include phone {
+  //  background-size: 40%;
+  //}
 }

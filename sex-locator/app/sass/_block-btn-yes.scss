@@ -14,13 +14,21 @@
     margin-left: 0;
   }
 }
+p.dont-miss-first {
+  @include phone {
+    line-height: 32px;
+  }
+}
 p.dont-miss {
   font-size: 45px;
-  @include tablet {
-    text-align: center;
-  }
   @include break-twelve {
     font-size: 35px;
+  }
+  @include col-btn-yes {
+    font-size: 26px;
+  }
+  @include tablet {
+    text-align: center;
   }
   @include phone-md {
     font-size: 30px;
@@ -40,11 +48,24 @@ p.dont-miss {
   //line-height: 27px;
   font-size: 50px;
   font-family: "CenturyGothicRegular", Arial, sans-serif;
-  @include tablet {
-    text-align: center;
-  }
+  //@include tablet {
+  //  text-align: center;
+  //}
+  //@include break-twelve {
+  //  font-size: 35px;
+  //}
+  //@include phone-md {
+  //  font-size: 30px;
+  //}
+
   @include break-twelve {
     font-size: 35px;
+  }
+  @include col-btn-yes {
+    font-size: 26px;
+  }
+  @include tablet {
+    text-align: center;
   }
   @include phone-md {
     font-size: 30px;
@@ -90,5 +111,9 @@ p.dont-miss {
     margin-left: 42px;
     padding: 15px 90px;
     font-size: 35px;
+  }
+  @include tablet {
+    display: block;
+    margin: 0 auto;
   }
 }

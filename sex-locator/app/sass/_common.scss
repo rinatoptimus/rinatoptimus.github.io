@@ -1,0 +1,47 @@
+/* ------------------ ФОН ДЛЯ РТОВ ------------------ */
+.bg-skin {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e5cdc2+50,faeae3+50,faeae3+51 */
+  background: #e5cdc2; /* Old browsers */
+  background: -moz-linear-gradient(left,  #e5cdc2 50%, #faeae3 50%, #faeae3 51%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left,  #e5cdc2 50%,#faeae3 50%,#faeae3 51%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right,  #e5cdc2 50%,#faeae3 50%,#faeae3 51%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5cdc2', endColorstr='#faeae3',GradientType=1 ); /* IE6-9 */
+}
+
+/* ------------------ СТИЛИ ДЛЯ РТОВ, КОТОРЫЕ РАЗМЕЩАЮТСЯ НА ЭТОМ ФОНЕ ------------------ */
+.picture-mouth {
+  max-height: 1073px;
+  max-width: 100%;
+  position: relative;
+  padding-top: 56%;
+  background: url('../img/mouth-little.jpg') no-repeat;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  &:after {
+    display: block;
+    content: '';
+  }
+}
+
+/* ------------------ ТЕКСТ В ОБЛАКЕ ИЗО РТА ------------------ */
+.qwerty {
+  z-index: 50;
+  max-width: 600px;
+  position: relative;
+  width: 100%;
+  padding-top: 11%;
+  padding-bottom: 20%;
+    p {
+      position: absolute;
+      font-size: 2.6vw;
+      font-family: "CenturyGothicRegular";
+      top: 11.3vw;
+      left: 0.5em;
+      span {
+        //font-size: 60px;
+        font-size: 3.1vw;
+        color: $btn-yes-first;
+      }
+    }
+}

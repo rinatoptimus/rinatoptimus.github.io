@@ -1,3 +1,8 @@
+.col-btn-yes, .col-btn-no {
+  @include col-btn-yes {
+    text-align: center;
+  }
+}
 .warning {
   padding-top: 16px;
   padding-bottom: 17px;
@@ -22,6 +27,9 @@
   //margin-left: 43px;
   margin-left: 51px;
   padding: 5px 35px;
+  @include col-btn-yes {
+    margin-left: 0;
+  }
   @include phone-md {
     margin-left: 0;
     padding: 10px;

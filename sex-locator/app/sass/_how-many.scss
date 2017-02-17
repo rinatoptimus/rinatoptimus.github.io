@@ -8,4 +8,16 @@
   font-family: "CenturyGothicRegular", Arial, sans-serif;
   font-weight: bold;
   color: $blue-dark;
+  @include break-twelve {
+    font-size: 35px;
+  }
+  @include col-btn-yes {
+    font-size: 26px;
+  }
+  @include tablet {
+    text-align: center;
+  }
+  @include phone-md {
+    font-size: 30px;
+  }
 }

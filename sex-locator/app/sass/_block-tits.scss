@@ -1,7 +1,17 @@
 .block-tits {
+  //max-width: 1692px;
+  //height: 861px;
+  //margin: 0 auto;
+  //
+  //background-size: contain;
+
+  max-height: 861px;
   max-width: 1692px;
-  height: 861px;
+  position: relative;
   margin: 0 auto;
+  padding-top: 45%;
   background: url('../img/bg-tits.png') no-repeat;
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: contain;
 }

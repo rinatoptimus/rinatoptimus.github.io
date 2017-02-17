@@ -1,12 +1,12 @@
-.mouth {
+.bg-skin {
   position: relative;
   overflow: hidden;
-  background-color: $skin;
-    .bg-shadow {
-      //height: 1077px;
-      height: 1073px;
-      border-radius: 0;
-    }
+  //background-color: $skin;
+    //.bg-shadow {
+    //  //height: 1077px;
+    //  height: 1073px;
+    //  border-radius: 0;
+    //}
     form {
       position: absolute;
       top: 67px;
@@ -33,10 +33,14 @@
 .block-btn-back {
   position: absolute;
   bottom: 41px;
-  left: 21px;
+  left: 90px;
+  @include phone-lg {
+    left: 0;
+  }
   a {
     padding: 5px 5px 5px 2px;
-    font-size: 48px;
+    //font-size: 48px;
+    font-size: 2.5vw;
     font-family: "CenturyGothicRegular", Arial, sans-serif;
     color: $black;
     &:hover {
@@ -50,11 +54,16 @@
 .arrow-back {
   position: relative;
   display: inline-block;
-  top: 12px;
+  //top: 12px;
   margin-right: 16px;
-  width: 77px;
-  height: 60px;
+  //width: 77px;
+  //height: 60px;
+
+  top: 0.9vw;
+  width: 4vw;
+  height: 3.2vw;
   background: url('../img/arrow-back.png') no-repeat;
+  background-size: contain;
 }
 
 .mouth-search {
@@ -108,39 +117,37 @@
     color: $white;
   }
 }
-.speech-bubble-lot {
-  position: relative;
-    p {
-      position: absolute;
-      //top: 11vw;
-      //left: 8vw;
-      font-size: 3.4em;
-      font-family: "CenturyGothicRegular";
-      top: 4.3em;
-      left: 2.9em;
-      @include speech-bubble-break {
-        top: 4em;
-        font-size: 4vw;
-      }
-      @include tablet {
-        font-size: 3.7vw;
-      }
-      @include phone-lg {
-        top: 3em;
-        font-size: 3.5vw;
-      }
-      @include phone-md {
-        top: 2em;
-      }
-      @include phone {
-        top: 1em;
-      }
-        span {
-          font-size: 60px;
-          color: $btn-yes-first;
-        }
-    }
-}
+//.speech-bubble-lot {
+//  position: relative;
+//    p {
+//      position: absolute;
+//      font-size: 3.4em;
+//      font-family: "CenturyGothicRegular";
+//      top: 4.3em;
+//      left: 2.9em;
+//      @include speech-bubble-break {
+//        top: 4em;
+//        font-size: 4vw;
+//      }
+//      @include tablet {
+//        font-size: 3.7vw;
+//      }
+//      @include phone-lg {
+//        top: 3em;
+//        font-size: 3.5vw;
+//      }
+//      @include phone-md {
+//        top: 2em;
+//      }
+//      @include phone {
+//        top: 1em;
+//      }
+//        span {
+//          font-size: 60px;
+//          color: $btn-yes-first;
+//        }
+//    }
+//}
 .form-inline {
   .search-city {
     max-width: 392px;
@@ -242,13 +249,13 @@ input[type=radio]:checked + label.btn{
 
 /* ------------------- MOUTH-LITTLE (РОТ МАЛО) ------------------- */
 .mouth-little {
-  position: relative;
-  left: 7px;
-  max-width: 1200px;
-  height: 1073px;
-  margin: 0 auto;
-  background: url('../img/mouth-little.jpg') no-repeat;
-  background-size: contain;
+  //position: relative;
+  //left: 7px;
+  //max-width: 1200px;
+  //height: 1073px;
+  //margin: 0 auto;
+  //background: url('../img/mouth-little.jpg') no-repeat;
+  //background-size: contain;
   //display: none;
 }
 

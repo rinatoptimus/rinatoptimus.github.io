@@ -6,6 +6,7 @@ $phone-lg: 570px;
 $phone-xl: 700px;
 $tablet: 767px;
 
+$col-btn-yes: 992px;
 $bg-footer-first: 1070px;
 $speech-bubble-break: 1170px;
 $break-twelve: 1200px;
@@ -73,7 +74,11 @@ $large-desktop-lg: 1700px;
   }
 }
 
-
+@mixin col-btn-yes {
+  @media (max-width: #{$col-btn-yes + 1px}) {
+    @content;
+  }
+}
 @mixin bg-footer-first {
   @media (max-width: #{$bg-footer-first + 1px}) {
     @content;

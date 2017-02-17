@@ -2,6 +2,10 @@
   margin-top: -40px;
   overflow: hidden;
   background-color: $skin;
+  display: block;
+  @include leggy {
+    display: none;
+  }
 }
 .bg-shadow {
   width: 50%;
@@ -158,3 +162,88 @@
     left: -10.5vw;
   }
 }
+
+
+/* ------------------------- EYES-MOB BEGIN ------------------------- */
+.eyes-mob {
+  position: relative;
+  margin: 60px auto;
+  max-width: 600px;
+  border: 1px solid red;
+  display: none;
+
+  background: url('../img/mask.jpg') no-repeat;
+  height: 200px;
+  background-size: 100%;
+  @include leggy {
+    display: block;
+  }
+}
+.outer-eye {
+  /*Positioning*/
+  position: relative;
+  display: inline-block;
+  /*Styling*/
+  background: white;
+  border-radius: 50%;
+  /*Size*/
+  width: 100px;
+  height: 100px;
+}
+
+.outer-eye-2 {
+  //left: 50px;
+}
+
+.inner-eye {
+  /*Positioning*/
+  position: absolute;
+  top: 50px;
+  left: 45px;
+  /*Styling*/
+  //background: #4056f4;
+  border-radius: 50%;
+  /*Size*/
+  //width: 35px;
+  //height: 35px;
+  width: 50px;
+  height: 50px;
+  /*Assigns animation*/
+  animation: shifty 3s infinite;
+}
+
+/*Begin animation details*/
+@keyframes shifty {
+  50% {
+    /*Moves pupils to left, change number to see what happens*/
+    transform: translateX(-25px);
+  }
+  75% {
+    /*Moves pupils right and up, change numbers to see what happens*/
+    transform: translateY(-30px) translateX(-10px);
+  }
+}
+
+#outer-eye-left {
+  position: absolute;
+  top: 40px;
+  left: 200px;
+}
+#outer-eye-right {
+  position: absolute;
+  top: 40px;
+  right: 200px;
+}
+.inner-eye-left {
+  max-width: 50px;
+  height: 50px;
+  background: url('../img/pupil-left.png') no-repeat;
+  background-size: contain;
+}
+.inner-eye-right {
+  max-width: 50px;
+  height: 50px;
+  background: url('../img/pupil-right.png') no-repeat;
+  background-size: contain;
+}
+/* ------------------------- EYES-MOB END ------------------------- */

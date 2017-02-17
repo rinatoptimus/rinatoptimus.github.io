@@ -11,6 +11,7 @@
   padding-bottom: 40px;
   font-size: 48px;
   font-family: "CenturyGothicRegular";
+  color: $white;
   @include speech-bubble-break {
     padding-bottom: 10px;
     font-size: 30px;
@@ -30,6 +31,7 @@
     }
 }
 .form-text {
+  max-width: 870px;
   margin-top: -1px;
   line-height: 45px;
   font-size: 30px;

@@ -77,13 +77,16 @@
   display: none;
 }
 .mouth-lot {
-  position: relative;
-  max-width: 1200px;
-  height: 1073px;
-  margin: 0 auto;
+  //position: relative;
+  //max-width: 1200px;
+  //height: 1073px;
+  //margin: 0 auto;
+  //background: url('../img/mouth-lot.jpg') no-repeat;
+  //background-size: contain;
+  //display: none;
   background: url('../img/mouth-lot.jpg') no-repeat;
+  background-position: center;
   background-size: contain;
-  display: none;
 }
 .mouth-shadow, .mouth-skin {
   height: 1073px;
@@ -254,7 +257,9 @@ input[type=radio]:checked + label.btn{
   //max-width: 1200px;
   //height: 1073px;
   //margin: 0 auto;
-  //background: url('../img/mouth-little.jpg') no-repeat;
+  background: url('../img/mouth-little.jpg') no-repeat;
+  background-position: center;
+  background-size: contain;
   //background-size: contain;
   //display: none;
 }

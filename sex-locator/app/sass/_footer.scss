@@ -246,7 +246,12 @@ img{
   margin-top: 200px;
 }
 .leggy {
+  margin-top: 93px;
   @include leggy {
     visibility: hidden;
   }
+}
+.block-congratulation {
+  position: absolute;
+  top: 100px;
 }

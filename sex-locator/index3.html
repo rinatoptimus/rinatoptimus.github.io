@@ -135,7 +135,39 @@
 </div>
 
 <div class="bg-skin">
-    <div class="mouth-search"></div>
+    <div class="picture-mouth mouth-search">
+        <form class="form-horizontal" method="">
+            <div class="form-group form-inline">
+                <p for="" class="me col-sm-2 control-label search-input-label search-input-label">Я:</p>
+                <label class="label-sex">
+                    <input type="radio" name="sex" value="male" />
+                    <img class="radiobutton-custom" src="app/img/radiobutton-male.png">
+                </label>
+                <label>
+                    <input type="radio" name="sex" value="female"/>
+                    <img class="radiobutton-custom" src="app/img/radiobutton-female.png">
+                </label>
+            </div>
+            <div class="form-group form-inline form-group-how-many">
+                <label for="" class="col-sm-2 control-label search-input-label search-input-label">Узнать сколько:</label>
+                <ul class="list-checkboxes">
+                    <li>
+                        <input type="radio" id="radio-btn-1" name="radio-btns">
+                        <label for="radio-btn-1" class="btn label-bitches"><i class="fa fa-venus" aria-hidden="true"></i> <span class="bitch">Стерв</span></label>
+                    </li>
+                    <li>
+                        <input type="radio" id="radio-btn-2" name="radio-btns">
+                        <label for="radio-btn-2" class="btn label-dogs"><i class="fa fa-mars" aria-hidden="true"></i> <span class="dude">Кобелей</span></label>
+                    </li>
+                </ul>
+            </div>
+            <div class="form-group form-inline form-group-which-city">
+                <label for="" class="col-sm-2 control-label search-input-label search-input-label label-city">В каком городе?</label>
+                <input type="text" class="form-control search-city" id="" placeholder="...">
+            </div>
+            <button type="submit" class="btn btn-default btn-search">Найти</button>
+        </form>
+    </div>
 
 
     <!-- БЛОК МНОГО (НАЧАЛО) -->

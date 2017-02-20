@@ -14,6 +14,9 @@
       left: 0;
       margin: auto;
       max-width: 1200px;
+      @include tablet {
+        top: 20px;
+      }
     }
 }
 .shadow-dark {
@@ -66,14 +69,31 @@
   background-size: contain;
 }
 
-.mouth-search {
-  position: absolute;
-  width: 760px;
-  height: 1073px;
-  left: 30%;
+div.picture-mouth.mouth-search {
+  //position: absolute;
+  //width: 760px;
+  //height: 1073px;
+  //left: 30%;
   background: url('../img/mouth-search.jpg') no-repeat;
-  background-size: cover;
-  display: none;
+  //background-size: cover;
+  //display: none;
+  //background-position: center;
+  background-position: 67%;
+  background-size: contain;
+  //padding-top: 132%;
+  @include large-desktop-lg {
+    padding-top: 65%;
+  }
+  @include bg-footer-first {
+    padding-top: 70%;
+  }
+  @include col-btn-yes {
+    padding-top: 80%;
+  }
+  @include phone-xl {
+    padding-top: 83%;
+    min-height: 575px;
+  }
 }
 .block-lot {
   display: none;
@@ -103,6 +123,12 @@
   font-weight: 500;
   line-height: 40px;
   color: $blue-dark;
+  @include bg-footer {
+    margin-left: 20px;
+  }
+  @include speech-bubble-break {
+    font-size: 25px;
+  }
 }
 .bitch, .dude {
   font-weight: 500;
@@ -120,6 +146,19 @@
   &:hover {
     background-color: $btn-red-hover;
     color: $white;
+  }
+  @include btn-search {
+    margin-top: 30px;
+  }
+  @include bg-footer {
+    margin-left: 23px;
+  }
+  @include col-btn-yes {
+    margin-top: 17px;
+  }
+  @include tablet {
+    padding: 2px 77px;
+    font-size: 30px;
   }
 }
 //.speech-bubble-lot {
@@ -163,6 +202,14 @@
     border-radius: 10px;
     font-size: 39px;
     color: $blue-dark;
+    @include speech-bubble-break {
+      margin-left: 10px;
+    }
+    @include tablet {
+      width: 210px;
+      margin-left: 75px;
+      font-size: 23px;
+    }
   }
   .search-city::-webkit-input-placeholder {color:$blue-dark;}
   .search-city::-moz-placeholder          {color:$blue-dark;}/* Firefox 19+ */
@@ -175,6 +222,16 @@
   margin-left: -63px;
   padding-left: 0;
   float: left;
+  @include speech-bubble-break {
+    margin-left: 0;
+  }
+  @include bg-footer-first {
+    float: none;
+  }
+  @include tablet {
+    //float: none;
+    margin-left: 65px;
+  }
     li {
       list-style: none;
         label {
@@ -217,8 +274,28 @@ input[type=radio] + label.btn:hover{
 input[type=radio]:checked + label.btn{
   box-shadow: 0 0 #ab3c3c;
   top: 6px;
+  border: 3px solid $btn-yes-first;
 }
-
+label.label-bitches {
+  @include col-btn-yes {
+    display: block;
+    float: none;
+  }
+  @include tablet {
+    margin-left: 141px;
+    max-width: 210px;
+  }
+}
+label.label-dogs {
+  @include col-btn-yes {
+    display: block;
+    float: none;
+  }
+  @include tablet {
+    margin-left: 141px;
+    max-width: 210px;
+  }
+}
 .fa-venus {
   margin-right: 30px;
   transform: rotate(105deg);
@@ -237,6 +314,18 @@ input[type=radio]:checked + label.btn{
   font-family: Roboto, Arial, sans-serif;
   font-weight: 500;
   color: $blue-dark;
+  @include bg-footer {
+    margin-left: 20px;
+  }
+  @include speech-bubble-break {
+    margin-right: 7px;
+    margin-left: 76px;
+  }
+  @include tablet {
+    margin-right: 50px;
+    margin-left: 17px;
+    font-size: 35px;
+  }
 }
 .label-sex {
   margin-right: 26px;
@@ -244,15 +333,31 @@ input[type=radio]:checked + label.btn{
 }
 .form-group-how-many {
   margin-top: 136px;
+  @include large-desktop-lg {
+    margin-top: 30px;
+  }
+  @include tablet {
+    margin-top: 10px;
+    margin-left: 115px;
+  }
 }
 .form-group-which-city {
   margin-top: 140px;
+  @include large-desktop-lg {
+    margin-top: 30px;
+  }
+  @include tablet {
+    margin-top: 20px;
+  }
 }
 .label-city {
   margin-top: -15px;
 }
 
 /* ------------------- MOUTH-LITTLE (РОТ МАЛО) ------------------- */
+.block-little {
+  display: none;
+}
 .mouth-little {
   //position: relative;
   //left: 7px;
@@ -277,6 +382,17 @@ input[type=radio]:checked + label.btn{
   &:hover {
     margin-top: 3px;
     border-bottom: 3px solid $blue-dark;
+  }
+  @include bg-footer {
+    padding: 2.1vw 3.5vw;
+  }
+  @include col-btn-yes {
+    width: 100px;
+    height: 90px;
+  }
+  @include tablet {
+    width: 90px;
+    height: 90px;
   }
 }
 label > input{ /* HIDE RADIO */

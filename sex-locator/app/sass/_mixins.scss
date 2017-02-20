@@ -18,6 +18,7 @@ $large-desktop-mini: 1500px;
 $large-desktop-xs: 1500px;
 $large-desktop-sm: 1600px;
 $large-desktop-lg: 1700px;
+$btn-search: 1880px;
 
 @mixin phone-mini {
   @media (max-width: #{$phone-mini + 1px}) {
@@ -132,6 +133,11 @@ $large-desktop-lg: 1700px;
 }
 @mixin large-desktop-lg {
   @media (max-width: #{$large-desktop-lg + 1px}) {
+    @content;
+  }
+}
+@mixin btn-search {
+  @media (max-width: #{$btn-search - 1px}) {
     @content;
   }
 }

@@ -9,11 +9,12 @@
   margin: 0 auto;
   background: url('../img/body2.png') no-repeat;
   background-size: contain;
+
+  //background: url('../img/body3.png') no-repeat;
+  //background-size: contain;
+  //
+  //padding-top: 50%;
 }
 .skirt {
-  max-width: 1404px;
-  height: 752px;
-  margin: 0 auto;
-  background: url('../img/skirt.png') no-repeat;
-  background-size: contain;
+  visibility: hidden;
 }

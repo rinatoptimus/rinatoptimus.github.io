@@ -467,3 +467,53 @@
 //    right: -70px;
 //    bottom: 20px;
 //}
+.flip  {
+    @include tablet {
+        width: 43px;
+    }
+}
+.footer-timer {
+    max-width: 460px;
+    margin: 78px auto 95px;
+    @include tablet {
+        max-width: 475px;
+    }
+    @include phone-lg {
+        //margin-right: -10px;
+        //margin-left: -10px;
+
+        max-width: 305px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    @include timer {
+        margin-right: -10px;
+        margin-left: -5px;
+    }
+}
+.flip-clock-divider {
+    @include phone-lg {
+        width: 0;
+    }
+}
+.flip-clock-wrapper {
+    @include phone-lg {
+        margin: 0;
+    }
+}
+.flip-clock-wrapper ul li a div div.inn {
+    @include phone-lg {
+        font-size: 40px;
+    }
+}
+.flip-clock-wrapper ul {
+    @include phone-lg {
+        width: 40px;
+    }
+}
+
+.flip-clock-divider .flip-clock-label {
+    @include phone-lg {
+        right: -77px;
+    }
+}

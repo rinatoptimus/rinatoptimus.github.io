@@ -111,11 +111,6 @@
   font-size: 36px;
   font-family: "CenturyGothicRegular", Arial, sans-serif;
 }
-.footer-timer {
-  width: 460px;
-  margin: 78px auto 95px;
-}
-
 
 .share-block {
   height: 106px;
@@ -241,6 +236,9 @@ img{
   @include bg-footer-first {
     margin-top: -185px;
   }
+}
+.block-leg {
+  position: relative;
 }
 .block-win {
   margin-top: 200px;

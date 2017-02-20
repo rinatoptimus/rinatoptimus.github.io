@@ -1,5 +1,6 @@
 //$phone: 400px;
 $phone-mini: 320px;
+$timer: 330px;
 $phone: 375px;
 $phone-probability-numbers: 398px;
 $phone-md: 455px;
@@ -20,6 +21,11 @@ $large-desktop-sm: 1600px;
 $large-desktop-lg: 1700px;
 $btn-search: 1880px;
 
+@mixin timer {
+  @media (max-width: #{$timer + 1px}) {
+    @content;
+  }
+}
 @mixin phone-mini {
   @media (max-width: #{$phone-mini + 1px}) {
     @content;

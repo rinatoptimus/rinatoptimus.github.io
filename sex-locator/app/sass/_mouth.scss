@@ -70,17 +70,10 @@
 }
 
 div.picture-mouth.mouth-search {
-  //position: absolute;
-  //width: 760px;
-  //height: 1073px;
-  //left: 30%;
   background: url('../img/mouth-search.jpg') no-repeat;
-  //background-size: cover;
-  //display: none;
-  //background-position: center;
   background-position: 67%;
   background-size: contain;
-  //padding-top: 132%;
+  display: none;
   @include large-desktop-lg {
     padding-top: 65%;
   }
@@ -94,6 +87,9 @@ div.picture-mouth.mouth-search {
     padding-top: 83%;
     min-height: 575px;
   }
+}
+.form-main {
+  width: 100%;
 }
 .block-lot {
   display: none;
@@ -356,7 +352,7 @@ label.label-dogs {
 
 /* ------------------- MOUTH-LITTLE (РОТ МАЛО) ------------------- */
 .block-little {
-  display: none;
+  //display: none;
 }
 .mouth-little {
   //position: relative;
@@ -381,6 +377,7 @@ label.label-dogs {
   border-bottom: 6px solid $blue-dark;
   &:hover {
     margin-top: 3px;
+    margin-bottom: -3px;
     border-bottom: 3px solid $blue-dark;
   }
   @include bg-footer {

@@ -1,6 +1,7 @@
 //$phone: 400px;
 $phone-mini: 320px;
 $phone: 375px;
+$phone-probability-numbers: 398px;
 $phone-md: 455px;
 $phone-lg: 570px;
 $phone-xl: 700px;
@@ -20,6 +21,11 @@ $large-desktop-lg: 1700px;
 
 @mixin phone-mini {
   @media (max-width: #{$phone-mini + 1px}) {
+    @content;
+  }
+}
+@mixin phone-probability-numbers {
+  @media (max-width: #{$phone-probability-numbers - 1px}) {
     @content;
   }
 }

@@ -6,12 +6,58 @@
   //background-size: contain;
 
   max-height: 861px;
-  max-width: 1692px;
+  //max-width: 1692px;
   position: relative;
   margin: 0 auto;
   padding-top: 45%;
   background: url('../img/bg-tits.png') no-repeat;
-  background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  @include tablet {
+    max-height: 861px;
+    max-width: 1692px;
+    position: relative;
+    margin: 0 auto;
+    padding-top: 45%;
+    background: url('../img/bg-tits-without-letters.png') no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+}
+.probability-numbers {
+  position: relative;
+  z-index: 40;
+  bottom: 30vw;
+}
+.number-badoo {
+  position: absolute;
+  top: 8vw;
+  left: 24.2vw;
+  font-size: 4.3vw;
+  color: $btn-yes-first;
+  @include phone-probability-numbers {
+    top: 10vw;
+    left: 22vw;
+  }
+}
+.number-here {
+  position: absolute;
+  top: 8vw;
+  right: 35vw;
+  font-size: 4.3vw;
+  color: $btn-yes-first;
+  @include phone-probability-numbers {
+    top: 9vw;
+    right: 34vw;
+  }
+}
+.probability {
+  display: none;
+  margin-top: -51px;
+  @include tablet {
+    display: block;
+  }
+}
+.probability-text {
+  font-family: 'Roboto', 'Arial', sans-serif;
 }

@@ -69,11 +69,13 @@
 .mouth-search {
   position: absolute;
   width: 760px;
-  //height: 1043px;
   height: 1073px;
   left: 30%;
   background: url('../img/mouth-search.jpg') no-repeat;
   background-size: cover;
+  display: none;
+}
+.block-lot {
   display: none;
 }
 .mouth-lot {

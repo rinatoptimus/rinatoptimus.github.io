@@ -18,3 +18,23 @@
 .skirt {
   visibility: hidden;
 }
+
+/* -------------- MAN BEGIN -------------- */
+.bg-body-man {
+  position: relative;
+  max-width: 1392px;
+  //height: 838px;
+  margin: 0 auto;
+  background: url('../img/body-man.png') no-repeat;
+  background-size: contain;
+  //@include phone-probability-numbers {
+  @include phone-md {
+    min-height: 285px;
+    background-size: cover;
+    background-position: center;
+  }
+}
+.underpants {
+  visibility: hidden;
+}
+/* -------------- MAN END -------------- */

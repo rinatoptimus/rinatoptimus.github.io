@@ -1,0 +1,50 @@
+#bridge {
+  display: block;
+  margin: 0 auto;
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/calgary-bridge-1943.jpg');
+  background-image: -webkit-image-set(url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/calgary-bridge-1943.jpg') 1x, url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/calgary-bridge-1943-2x.jpg') 2x );
+  background-size: cover;
+  width: 100%;
+  max-width: 190px;
+  height: auto;
+  cursor:  crosshair;
+  cursor: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/circular-cursor.png) 53 53, crosshair;
+}
+#bridgeContainer {
+  text-align: center;
+  font-family: Avenir, sans-serif;
+
+  position: relative;
+  margin: 0 auto;
+  //top: 17vw;
+  top: 330px;
+  margin-bottom: -14vw;
+  max-width: 1392px;
+  height: 14vw;
+  //height: 257px;
+  background: url('../img/bg-ticket.png') no-repeat;
+  //background-size: contain;
+
+  min-height: 13vw;
+  background-size: contain;
+  background-position: center;
+  @include btn-search {
+
+  }
+  @include leggy {
+    //top: 24vw;
+  }
+
+
+  //width: 100%;
+  //vertical-align: middle;
+  //display: inline-block;
+  //height: 14vw;
+  //position: absolute;
+  //top: 81%;
+  //left: 50%;
+  //transform: translate(-50%, -50%);
+}
+#bridgeContainer figcaption {
+  margin-top: 2rem;
+}

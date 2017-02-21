@@ -1,0 +1,80 @@
+#pendulum{
+  //width: 15px;
+  //height: 150px;
+  margin: -10px auto 0;
+  //position: relative;
+  //z-index: 1;
+  -webkit-animation: pendulum 2s cubic-bezier(.57,.07,.47,.84) infinite;
+  -moz-animation: pendulum 2s cubic-bezier(.57,.07,.47,.84) infinite;
+  animation: pendulum 2s cubic-bezier(.57,.07,.47,.84) infinite;
+  //transform-origin: 0 0 0;
+  //-webkit-transform-origin: 0 0 0;
+  //-moz-transform-origin: 0 0 0;
+  transform-origin: 20% 0%;
+  background: red; /* Old browsers */
+
+
+  position: absolute;
+  background: url("../img/saliva.png") no-repeat;
+  background-size: contain;
+  top: -15.6vw;
+  right: 25vw;
+  z-index: 10;
+  width: 4vw;
+  height: 17vw;
+}
+
+/*pendulum animation*/
+@-webkit-keyframes pendulum {
+  0%{
+    -webkit-transform: rotate(-10deg);
+  }
+  50%{
+    -webkit-transform: rotate(10deg);
+  }
+  100%{
+    -webkit-transform: rotate(-10deg);
+  }
+}
+@-moz-keyframes pendulum {
+  0%{
+    -moz-transform: rotate(-10deg);
+  }
+  50%{
+    -moz-transform: rotate(10deg);
+  }
+  100%{
+    -moz-transform: rotate(-10deg);
+  }
+}
+@keyframes pendulum {
+  0%{
+    transform: rotate(-10deg);
+  }
+  50%{
+    transform: rotate(10deg);
+  }
+  100%{
+    transform: rotate(-10deg);
+  }
+}
+
+#pendulum.off {
+  -moz-animation-name: none;
+  -webkit-animation-name: none;
+  -ms-animation-name: none;
+  animation-name: none;
+}
+
+.green {
+  //width: 379px !important;
+  //height: 228px !important;
+
+  //width: 30vw !important;
+  //height: 228px !important;
+  //right: 8vw !important;
+  //
+  //background: url("../img/splash.png") no-repeat !important;
+  //background-size: contain !important;
+  background: transparent !important;
+}

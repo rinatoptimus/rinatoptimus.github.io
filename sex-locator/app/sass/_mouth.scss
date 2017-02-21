@@ -25,35 +25,16 @@
 .skin-dark {
   background-color: $skin-dark;
 }
-.saliva {
-  //position: absolute;
-  //right: 164px;
-  //bottom: -16px;
-  //width: 35px;
-  //height: 326px;
-  //background: url('../img/saliva.png') no-repeat;
-  //background-size: contain;
-  //
-  //top: -16.1vw;
-  //right: 27vw;
-  //z-index: 10;
-
-
-  position: absolute;
-  //bottom: -16px;
-  width: 35px;
-  background: url("../img/saliva.png") no-repeat;
-  background-size: contain;
-  top: -16.1vw;
-  right: 27vw;
-  z-index: 10;
-
-  top: -16.1vw;
-  right: 24.8vw;
-  z-index: 10;
-  width: 4vw;
-  height: 17vw;
-}
+//.saliva {
+//  position: absolute;
+//  background: url("../img/saliva.png") no-repeat;
+//  background-size: contain;
+//  top: -16.1vw;
+//  right: 24.8vw;
+//  z-index: 10;
+//  width: 4vw;
+//  height: 17vw;
+//}
 .block-btn-back {
   position: absolute;
   bottom: 41px;

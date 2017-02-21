@@ -14,14 +14,14 @@
   background-position: center;
   background-size: contain;
   @include tablet {
-    max-height: 861px;
-    max-width: 1692px;
-    position: relative;
-    margin: 0 auto;
-    padding-top: 45%;
-    background: url('../img/bg-tits-without-letters.png') no-repeat;
-    background-position: center;
-    background-size: contain;
+    max-height: 861px !important;
+    max-width: 1692px !important;
+    position: relative !important;
+    margin: 0 auto !important;
+    padding-top: 45% !important;
+    background: url('../img/bg-tits-without-letters.png') no-repeat !important;
+    background-position: center !important;
+    background-size: contain !important;
   }
 }
 .probability-numbers {

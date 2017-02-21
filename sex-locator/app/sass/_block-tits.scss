@@ -1,12 +1,6 @@
+/* -------------- WOMAN BEGIN -------------- */
 .block-tits {
-  //max-width: 1692px;
-  //height: 861px;
-  //margin: 0 auto;
-  //
-  //background-size: contain;
-
   max-height: 861px;
-  //max-width: 1692px;
   position: relative;
   margin: 0 auto;
   padding-top: 45%;
@@ -62,3 +56,72 @@
 .probability-text {
   font-family: 'Roboto', 'Arial', sans-serif;
 }
+/* -------------- WOMAN END -------------- */
+
+/* -------------- MAN BEGIN -------------- */
+.block-tits-man {
+  max-height: 861px;
+  position: relative;
+  margin: 0 auto;
+  padding-top: 45%;
+  background: url('../img/bg-tits-man.png') no-repeat;
+  background-position: center;
+  background-size: contain;
+  @include tablet {
+    max-height: 861px !important;
+    max-width: 1692px !important;
+    position: relative !important;
+    margin: 0 auto !important;
+    padding-top: 45% !important;
+    background: url('../img/bg-tits-man-without-letters.png') no-repeat !important;
+    background-position: center !important;
+    background-size: contain !important;
+  }
+}
+
+.probability-numbers {
+  position: relative;
+  z-index: 40;
+  bottom: 30vw;
+}
+.number-badoo-man {
+  position: absolute;
+  top: 21vw;
+  left: 29.6vw;
+  font-size: 4.3vw;
+  color: $btn-yes-first;
+  @include phone-probability-numbers {
+    top: 21vw;
+    left: 30vw;
+  }
+}
+.number-here-man {
+  position: absolute;
+  top: 22vw;
+  right: 30vw;
+  font-size: 4.3vw;
+  color: $btn-yes-first;
+  @include phone-probability-numbers {
+    top: 22vw;
+    right: 30vw;
+  }
+}
+.probability {
+  display: none;
+  margin-top: -51px;
+  @include tablet {
+    display: block;
+  }
+}
+.probability-text {
+  font-family: 'Roboto', 'Arial', sans-serif;
+}
+
+.man-probability {
+  position: absolute;
+  top: 80px;
+  @include phone-lg {
+    top: 49px;
+  }
+}
+/* -------------- MAN END -------------- */

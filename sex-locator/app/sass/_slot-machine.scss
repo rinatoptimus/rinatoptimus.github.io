@@ -62,6 +62,8 @@
 
 
   height: 140px;
+
+
   margin: 10px;
   margin-right: 12px;
   background-color: #FFF;
@@ -74,6 +76,9 @@
   -o-animation: spin 3s linear 0s infinite;
   -ms-animation: spin 3s linear 0s infinite;
   animation: spin 3s linear 0s infinite;
+  @include tablet {
+    height: 110px; // 1111
+  }
 }
 #equation .spinner:before {
   content: '';
@@ -83,6 +88,7 @@
   left: -10px;
   width: 120px;
   height: 160px;
+
   border-radius: 10px;
   background-color: #333;
   background-image: -webkit-linear-gradient(#666 0%, #333 60%, #666 100%);
@@ -90,6 +96,9 @@
   background-image: -ms-linear-gradient(#666 0%, #333 60%, #666 100%);
   background-image: -o-linear-gradient(#666 0%, #333 60%, #666 100%);
   box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.2);
+  @include tablet {
+    height: 130px; // 1111
+  }
 }
 #equation .drink {
   background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.6) 0%, transparent 15%, transparent 85%, rgba(0, 0, 0, 0.6) 100%), url("http://media.balsamiq.com/img/hashtaghot/drinks.jpg");
@@ -99,6 +108,10 @@
   width: 80px;
   background-size: 80px auto;
   background-position: 0, 0 20px;
+
+  @include tablet {
+    background-position: 0, 0 10px; // 1111
+  }
 }
 #equation .drink:before {
   width: 100px;
@@ -127,6 +140,58 @@
 #equation.seven .drink {
   background-position: 0, 0 -2280px;
 }
+
+
+#equation.zero .drink {
+  @include tablet {
+    background-position: 0, 0 -1590px;
+  }
+}
+#equation.one .drink {
+
+  @include tablet {
+    background-position: 0, 0 -1690px;
+  }
+}
+#equation.two .drink {
+
+  @include tablet {
+    background-position: 0, 0 -1790px;
+  }
+}
+#equation.three .drink {
+
+  @include tablet {
+    background-position: 0, 0 -1890px;
+  }
+}
+#equation.four .drink {
+
+  @include tablet {
+    background-position: 0, 0 -1990px;
+  }
+}
+#equation.five .drink {
+
+  @include tablet {
+    background-position: 0, 0 -2090px;
+  }
+}
+#equation.six .drink {
+
+  @include tablet {
+    background-position: 0, 0 -2190px;
+  }
+}
+#equation.seven .drink {
+
+  @include tablet {
+    background-position: 0, 0 -2290px;
+  }
+}
+
+
+
 #equation.done .spinner {
   -webkit-animation: none;
   -moz-animation: none;
@@ -254,6 +319,7 @@
 /* -------------- MY STYLE -------------- */
 .block-slot-machine {
   position: absolute;
+  z-index: 30;
   top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -274,7 +340,8 @@
   }
   @include phone-lg {
     width: 230px;
-    height: 260px;
+    height: 205px;
+    margin-top: -15px;
   }
 }
 #equation {
@@ -291,14 +358,19 @@
     top: 33%;
   }
   @include phone-xl {
-    top: 32%;
+    top: 31%;
   }
 }
 .bg-slot-machine-text {
+  //position: absolute;
+  z-index: 10;
   background-color: $yellow;
   font-size: 19px;
   font-family: 'Roboto', 'Arial', sans-serif;
-  @include col-btn-yes {
-    font-size: 16px;
+  @include tablet {
+    font-size: 11px;
   }
+  //@include phone-md {
+  //  font-size: 11px;
+  //}
 }

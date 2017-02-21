@@ -4,6 +4,7 @@ $timer: 330px;
 $phone: 375px;
 $phone-probability-numbers: 398px;
 $phone-md: 455px;
+$underpants: 459px;
 $phone-lg: 570px;
 $phone-xl: 700px;
 $tablet: 767px;
@@ -43,6 +44,11 @@ $btn-search: 1880px;
 }
 @mixin phone-md {
   @media (max-width: #{$phone-md + 1px}) {
+    @content;
+  }
+}
+@mixin underpants {
+  @media (max-width: #{$underpants - 1px}) {
     @content;
   }
 }

@@ -27,6 +27,7 @@
   margin: 0 auto;
   background: url('../img/body-man.png') no-repeat;
   background-size: contain;
+  overflow: hidden;
   //@include phone-probability-numbers {
   @include phone-md {
     min-height: 285px;
@@ -34,7 +35,22 @@
     background-position: center;
   }
 }
+
+
 .underpants {
-  visibility: hidden;
+  //visibility: hidden;
+  position: relative;
+  z-index: 20;
+  opacity: .5;
+  //@include phone-md {
+  //  //min-height: 285px;
+  //  //background-size: cover;
+  //  //background-position: center;
+  //}
+  @include underpants {
+    width: 146%;
+    margin-left: -23vw;
+  }
+
 }
 /* -------------- MAN END -------------- */

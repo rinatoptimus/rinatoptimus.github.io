@@ -8,7 +8,8 @@
   max-width: 190px;
   height: auto;
   cursor:  crosshair;
-  cursor: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/circular-cursor.png) 53 53, crosshair;
+  //cursor: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/circular-cursor.png) 53 53, crosshair;
+  cursor: url('../img/rouble.png') 53 53, crosshair;
 }
 #bridgeContainer {
   text-align: center;
@@ -22,7 +23,7 @@
   max-width: 1392px;
   height: 14vw;
   //height: 257px;
-  background: url('../img/bg-ticket.png') no-repeat;
+  background: url('../img/bg-ticket-wide.png') no-repeat;
   //background-size: contain;
 
   min-height: 13vw;
@@ -47,4 +48,50 @@
 }
 #bridgeContainer figcaption {
   margin-top: 2rem;
+}
+
+// my styles
+#bridgeContainer {
+  //top: 56%;
+  //left: 50%;
+  //transform: translate(-50%, 120%);
+  //right: 50%;
+  padding-top: 7.4vw;
+  padding-left: 3vw;
+
+  text-align: center;
+  font-family: Avenir, sans-serif;
+  position: relative;
+  margin: 0 auto;
+  top: 330px;
+  margin-bottom: -14vw;
+  max-width: 1392px;
+  height: 257px;
+  background: url("../img/bg-ticket-wide.png") no-repeat;
+  min-height: 13vw;
+  background-size: cover;
+  background-position: center;
+  @include large-desktop-sm {
+    padding-top: 8.4vw;
+  }
+  @include leggy {
+    top: 24vw;
+    padding-top: 8.9vw;
+  }
+  @include break-twelve {
+    top: 20vw;
+  }
+  @include col-btn-yes {
+    top: 23vw;
+    height: 176px;
+  }
+  @include tablet {
+    top: 20vw;
+  }
+  @include phone-md {
+    top: 10vw;
+  }
+  @include phone-probability-numbers {
+    top: 3vw;
+  }
 }

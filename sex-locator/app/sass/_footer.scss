@@ -236,6 +236,9 @@ img{
   @include bg-footer-first {
     margin-top: -185px;
   }
+  @include phone-probability-numbers {
+    margin-top: -264px;
+  }
 }
 .block-leg {
   position: relative;
@@ -244,7 +247,7 @@ img{
   margin-top: 200px;
 }
 .leggy {
-  margin-top: 93px;
+  margin-top: 103px;
   @include leggy {
     visibility: hidden;
   }
@@ -252,4 +255,7 @@ img{
 .block-congratulation {
   position: absolute;
   top: 100px;
+  @include phone-probability-numbers {
+    top: -70px;
+  }
 }

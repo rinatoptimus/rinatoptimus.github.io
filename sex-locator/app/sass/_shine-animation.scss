@@ -1,0 +1,23 @@
+button.shine-animation::after{
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  bottom: -50%;
+  left: -50%;
+  background: linear-gradient(to bottom, rgba(229, 172, 142, 0), rgba(255,255,255,0.5) 50%, rgba(229, 172, 142, 0));
+  transform: rotateZ(60deg) translate(-5em, 7.5em);
+}
+button.shine-animation {
+  position: relative;
+  overflow: hidden;
+}
+button.shine-animation::after, button.shine-animation:focus::after {
+  animation: sheen 3s forwards;
+  animation-iteration-count: infinite;
+}
+@keyframes sheen {
+  100% {
+    transform: rotateZ(60deg) translate(1em, -6em);/*sets when animation stops and where*/
+  }
+}

@@ -1,0 +1,15 @@
+.skirt-off {
+  animation: mymove 2s ease-out forwards;
+}
+@keyframes mymove
+{ from {top:0px; opacity: 1;}
+  to {top:1000px; opacity: 0}
+}
+
+.underpants-off {
+  animation: mymove 2s ease-out forwards;
+}
+@keyframes mymove
+{ from {top:0px; opacity: 1;}
+  to {top:1000px; opacity: 0}
+}

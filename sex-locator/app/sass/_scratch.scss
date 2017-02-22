@@ -1,16 +1,25 @@
 #bridge {
   display: block;
   margin: 0 auto;
-  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/calgary-bridge-1943.jpg');
-  background-image: -webkit-image-set(url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/calgary-bridge-1943.jpg') 1x, url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/calgary-bridge-1943-2x.jpg') 2x );
+  //background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/calgary-bridge-1943.jpg');
+  //background-image: -webkit-image-set(url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/calgary-bridge-1943.jpg') 1x, url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/calgary-bridge-1943-2x.jpg') 2x );
+  background-image: url('../img/text-lost.jpg');
+  background-image: -webkit-image-set(url('../img/text-lost.jpg') 1x, url('../img/text-lost.jpg') 2x );
   background-size: cover;
   width: 100%;
   max-width: 190px;
   height: auto;
   cursor:  crosshair;
   cursor: url('../img/rouble.png') 53 53, crosshair;
+  @include large-desktop-lg {
+    max-width: 11vw;
+  }
+  @include col-btn-yes {
+    max-width: 145px;
+  }
 }
 #bridgeContainer {
+  display: none;
   text-align: center;
   font-family: Avenir, sans-serif;
   position: relative;
@@ -31,7 +40,7 @@
 
 // my styles
 #bridgeContainer {
-  padding-top: 7.4vw;
+  padding-top: 6.4vw;
   padding-left: 3vw;
 
   text-align: center;
@@ -39,29 +48,66 @@
   position: relative;
   margin: 0 auto;
   top: 330px;
-  margin-bottom: -14vw;
+  //margin-bottom: -14vw;
+  margin-bottom: -13.4vw;
+
   max-width: 1392px;
-  height: 257px;
+  //height: 257px;
+  height: 13.4vw;
+
   background: url("../img/bg-ticket-wide.png") no-repeat;
   min-height: 13vw;
   background-size: cover;
   background-position: center;
+
+  position: relative;
+  height: 13vw;
+  display: block;
+  @include btn-search {
+    top: 370px;
+  }
+  @include large-desktop-sm {
+    height: 15vw;
+    margin-bottom: -15.4vw;
+  }
+
   @include large-desktop-sm {
     padding-top: 8.4vw;
   }
+  @include large-desktop-xs {
+    margin-bottom: -16.4vw;
+    //margin-bottom: -20.4vw;
+    height: 16vw;
+  }
   @include leggy {
-    top: 24vw;
+    //top: 24vw;
+    top: 27vw;
     padding-top: 8.9vw;
   }
   @include break-twelve {
-    top: 20vw;
+    //top: 20vw;
+    top: 27vw;
   }
   @include col-btn-yes {
     top: 23vw;
     height: 176px;
+    padding-top: 90px;
   }
+  //@include col-btn-yes {
+  //  padding-top: 9.9vw;
+  //}
   @include tablet {
     top: 20vw;
+  }
+  @include phone-xl {
+    margin-bottom: -19.5vw;
+  }
+  @include phone-lg {
+    //margin-bottom: -19.4vw;
+    margin-bottom: -25.8vw;
+  }
+  @include underpants {
+    margin-bottom: -38.4vw;
   }
   @include phone-md {
     top: 10vw;

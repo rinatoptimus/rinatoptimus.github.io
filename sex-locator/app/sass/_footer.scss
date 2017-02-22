@@ -6,7 +6,7 @@
   background-color: $bg-blue;
   color: $white;
   border-top: 10px solid $white;
-  margin-top: -238px;
+  margin-top: -237px;
   @include bg-body {
     border-top: 60px solid $white;
   }
@@ -15,6 +15,9 @@
   }
   @include bg-footer-first {
     margin-top: -185px;
+  }
+  @include col-btn-yes {
+    margin-top: -187px;
   }
   @include phone-probability-numbers {
     //margin-top: -264px;
@@ -225,7 +228,8 @@ html,body{
   margin-top: 266px;
 }
 .leggy {
-  margin-top: 94px;
+  //margin-top: 104px;
+  margin-top: 99px;
   width: 100%;
   @include leggy {
     visibility: hidden;

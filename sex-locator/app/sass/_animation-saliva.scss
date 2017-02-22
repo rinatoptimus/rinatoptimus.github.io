@@ -13,49 +13,67 @@
   transform-origin: 20% 0%;
   background: red; /* Old browsers */
 
-
   position: absolute;
   background: url("../img/saliva.png") no-repeat;
   background-size: contain;
   top: -15.6vw;
-  right: 25vw;
+  right: 24.35vw;
   z-index: 10;
   width: 4vw;
   height: 17vw;
+  @include large-desktop-lg {
+    top: -15.7vw;
+    right: 24.9vw;
+  }
+  @include large-desktop-mini {
+    top: -15.6vw;
+  }
+  @include break-twelve {
+    top: -15.5vw;
+  }
+  @include col-btn-yes {
+    top: -15.3vw;
+  }
+  @include tablet {
+    top: -15vw;
+  }
+  @include phone-md {
+    top: -14vw;
+  }
 }
 
 /*pendulum animation*/
 @-webkit-keyframes pendulum {
   0%{
-    -webkit-transform: rotate(-10deg);
+    -webkit-transform: rotate(-5deg);
   }
   50%{
-    -webkit-transform: rotate(10deg);
+    -webkit-transform: rotate(5deg);
   }
   100%{
-    -webkit-transform: rotate(-10deg);
+    -webkit-transform: rotate(-5deg);
   }
 }
 @-moz-keyframes pendulum {
   0%{
-    -moz-transform: rotate(-10deg);
+    -moz-transform: rotate(-5deg);
   }
   50%{
-    -moz-transform: rotate(10deg);
+    -moz-transform: rotate(5deg);
   }
   100%{
-    -moz-transform: rotate(-10deg);
+    -moz-transform: rotate(-5deg);
   }
 }
 @keyframes pendulum {
   0%{
-    transform: rotate(-10deg);
+    transform: rotate(-5deg);
   }
   50%{
-    transform: rotate(10deg);
+    transform: rotate(5deg);
   }
   100%{
-    transform: rotate(-10deg);
+    transform: rotate(-5deg);
   }
 }
 
@@ -67,14 +85,5 @@
 }
 
 .green {
-  //width: 379px !important;
-  //height: 228px !important;
-
-  //width: 30vw !important;
-  //height: 228px !important;
-  //right: 8vw !important;
-  //
-  //background: url("../img/splash.png") no-repeat !important;
-  //background-size: contain !important;
   background: transparent !important;
 }

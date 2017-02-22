@@ -10,6 +10,9 @@
   font-size: 24px;
   font-family: "CenturyGothicRegular", Arial, sans-serif;
   font-weight: bold;
+  @include leggy {
+    padding-top: 20px;
+  }
 }
 .warning-text {
   max-width: 850px;

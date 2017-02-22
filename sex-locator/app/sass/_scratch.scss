@@ -7,15 +7,18 @@
   width: 100%;
   max-width: 190px;
   height: auto;
+  //transform: rotate(-3deg);
   cursor:  crosshair;
   //cursor: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/circular-cursor.png) 53 53, crosshair;
   cursor: url('../img/rouble.png') 53 53, crosshair;
 }
 #bridgeContainer {
+  display: none;
   text-align: center;
   font-family: Avenir, sans-serif;
 
   position: relative;
+  z-index: 20;
   margin: 0 auto;
   //top: 17vw;
   top: 330px;

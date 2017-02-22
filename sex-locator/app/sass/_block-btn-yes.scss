@@ -1,4 +1,5 @@
 .block-btn-yes {
+  margin-bottom: -1px;
   position: relative;
   padding-top: 37px;
   padding-bottom: 20px;
@@ -70,6 +71,9 @@ p.dont-miss {
   }
   @include phone-md {
     font-size: 30px;
+  }
+  @include phone-probability-numbers {
+    font-size: 25px;
   }
 }
 .btn-yes-first {

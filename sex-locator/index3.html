@@ -151,15 +151,12 @@
             </div>
             <!-- БЛОК ФОРМА ПОИСКА (КОНЕЦ) -->
 
-
             <!-- БЛОК МНОГО (НАЧАЛО) -->
             <div class="block-lot">
                 <div class="col-lg-offset-3 col-md-offset-3 col-sm-offset-3 col-xs-offset-3 col-xs-6 col-xl-6 qwerty">
                     <p>В городе <span>10</span> стерв</p>
                 </div>
-
                 <div class="picture-mouth mouth-lot"></div>
-
                 <div class="col-lg-offset-2 col-md-offset-3 col-sm-offset-3 col-xs-offset-3 col-xs-6 col-xl-6">
                     <div class="block-btn-back">
                         <a href="#"><span class="arrow-back"></span>Вернуться в поиск</a>
@@ -168,16 +165,12 @@
             </div>
             <!-- БЛОК МНОГО (КОНЕЦ) -->
 
-
-
             <!-- БЛОК МАЛО (НАЧАЛО) -->
             <div class="block-little">
                 <div class="col-lg-offset-3 col-md-offset-3 col-sm-offset-3 col-xs-offset-3 col-xs-6 col-xl-6 qwerty">
                     <p>В городе <span>4</span> стервы</p>
                 </div>
-
                 <div class="picture-mouth mouth-little"></div>
-
                 <div class="col-lg-offset-2 col-md-offset-3 col-sm-offset-3 col-xs-offset-3 col-xs-6 col-xl-6">
                     <div class="block-btn-back">
                         <a href="#"><span class="arrow-back"></span>Вернуться в поиск</a>
@@ -186,6 +179,7 @@
             </div>
             <!-- БЛОК МАЛО (КОНЕЦ) -->
 
+            <!-- НЕ УДАЛЯТЬ!!! -->
             <!--<form class="form-horizontal" method="">-->
             <!--<div class="form-group form-inline">-->
             <!--<p for="" class="me col-sm-2 control-label search-input-label search-input-label">Я:</p>-->
@@ -220,6 +214,7 @@
         </div>
 
         <div class="block-btn-yes">
+            <div id="pendulum" class="saliva"></div>
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
@@ -251,16 +246,6 @@
                 <div><p class="number-badoo-man">8</p></div>
                 <div><p class="number-here-man">80</p></div>
             </div>
-            <!--<div class="container">-->
-                <!--<div class="row probability">-->
-                    <!--<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">-->
-                        <!--<p class="probability-text">Вероятность того, что ты завалишь самца на Badoo</p>-->
-                    <!--</div>-->
-                    <!--<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">-->
-                        <!--<p class="probability-text">Вероятность того, что ты найдешь его здесь</p>-->
-                    <!--</div>-->
-                <!--</div>-->
-            <!--</div>-->
         </div>
         <!-- БЛОК ТЕЛО МУЖ (КОНЕЦ) -->
 
@@ -296,12 +281,12 @@
                 </div>
             </div>
         </div>
+
         <div class="wrap">
 
             <!-- БЛОК МУЖСКОЙ ТАЗ С ТРУСАМИ ИЛИ БЕЗ (НАЧАЛО) -->
             <div class="bg-body-man" id="main">
                 <img class="underpants" src="app/img/underpants.png">
-
                 <div class="block-slot-machine">
                     <div class="bg-slot-machine-text">
                         <p>Потяни рычаг вниз и, возможно, тебе повезет</p>
@@ -318,21 +303,15 @@
 
             <!-- БЛОК ЖЕНСКИЙ ТАЗ С ЮБКОЙ ИЛИ БЕЗ (НАЧАЛО) -->
             <div class="bg-body" id="main">
-
-
-
                 <div id="bridgeContainer">
                     <canvas id="bridge"></canvas>
                 </div>
-
-
-
                 <img class="skirt" src="app/img/skirt.png">
                 <div class="block-leg">
                     <img class="leggy" src="app/img/leg.png">
                     <div class="container block-congratulation">
                         <div class="row">
-                            <div class="col-lg-offset-1 col-lg-11">
+                            <div class="col-lg-offset-2 col-lg-10 col-lucky">
                                 <h4 class="title-lucky text-left">Ты счастливчик!</h4>
                                 <p class="form-text text-left">Оставь свои контакты и через неделю мы пришлём тебе 100% вариант и "презик"</p>
                             </div>
@@ -382,8 +361,6 @@
                         </div>
                     </div>
                 </div>
-
-
 
                  <!--BLOCK ПРОИГРАЛ-->
                 <div class="block-lost">
@@ -445,42 +422,6 @@
         <script src="app/js/flipclock.js"></script>
         <script src="app/js/flipclock-init.js"></script>
         <script src="app/js/slot-machine.js"></script>
-        <script>
-            //$(document).ready(function(){
-                (function( $ ) {
-
-//                    $(function() {
-//                        $( "#stop" ).click(function() {
-//                            $( "#pendulum" ).addClass( "off" ).animate({
-//                                top: '10px'
-//                            }, 450, function() {
-//                                $(this).addClass("green");
-//                            });
-//
-//                            setTimeout(function(){
-//                                $('.block-tits').css('background-image', 'url(app/img/bg-tits-splash.png)');
-//                            }, 430);
-//                        });
-//                    });
-
-                    $(function() {
-                        $( "#stop" ).click(function() {
-                            $( "#pendulum" ).addClass( "off" ).animate({
-                                top: '10px'
-                            }, 450, function() {
-                                $(this).addClass("green");
-                            });
-
-                            setTimeout(function(){
-                                $('.block-tits').css('background-image', 'url(app/img/bg-tits-splash.png)');
-                            }, 430);
-                        });
-                    });
-
-                })( jQuery );
-            //});
-        </script>
-
         <script src="app/js/scratch.js"></script>
     </body>
 </html>

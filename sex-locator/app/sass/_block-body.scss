@@ -16,7 +16,8 @@
   //padding-top: 50%;
 }
 .skirt {
-  visibility: hidden;
+  position: relative;
+  z-index: 30;
 }
 
 /* -------------- MAN BEGIN -------------- */

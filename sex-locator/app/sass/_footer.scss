@@ -25,6 +25,7 @@
 .form-footer {
   //margin-top: -339px;
   margin-top: -344px; // 1111
+  margin-left: 7vw;
     .form-group {
       //margin-bottom: 54px;
       margin-bottom: 42px; // 1111
@@ -43,7 +44,7 @@
   }
 }
 .block-stripes {
-  margin-top: 27px;
+  margin-top: 55px;
 }
 .footer-input {
   max-width: 500px;
@@ -95,7 +96,7 @@
 .footer-input:focus:-ms-input-placeholder      {color: transparent}
 
 .share-text {
-  margin-top: -23px;
+  margin-top: -13px;
   margin-bottom: 21px;
   font-size: 48px;
   font-family: "CenturyGothicRegular";
@@ -257,5 +258,12 @@ img{
   top: 100px;
   @include phone-probability-numbers {
     top: -70px;
+  }
+}
+.col-lucky {
+  padding-top: 60px;
+  padding-left: 69px;
+  @include phone-lg {
+    padding-left: 15px;
   }
 }

@@ -37,8 +37,12 @@
 .logo-pharm-linker {
   width: 237px;
   height: 81px;
+  margin-left: 24px;
   background: url('../img/logo-pharm-linker.png') no-repeat;
   //background-size: contain;
+  @include break-twelve {
+    margin-left: 0;
+  }
   @include phone-xl {
     //background-size: 70%;
     width: auto;

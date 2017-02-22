@@ -28,7 +28,6 @@
   background: url('../img/body-man.png') no-repeat;
   background-size: contain;
   overflow: hidden;
-  //@include phone-probability-numbers {
   @include phone-md {
     min-height: 285px;
     background-size: cover;
@@ -40,13 +39,7 @@
 .underpants {
   //visibility: hidden;
   position: relative;
-  z-index: 20;
-  opacity: .5;
-  //@include phone-md {
-  //  //min-height: 285px;
-  //  //background-size: cover;
-  //  //background-position: center;
-  //}
+  z-index: 30;
   @include underpants {
     width: 146%;
     margin-left: -23vw;

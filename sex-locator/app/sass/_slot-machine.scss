@@ -101,10 +101,12 @@
   }
 }
 #equation .drink {
-  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.6) 0%, transparent 15%, transparent 85%, rgba(0, 0, 0, 0.6) 100%), url("http://media.balsamiq.com/img/hashtaghot/drinks.jpg");
-  background-image: -moz-linear-gradient(rgba(0, 0, 0, 0.6) 0%, transparent 15%, transparent 85%, rgba(0, 0, 0, 0.6) 100%), url("http://media.balsamiq.com/img/hashtaghot/drinks.jpg");
-  background-image: -ms-linear-gradient(rgba(0, 0, 0, 0.6) 0%, transparent 15%, transparent 85%, rgba(0, 0, 0, 0.6) 100%), url("http://media.balsamiq.com/img/hashtaghot/drinks.jpg");
-  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.6) 0%, transparent 15%, transparent 85%, rgba(0, 0, 0, 0.6) 100%), url("http://media.balsamiq.com/img/hashtaghot/drinks.jpg");
+  //background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.6) 0%, transparent 15%, transparent 85%, rgba(0, 0, 0, 0.6) 100%), url("http://media.balsamiq.com/img/hashtaghot/drinks.jpg");
+  //background-image: -moz-linear-gradient(rgba(0, 0, 0, 0.6) 0%, transparent 15%, transparent 85%, rgba(0, 0, 0, 0.6) 100%), url("http://media.balsamiq.com/img/hashtaghot/drinks.jpg");
+  //background-image: -ms-linear-gradient(rgba(0, 0, 0, 0.6) 0%, transparent 15%, transparent 85%, rgba(0, 0, 0, 0.6) 100%), url("http://media.balsamiq.com/img/hashtaghot/drinks.jpg");
+  //background-image: -o-linear-gradient(rgba(0, 0, 0, 0.6) 0%, transparent 15%, transparent 85%, rgba(0, 0, 0, 0.6) 100%), url("http://media.balsamiq.com/img/hashtaghot/drinks.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6) 0%, transparent 15%, transparent 85%, rgba(0, 0, 0, 0.6) 100%), url("http://media.balsamiq.com/img/hashtaghot/drinks.jpg");
+
   width: 80px;
   background-size: 80px auto;
   background-position: 0, 0 20px;
@@ -319,7 +321,7 @@
 /* -------------- MY STYLE -------------- */
 .block-slot-machine {
   position: absolute;
-  z-index: 30;
+  z-index: 20;
   top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);

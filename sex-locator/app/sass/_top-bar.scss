@@ -1,3 +1,4 @@
+/* ----------------- ВЕРХНИЕ ЛОГО (НАЧАЛО) ----------------- */
 .top-bar {
   padding-top: 71px;
   padding-bottom: 71px;
@@ -20,39 +21,22 @@
   width: 237px;
   height: 81px;
   background: url('../img/logo-my-linker.png') no-repeat;
-  //background-size: contain;
   @include phone-xl {
-    //background-size: 70%;
     width: auto;
     background-size: contain;
   }
-  //@include phone-md {
-  //  height: 65px;
-  //  background-size: 50%;
-  //}
-  //@include phone {
-  //  background-size: 40%;
-  //}
 }
 .logo-pharm-linker {
   width: 237px;
   height: 81px;
   margin-left: 24px;
   background: url('../img/logo-pharm-linker.png') no-repeat;
-  //background-size: contain;
   @include break-twelve {
     margin-left: 0;
   }
   @include phone-xl {
-    //background-size: 70%;
     width: auto;
     background-size: contain;
   }
-  //@include phone-md {
-  //  height: 65px;
-  //  background-size: 50%;
-  //}
-  //@include phone {
-  //  background-size: 40%;
-  //}
 }
+/* ----------------- ВЕРХНИЕ ЛОГО (КОНЕЦ) ----------------- */

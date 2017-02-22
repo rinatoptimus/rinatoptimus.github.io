@@ -1,3 +1,4 @@
+/* -------------- АНИМАЦИЯ ТАЙМЕРА (НАЧАЛО) -------------- */
 /* Get the bourbon mixin from http://bourbon.io */
 /* Reset */
 .flip-clock-wrapper * {
@@ -37,7 +38,7 @@
 
 /* Main */
 .flip-clock-wrapper {
-    font: normal 11px "Helvetica Neue", Helvetica, sans-serif;
+    font: normal 11px "Helvetica Neue", Helvetica, Arial, sans-serif;
     -webkit-user-select: none; }
 
 .flip-clock-meridium {
@@ -449,24 +450,7 @@
     text-transform: uppercase;
 }
 
-// for responsive
-//.flip-clock-wrapper {
-//    margin: 0;
-//}
-//.flip-clock-wrapper .flip {
-//    width: 10px;
-//    margin: 2px;
-//}
-//.flip-clock-wrapper ul li a div div.inn {
-//    font-size: 40px;
-//}
-//.flip-clock-divider {
-//    width: 13px;
-//}
-//.flip-clock-divider .flip-clock-label {
-//    right: -70px;
-//    bottom: 20px;
-//}
+// для респонсивности
 .flip  {
     @include tablet {
         width: 43px;
@@ -479,9 +463,6 @@
         max-width: 475px;
     }
     @include phone-lg {
-        //margin-right: -10px;
-        //margin-left: -10px;
-
         max-width: 305px;
         margin-right: auto;
         margin-left: auto;
@@ -517,3 +498,4 @@
         right: -77px;
     }
 }
+/* -------------- АНИМАЦИЯ ТАЙМЕРА (КОНЕЦ) -------------- */

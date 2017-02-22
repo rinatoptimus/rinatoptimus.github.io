@@ -46,20 +46,8 @@ p.dont-miss {
   }
 }
 .yes-btn-text {
-  //margin-top: 60px;
-  //line-height: 27px;
   font-size: 50px;
   font-family: "CenturyGothicRegular", Arial, sans-serif;
-  //@include tablet {
-  //  text-align: center;
-  //}
-  //@include break-twelve {
-  //  font-size: 35px;
-  //}
-  //@include phone-md {
-  //  font-size: 30px;
-  //}
-
   @include break-twelve {
     font-size: 35px;
   }
@@ -99,8 +87,6 @@ p.dont-miss {
   }
 }
 .btn-yes-second {
-  //margin-top: -3px;
-  //padding: 28px 176px;
   margin-top: -3px;
   margin-left: 42px;
   padding: 33px 190px;

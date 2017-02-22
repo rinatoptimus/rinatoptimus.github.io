@@ -7,47 +7,24 @@
   width: 100%;
   max-width: 190px;
   height: auto;
-  //transform: rotate(-3deg);
   cursor:  crosshair;
-  //cursor: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/circular-cursor.png) 53 53, crosshair;
   cursor: url('../img/rouble.png') 53 53, crosshair;
 }
 #bridgeContainer {
   display: none;
   text-align: center;
   font-family: Avenir, sans-serif;
-
   position: relative;
   z-index: 20;
   margin: 0 auto;
-  //top: 17vw;
   top: 330px;
   margin-bottom: -14vw;
   max-width: 1392px;
   height: 14vw;
-  //height: 257px;
   background: url('../img/bg-ticket-wide.png') no-repeat;
-  //background-size: contain;
-
   min-height: 13vw;
   background-size: contain;
   background-position: center;
-  @include btn-search {
-
-  }
-  @include leggy {
-    //top: 24vw;
-  }
-
-
-  //width: 100%;
-  //vertical-align: middle;
-  //display: inline-block;
-  //height: 14vw;
-  //position: absolute;
-  //top: 81%;
-  //left: 50%;
-  //transform: translate(-50%, -50%);
 }
 #bridgeContainer figcaption {
   margin-top: 2rem;
@@ -55,10 +32,6 @@
 
 // my styles
 #bridgeContainer {
-  //top: 56%;
-  //left: 50%;
-  //transform: translate(-50%, 120%);
-  //right: 50%;
   padding-top: 7.4vw;
   padding-left: 3vw;
 

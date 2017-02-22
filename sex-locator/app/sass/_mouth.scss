@@ -1,12 +1,6 @@
 .bg-skin {
   position: relative;
   overflow: hidden;
-  //background-color: $skin;
-    //.bg-shadow {
-    //  //height: 1077px;
-    //  height: 1073px;
-    //  border-radius: 0;
-    //}
     form {
       position: absolute;
       top: 67px;
@@ -25,16 +19,7 @@
 .skin-dark {
   background-color: $skin-dark;
 }
-//.saliva {
-//  position: absolute;
-//  background: url("../img/saliva.png") no-repeat;
-//  background-size: contain;
-//  top: -16.1vw;
-//  right: 24.8vw;
-//  z-index: 10;
-//  width: 4vw;
-//  height: 17vw;
-//}
+
 .block-btn-back {
   position: absolute;
   bottom: 43px;
@@ -45,7 +30,6 @@
   }
   a {
     padding: 5px 5px 5px 2px;
-    //font-size: 48px;
     font-size: 2.5vw;
     font-family: "CenturyGothicRegular", Arial, sans-serif;
     color: $black;
@@ -63,11 +47,7 @@
 .arrow-back {
   position: relative;
   display: inline-block;
-  //top: 12px;
   margin-right: 16px;
-  //width: 77px;
-  //height: 60px;
-
   top: 0.9vw;
   width: 4vw;
   height: 3.2vw;
@@ -101,13 +81,6 @@ div.picture-mouth.mouth-search {
   display: none;
 }
 .mouth-lot {
-  //position: relative;
-  //max-width: 1200px;
-  //height: 1073px;
-  //margin: 0 auto;
-  //background: url('../img/mouth-lot.jpg') no-repeat;
-  //background-size: contain;
-  //display: none;
   background: url('../img/mouth-lot.jpg') no-repeat;
   background-position: center;
   background-size: contain;
@@ -200,7 +173,6 @@ div.picture-mouth.mouth-search {
     float: none;
   }
   @include tablet {
-    //float: none;
     margin-left: 65px;
   }
     li {
@@ -326,15 +298,7 @@ label.label-dogs {
 }
 
 /* ------------------- MOUTH-LITTLE (РОТ МАЛО) ------------------- */
-.block-little {
-  //display: none;
-}
 .mouth-little {
-  //position: relative;
-  //left: 7px;
-  //max-width: 1200px;
-  //height: 1073px;
-  //margin: 0 auto;
   margin-bottom: -1px;
   margin-left: 15px;
   background: url('../img/mouth-little.jpg') no-repeat;
@@ -343,8 +307,6 @@ label.label-dogs {
   @include btn-search {
     margin-left: 0;
   }
-  //background-size: contain;
-  //display: none;
 }
 
 /* ------------------- Чекбокс Я ------------------- */

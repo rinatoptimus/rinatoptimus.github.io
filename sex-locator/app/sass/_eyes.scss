@@ -43,53 +43,6 @@
   background: url('../img/eye-right.png') no-repeat;
 }
 
-
-
-// eyes animation
-
-//#follower{
-//  position: relative;
-//  width: 675px;
-//  height: 132px;
-//  border-radius: 50px;
-//}
-//.eye {
-//  width: 15px;
-//  height: 15px;
-//  background-color: black;
-//  border-radius: 15px;
-//  position: absolute;
-//}
-//.left {
-//  left: 0;
-//  width: 141px;
-//  height: 140px;
-//  background: url('../img/pupil-left.png') no-repeat;
-//  background-size: 80%;
-//}
-//.right {
-//  right: 0;
-//  width: 141px;
-//  height: 140px;
-//  background: url('../img/pupil-right.png') no-repeat;
-//  background-size: 80%;
-//}
-//.centerdiv {
-//  width: 200px;
-//  margin-left:auto;
-//  margin-right:auto;
-//  position:relative;
-//}
-//.cont {
-//  width: 712px;
-//  height: 165px;
-//  position: absolute;
-//  top: 148px;
-//  left: -260px;
-//  overflow: hidden;
-//}
-
-
 #follower{
   position: relative;
   width: 675px;
@@ -141,9 +94,6 @@
   top: 148px;
   left: -260px;
   overflow: hidden;
-
-  //width: 40vw;
-  //left: -13vw;
   width: 41vw;
   left: -13vw;
   @include large-desktop-lg {
@@ -162,7 +112,6 @@
     left: -10.5vw;
   }
 }
-
 
 /* ------------------------- EYES-MOB BEGIN ------------------------- */
 .block-eyes-mob {
@@ -193,14 +142,8 @@
   background: white;
   border-radius: 50%;
   /*Size*/
-  //width: 100px;
-  //height: 100px;
   width: 14vw;
   height: 14vw;
-}
-
-.outer-eye-2 {
-  //left: 50px;
 }
 
 .inner-eye {
@@ -209,12 +152,8 @@
   top: 5vw;
   left: 5vw;
   /*Styling*/
-  //background: #4056f4;
   border-radius: 50%;
   /*Size*/
-  //width: 35px;
-  //height: 35px;
-  //width: 50px;
   width: 8vw;
   height: 50px;
   /*Assigns animation*/
@@ -270,8 +209,6 @@
   background-size: contain;
 }
 .inner-eye-right {
-  //max-width: 50px;
-  //height: 50px;
   max-width: 8vw;
   height: 8vw;
   background: url('../img/pupil-right.png') no-repeat;

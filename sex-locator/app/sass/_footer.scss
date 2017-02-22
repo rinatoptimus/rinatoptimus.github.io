@@ -1,5 +1,4 @@
 .footer-bottom {
-  //margin-top: -226px;
   z-index: -10;
   position: relative;
   padding-top: 40px;
@@ -37,12 +36,10 @@
   background-color: rgba(255, 255, 255, 0.4);
 }
 .form-footer {
-  //margin-top: -339px;
-  margin-top: -344px; // 1111
+  margin-top: -344px;
   margin-left: 7vw;
     .form-group {
-      //margin-bottom: 54px;
-      margin-bottom: 42px; // 1111
+      margin-bottom: 42px;
     }
 }
 .form-text {
@@ -62,7 +59,7 @@
 }
 .footer-input {
   max-width: 500px;
-  height: 46px; // 1111
+  height: 46px;
   background-color: transparent;
   border: none;
   box-shadow: none;
@@ -95,15 +92,6 @@
   color: $white;
 }
 
-//.footer-input::-webkit-input-placeholder       {text-indent: 0; transition: text-indent 0.3s ease;}
-//.footer-input::-moz-placeholder                {text-indent: 0; transition: text-indent 0.3s ease;}
-//.footer-input:-moz-placeholder                 {text-indent: 0; transition: text-indent 0.3s ease;}
-//.footer-input:-ms-input-placeholder            {text-indent: 0; transition: text-indent 0.3s ease;}
-//.footer-input:focus::-webkit-input-placeholder {text-indent: 0; transition: text-indent 0.3s ease;}
-//.footer-input:focus::-moz-placeholder          {text-indent: 0; transition: text-indent 0.3s ease;}
-//.footer-input:focus:-moz-placeholder           {text-indent: 0; transition: text-indent 0.3s ease;}
-//.footer-input:focus:-ms-input-placeholder      {text-indent: 0; transition: text-indent 0.3s ease;}
-
 .footer-input:focus::-webkit-input-placeholder {color: transparent}
 .footer-input:focus::-moz-placeholder          {color: transparent}
 .footer-input:focus:-moz-placeholder           {color: transparent}
@@ -119,7 +107,6 @@
     font-size: 28px;
   }
 }
-
 
 .or {
   margin-bottom: 45px;
@@ -229,12 +216,11 @@ html,body{
 #main{
   width: 100%;
   text-align: center;
-}
-
-img{
-  width: 100%;
-  margin: auto;
-  vertical-align: middle;
+    img{
+      width: 100%;
+      margin: auto;
+      vertical-align: middle;
+    }
 }
 
 .bg-body {

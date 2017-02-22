@@ -1,15 +1,9 @@
+/* -------------- АНИМАЦИЯ СЛЮНЫ (НАЧАЛО) -------------- */
 #pendulum{
-  //width: 15px;
-  //height: 150px;
   margin: -10px auto 0;
-  //position: relative;
-  //z-index: 1;
   -webkit-animation: pendulum 2s cubic-bezier(.57,.07,.47,.84) infinite;
   -moz-animation: pendulum 2s cubic-bezier(.57,.07,.47,.84) infinite;
   animation: pendulum 2s cubic-bezier(.57,.07,.47,.84) infinite;
-  //transform-origin: 0 0 0;
-  //-webkit-transform-origin: 0 0 0;
-  //-moz-transform-origin: 0 0 0;
   transform-origin: 20% 0%;
   background: red; /* Old browsers */
 
@@ -87,3 +81,4 @@
 .green {
   background: transparent !important;
 }
+/* -------------- АНИМАЦИЯ СЛЮНЫ (КОНЕЦ) -------------- */

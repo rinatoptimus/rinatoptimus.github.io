@@ -8,6 +8,10 @@
 .skirt {
   position: relative;
   z-index: 30;
+
+  margin: auto;
+  width: 100%;
+  vertical-align: middle;
 }
 
 /* -------------- MAN BEGIN -------------- */
@@ -28,8 +32,10 @@
   //visibility: hidden;
   position: relative;
   z-index: 30;
+
+  width: 100%;
   @include underpants {
-    width: 146%;
+    width: 148%;
     margin-left: -23vw;
   }
 

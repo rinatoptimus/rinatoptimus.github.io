@@ -17,7 +17,8 @@
     margin-top: -185px;
   }
   @include phone-probability-numbers {
-    margin-top: -264px;
+    //margin-top: -264px;
+    margin-top: -192px;
   }
 }
 .title-lucky {
@@ -213,16 +214,6 @@ html,body{
   height: 100%;
   margin: 0 auto;
 }
-#main{
-  width: 100%;
-  //text-align: center;
-    img{
-      width: 100%;
-      margin: auto;
-      vertical-align: middle;
-    }
-}
-
 
 .bg-body {
   height: auto;
@@ -235,6 +226,7 @@ html,body{
 }
 .leggy {
   margin-top: 94px;
+  width: 100%;
   @include leggy {
     visibility: hidden;
   }
@@ -251,8 +243,12 @@ html,body{
   padding-left: 69px;
   @include tablet {
     padding-top: 30px;
+    padding-top: 20px;
   }
   @include phone-lg {
     padding-left: 15px;
+  }
+  @include phone-probability-numbers {
+    padding-top: 150px;
   }
 }

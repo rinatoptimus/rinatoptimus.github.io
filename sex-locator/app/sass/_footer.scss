@@ -1,11 +1,25 @@
 .footer-bottom {
-  margin-top: -226px;
+  //margin-top: -226px;
   z-index: -10;
   position: relative;
   padding-top: 40px;
   padding-bottom: 60px;
   background-color: $bg-blue;
   color: $white;
+  border-top: 10px solid $white;
+  margin-top: -238px;
+  @include bg-body {
+    border-top: 60px solid $white;
+  }
+  @include bg-footer {
+    margin-top: -196px;
+  }
+  @include bg-footer-first {
+    margin-top: -185px;
+  }
+  @include phone-probability-numbers {
+    margin-top: -264px;
+  }
 }
 .title-lucky {
   padding-bottom: 40px;
@@ -226,21 +240,6 @@ img{
 .bg-body {
   height: auto;
 }
-.footer-bottom {
-  margin-top: -227px;
-  @include bg-body {
-    border-top: 60px solid $white;
-  }
-  @include bg-footer {
-    margin-top: -196px;
-  }
-  @include bg-footer-first {
-    margin-top: -185px;
-  }
-  @include phone-probability-numbers {
-    margin-top: -264px;
-  }
-}
 .block-leg {
   position: relative;
 }
@@ -248,7 +247,7 @@ img{
   margin-top: 200px;
 }
 .leggy {
-  margin-top: 104px;
+  margin-top: 94px;
   @include leggy {
     visibility: hidden;
   }
@@ -263,6 +262,9 @@ img{
 .col-lucky {
   padding-top: 60px;
   padding-left: 69px;
+  @include tablet {
+    padding-top: 30px;
+  }
   @include phone-lg {
     padding-left: 15px;
   }

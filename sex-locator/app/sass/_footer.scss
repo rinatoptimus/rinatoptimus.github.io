@@ -61,12 +61,13 @@
   max-width: 500px;
   height: 46px;
   background-color: transparent;
-  border: none;
+  //border: none;
   box-shadow: none;
   font-size: 30px;
   font-style: italic;
   color: $white;
   text-indent: 10px;
+  border: 1px solid $white;
   @include phone-md {
     font-size: 21px;
   }

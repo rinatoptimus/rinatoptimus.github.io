@@ -1,4 +1,4 @@
-$(document).ready(function () {
+$(function(){
     $('.js-tilt').tilt({
         glare: true,
         maxGlare: .4,

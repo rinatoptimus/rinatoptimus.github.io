@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(function(){
     var drinks = ['zero','one','two','three','four','five','six','seven'],
         prev = -1;
 
@@ -18,5 +18,4 @@ $(document).ready(function(){
             timeout = setTimeout(function() { equation.addClass('done') },3000);
         prev = index;
     }
-
 });

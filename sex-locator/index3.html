@@ -252,7 +252,7 @@
         <div class="wrap">
 
             <!-- БЛОК МУЖСКОЙ ТАЗ С ТРУСАМИ ИЛИ БЕЗ (НАЧАЛО) -->
-            <div class="bg-body-man">
+            <div class="bg-body-man" id="waypoint-underpants">
                 <img class="underpants" src="app/img/underpants.png">
                 <div class="block-slot-machine">
                     <div class="bg-slot-machine-text">
@@ -269,11 +269,12 @@
             <!-- БЛОК МУЖСКОЙ ТАЗ С ТРУСАМИ ИЛИ БЕЗ (КОНЕЦ) -->
 
             <!-- БЛОК ЖЕНСКИЙ ТАЗ С ЮБКОЙ ИЛИ БЕЗ (НАЧАЛО) -->
-            <div class="bg-body">
+            <div class="bg-body" id="waypoint-skirt">
+                <img class="skirt" src="app/img/skirt.png">
                 <div id="bridgeContainer">
                     <canvas id="bridge"></canvas>
                 </div>
-                <img class="skirt" src="app/img/skirt.png">
+
                 <div class="block-leg">
                     <img class="leggy" src="app/img/leg.png">
                     <div class="container block-congratulation">
@@ -384,6 +385,7 @@
         <script src="app/js/scratch.js"></script>
         <script src="app/js/tilt.jquery.min.js"></script>
         <script src="app/js/tilt-init.js"></script>
-        <script src="app/js/clothes-off.js"></script>
+        <script src="app/js/noframework.waypoints.min.js"></script>
+        <script src="app/js/waypoint-custom.js"></script>
     </body>
 </html>

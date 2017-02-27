@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(function(){
     var bridge = document.getElementById("bridge"),
         bridgeCanvas = bridge.getContext('2d'),
         brushRadius = (bridge.width / 50) * 2,

@@ -17,13 +17,7 @@
     margin-top: -185px;
   }
   @include col-btn-yes {
-    //margin-top: -187px;
-    //margin-top: -196px;
     margin-top: -205px;
-  }
-  @include phone-probability-numbers {
-    //margin-top: -264px;
-    //margin-top: -192px;
   }
 }
 .title-lucky {
@@ -230,7 +224,6 @@ html,body{
   margin-top: 266px;
 }
 .leggy {
-  //margin-top: 104px;
   margin-top: 99px;
   width: 100%;
   @include leggy {

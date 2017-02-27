@@ -1,5 +1,5 @@
 #bridge {
-  display: block;
+  //display: block;
   margin: 0 auto;
   //background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/calgary-bridge-1943.jpg');
   //background-image: -webkit-image-set(url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/calgary-bridge-1943.jpg') 1x, url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/calgary-bridge-1943-2x.jpg') 2x );
@@ -17,9 +17,22 @@
   @include col-btn-yes {
     max-width: 145px;
   }
+  @include phone-lg {
+    max-width: 120px;
+  }
+  @include phone-probability-numbers {
+    max-width: 110px;
+  }
 }
+.ticket-desktop {
+  display: block;
+  @include tablet {
+    display: none;
+  }
+}
+
 #bridgeContainer {
-  display: none;
+  //display: none;
   text-align: center;
   font-family: Avenir, sans-serif;
   position: relative;
@@ -29,7 +42,8 @@
   margin-bottom: -14vw;
   max-width: 1392px;
   height: 14vw;
-  background: url('../img/bg-ticket-wide.png') no-repeat;
+  //background: url('../img/bg-ticket-wide.png') no-repeat;
+
   min-height: 13vw;
   background-size: contain;
   background-position: center;
@@ -56,6 +70,8 @@
   height: 13.4vw;
 
   background: url("../img/bg-ticket-wide.png") no-repeat;
+  //background: url('../img/bg-ticket-fields.png') no-repeat;
+
   min-height: 13vw;
   background-size: cover;
   background-position: center;
@@ -63,12 +79,19 @@
   position: relative;
   height: 13vw;
   display: block;
+
+  top: -20vw;
   @include btn-search {
-    top: 370px;
+    //top: 370px;
+  }
+  @include large-desktop-lg {
+    top: -23vw;
   }
   @include large-desktop-sm {
     height: 15vw;
     margin-bottom: -15.4vw;
+
+    top: -25vw;
   }
   @include large-desktop-sm {
     padding-top: 8.4vw;
@@ -78,19 +101,25 @@
     height: 16vw;
   }
   @include leggy {
-    top: 27vw;
+    //top: 27vw;
+    top: -28vw;
     padding-top: 8.9vw;
   }
   @include break-twelve {
-    top: 27vw;
+    //top: 27vw;
   }
   @include col-btn-yes {
-    top: 23vw;
-    height: 176px;
-    padding-top: 90px;
+    //top: 23vw;
+    //top: 23vw;
+    //height: 176px;
+    //padding-top: 90px;
+
+    height: 160px;
+    padding-top: 76px;
   }
   @include tablet {
-    top: 20vw;
+    //top: 20vw;
+    display: none;
   }
   @include phone-xl {
     margin-bottom: -19.5vw;
@@ -106,5 +135,22 @@
   }
   @include phone-probability-numbers {
     top: 3vw;
+  }
+}
+
+
+#bridge-mobile {
+  background: url('../img/text-lost.jpg') no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.ticket-mobile {
+  display: none;
+  width: 25vw;
+  margin: 0 auto;
+  @include tablet {
+    display: block;
+    top: -22vw;
+    position: relative;
   }
 }

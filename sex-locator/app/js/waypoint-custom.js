@@ -3,6 +3,11 @@ $(function(){
         element: document.getElementById('waypoint-skirt'),
         handler: function() {
             $('.skirt').addClass('skirt-off');
+
+            setTimeout(function(){
+                $('.skirt').css('z-index', '-20');
+            }, 2000);
+
         }
     })
 

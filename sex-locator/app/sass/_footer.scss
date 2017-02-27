@@ -72,7 +72,6 @@
     font-size: 21px;
   }
   &:focus {
-    border: none;
     box-shadow: none;
   }
 }
@@ -223,13 +222,15 @@ html,body{
 }
 .block-win {
   margin-top: 266px;
+  border: 1px solid transparent;
 }
 .leggy {
   margin-top: 99px;
   width: 100%;
-  @include leggy {
-    visibility: hidden;
-  }
+  visibility: hidden;
+  //@include leggy {
+  //  visibility: hidden;
+  //}
 }
 .block-congratulation {
   position: absolute;

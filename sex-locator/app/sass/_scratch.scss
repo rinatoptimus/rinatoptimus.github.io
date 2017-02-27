@@ -70,22 +70,18 @@
     height: 15vw;
     margin-bottom: -15.4vw;
   }
-
   @include large-desktop-sm {
     padding-top: 8.4vw;
   }
   @include large-desktop-xs {
     margin-bottom: -16.4vw;
-    //margin-bottom: -20.4vw;
     height: 16vw;
   }
   @include leggy {
-    //top: 24vw;
     top: 27vw;
     padding-top: 8.9vw;
   }
   @include break-twelve {
-    //top: 20vw;
     top: 27vw;
   }
   @include col-btn-yes {
@@ -93,9 +89,6 @@
     height: 176px;
     padding-top: 90px;
   }
-  //@include col-btn-yes {
-  //  padding-top: 9.9vw;
-  //}
   @include tablet {
     top: 20vw;
   }
@@ -103,7 +96,6 @@
     margin-bottom: -19.5vw;
   }
   @include phone-lg {
-    //margin-bottom: -19.4vw;
     margin-bottom: -25.8vw;
   }
   @include underpants {

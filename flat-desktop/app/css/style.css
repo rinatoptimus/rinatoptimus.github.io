@@ -17,7 +17,15 @@
   background: url("../img/geo-mark.png") no-repeat; }
 
 .select-header {
-  width: 60%; }
+  width: 65%;
+  margin-top: -2px;
+  margin-left: 5px;
+  padding: 0;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  font-size: 24px;
+  color: #133665; }
 
 .navbar-toggle .icon-bar-custom {
   background-color: #133665; }

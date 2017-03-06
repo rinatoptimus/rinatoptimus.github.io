@@ -1,5 +1,5 @@
 #bridge {
-  margin: 0 auto;
+  margin: 15px auto 0;
   //background-image: url('../img/text-lost.jpg');
   //background-image: -webkit-image-set(url('../img/text-lost.jpg') 1x, url('../img/text-lost.jpg') 2x );
   //background-size: cover;
@@ -8,11 +8,23 @@
   height: auto;
   cursor:  crosshair;
   cursor: url('../img/rouble.png') 53 53, crosshair;
+  @include large-desktop-sm {
+    margin-top: 0;
+  }
   @include large-desktop-lg {
-    max-width: 11vw;
+    //max-width: 11vw;
+    max-width: 130px;
+    //max-width: 100px;
+    margin-top: 0;
+  }
+  @include break-twelve {
+    max-width: 110px;
+    margin-top: 0;
   }
   @include col-btn-yes {
-    max-width: 145px;
+    //max-width: 145px;
+    max-width: 90px;
+    margin-top: 75px;
   }
   @include phone-lg {
     max-width: 120px;
@@ -32,13 +44,13 @@
   text-align: center;
   position: relative;
   z-index: 20;
-  top: 330px;
+  //top: 330px;
   margin: 0 auto -14vw;
 
   max-width: 1392px;
-  height: 14vw;
+  //height: 14vw;
 
-  min-height: 13vw;
+  //min-height: 13vw;
   background-size: contain;
   background-position: center;
 }
@@ -48,48 +60,76 @@
 
 // my styles
 #bridgeContainer {
-  padding-top: 6.4vw;
-  padding-left: 3vw;
+  //padding-top: 6.4vw;
+  //padding-left: 3vw;
 
   text-align: center;
   font-family: Avenir, sans-serif;
   position: relative;
-  margin-bottom: 0 auto -13.4vw;
+  //margin-bottom: 0 auto -13.4vw;
 
   max-width: 1392px;
 
   background: url("../img/bg-ticket-wide.png") no-repeat;
 
-  min-height: 13vw;
+  //min-height: 13vw;
   background-size: cover;
   background-position: center;
 
   position: relative;
-  height: 13vw;
+  //height: 13vw;
   display: block;
 
-  top: -20vw;
+  //top: -20vw;
 
+
+  top: -80px;
+  margin: -307px auto 0;
+  min-height: 300px;
+  padding-top: 150px;
+  @include desktop {
+    //top: 330px;
+    //margin: 0 auto -14vw;
+    //
+    //max-width: 1392px;
+    //height: 14vw;
+    //
+    //min-height: 13vw;
+  }
   @include large-desktop-lg {
-    top: -23vw;
+    //top: -23vw;
   }
   @include large-desktop-sm {
     height: 15vw;
-    margin-bottom: -15.4vw;
+    //margin-bottom: -15.4vw;
 
-    top: -25vw;
+    //top: -25vw;
   }
   @include large-desktop-sm {
-    padding-top: 8.4vw;
+    //padding-top: 8.4vw;
   }
   @include large-desktop-xs {
-    margin-bottom: -16.4vw;
+    //margin-bottom: -16.4vw;
     height: 16vw;
   }
-  @include leggy {
-    top: -28vw;
-    padding-top: 8.9vw;
+
+  @include large-desktop-mini {
+    background-size: 100%;
+    top: -40px;
   }
+
+
+  @include leggy {
+    //top: -28vw;
+    //padding-top: 8.9vw;
+  }
+  @include break-twelve {
+    padding-top: 150px;
+  }
+  @include bg-footer-first {
+    top: 8px;
+  }
+
   @include col-btn-yes {
     height: 160px;
     padding-top: 76px;

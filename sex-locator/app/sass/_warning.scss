@@ -8,18 +8,28 @@
   padding-top: 44px;
   padding-bottom: 17px;
   background-color: $bg-main;
-  font-size: 24px;
+  //font-size: 24px;
+  font-size: 1.5vw;
   font-family: "CenturyGothicRegular", Arial, sans-serif;
   font-weight: bold;
+  @include desktop {
+    font-size: 24px;
+  }
   @include leggy {
     padding-top: 20px;
   }
 }
 .warning-text {
-  max-width: 850px;
+  //max-width: 850px;
+  max-width: 100%;
   margin: 0 auto 37px;
-  font-size: 16px;
+  //font-size: 16px;
+  font-size: 35px;
   color: $warning-text;
+  @include desktop {
+    max-width: 850px;
+    font-size: 16px;
+  }
 }
 .btn-adult {
   padding: 5px 42px;
@@ -40,16 +50,23 @@
   }
 }
 .btn-adult, .btn-not-adult {
-  max-width: 310px;
+  //max-width: 310px;
   margin-bottom: 40px;
   border: 3px solid $red-border;
   border-radius: 10px;
-  font-size: 24px;
+  //font-size: 24px;
   font-family: 'Roboto', 'Arial', sans-serif;
   color: $grey-dark;
+
+  font-size: 30px;
+  max-width: 400px;
   &:hover {
     background-color: $btn-hover-border;
     border: 3px solid $red-border;
+  }
+  @include desktop {
+    max-width: 310px;
+    font-size: 24px;
   }
 }
 /* ----------------- БЛОК ПРЕДУПРЕЖДЕНИЕ (КОНЕЦ) ----------------- */

@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Flat desktop</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <!--<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -12,29 +13,18 @@
 </head>
 <body>
     <div class="container">
-        <!--<div class="block-header-left">-->
-            <!--<a class="logo" href="#"></a>-->
-            <!--<div class="geo-mark"></div>-->
-            <!--<select class="form-control select-header">-->
-                <!--<option>Казань</option>-->
-                <!--<option>Москва</option>-->
-                <!--<option>Томск</option>-->
-                <!--<option>Бийск</option>-->
-            <!--</select>-->
-        <!--</div>-->
-    </div>
-
-    <div class="container">
         <div class="row">
-            <div class="col-lg-4">
-                <div>
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar icon-bar-custom"></span>
-                        <span class="icon-bar icon-bar-custom"></span>
-                        <span class="icon-bar icon-bar-custom"></span>
-                    </button>
-                    <a class="logo" href="#"></a>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div class="top-block">
+                    <!--<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">-->
+                        <!--<span class="sr-only">Toggle navigation</span>-->
+                        <!--<span class="icon-bar icon-bar-custom"></span>-->
+                        <!--<span class="icon-bar icon-bar-custom"></span>-->
+                        <!--<span class="icon-bar icon-bar-custom"></span>-->
+                    <!--</button>-->
+                    <div class="logo-block">
+                        <a class="logo" href="#"></a>
+                    </div>
                     <div class="block-header-left">
                         <div class="geo-mark"></div>
                         <select class="form-control select-header">
@@ -46,15 +36,21 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-8">
-                <div id="navbar" class="navbar-collapse collapse">
-                    <div class="navbar-right">
-                        <input type="button" value="Создать объявление">
-                        <input type="button" value="Войти">
-                        <a href="#">8 800 505 34 90</a>
-                    </div>
-                </div>
+            <!--<div class="col-lg-8">-->
+                <!--<div id="navbar" class="navbar-collapse collapse">-->
+                    <!--<div class="navbar-right">-->
+                        <!--<a class="btn btn-default" href="#" role="button">Создать объявление</a>-->
+                        <!--<a class="btn btn-default" href="#" role="button">Войти</a>-->
+                        <!--<a href="#">8 800 505 34 90</a>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 btns-phone-block">
+                <a class="btn btn-default btn-create" href="#" role="button">Создать объявление</a>
+                <a class="btn btn-default btn-enter" href="#" role="button">Войти</a>
+                <a href="#" class="phone-number">8 800 505 34 90</a>
             </div>
+
         </div>
     </div>
 
@@ -68,9 +64,9 @@
         </div>
     </div>
 
-    <div class="container container-widget">
+    <div class="container container-widget container-widget-large">
         <div class="row">
-            <div class="col-sm-12 col-xs-12 col-tab">
+            <div class="col-md-offset-2 col-md-12 col-sm-12 col-xs-12 col-tab">
                 <div href="#" class="thumbnail thumbnail-custom">
                     <div class="col-md-12 col-xs-12 col-person">
                         <img class="thumbnail-avatar" src="http://i.imgur.com/Hw1dyoP.png" alt="Generic placeholder thumbnail" />
@@ -121,12 +117,12 @@
                         </p>
                         <p class="bottom-btns-block">
                         </p>
-                        <p class="answer-time">Среднее время ответа хозяина 15 минут</p>
+                        <p class="text-center answer-time">Среднее время ответа хозяина 15 минут</p>
                     </div>
                     <div class="warranty-footer">
                         <i class="fa fa-shield fa-3 media-shield" aria-hidden="true"></i>
                         <h4 class="media-heading media-heading-warranty">Гарантия безопасной сделки</h4>
-                        <ul>
+                        <ul class="warranty-list">
                             <li><i class="fa fa-check-square-o fa-1" aria-hidden="true"></i> Проверка фотографий на уникальность</li>
                             <li><i class="fa fa-check-square-o fa-1" aria-hidden="true"></i> Ваш платеж на сайте <a href="#">застрахован</a></li>
                             <li><i class="fa fa-check-square-o fa-1" aria-hidden="true"></i> Защита покупателей 24/7</li>
@@ -139,7 +135,7 @@
 
     <div class="container">
         <div class="row row-location">
-            <div class="col-lg-2">
+            <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12">
                 <div class="block-header-left">
                     <div class="geo-mark"></div>
                     <select class="form-control select-header">
@@ -150,8 +146,8 @@
                     </select>
                 </div>
             </div>
-            <div class="col-lg-10">
-                <p>ул. Чистопольская, 5</p>
+            <div class="col-lg-10 col-md-10 col-sm-6 col-xs-12">
+                <p class="address">ул. Чистопольская, 5</p>
             </div>
         </div>
     </div>
@@ -197,14 +193,14 @@
         <div class="container container-tabs">
             <div id="responsiveTabsDemo">
                 <ul>
-                    <li><a href="#tab-1">Описание</a></li>
-                    <li><a href="#tab-2">Показать на карте</a></li>
+                    <li><a href="#tab-1"><span class="underlined">Описание</span></a></li>
+                    <li><a href="#tab-2"><span class="underlined">Показать на карте</span> <span class="new">new!</span></a></li>
                 </ul>
                 <div id="tab-1">
                     <div class="row">
-                        <div class="col-lg-8">
+                        <div class="col-lg-8 col-md-8 col-sm-8">
                             <div class="slider">Слайдер</div>
-                            <p>Quisque sodales sodales lacus pharetra bibendum. Etiam commodo non velit ac rhoncus.
+                            <p class="text-justify slider-flat-description">Quisque sodales sodales lacus pharetra bibendum. Etiam commodo non velit ac rhoncus.
                                 Mauris euismod purus sem, ac adipiscing quam laoreet et.
                                 Praesent vulputate ornare sem vel scelerisque.
                                 Ut dictum augue non erat lacinia, sed lobortis elit gravida. Proin ante massa,
@@ -215,10 +211,43 @@
                                 Curabitur tincidunt molestie turpis, ut luctus nibh sollicitudin vel.
                                 Sed vel luctus nisi, at mattis metus. Aenean ultricies dolor est, a congue ante dapibus varius.
                                 Nulla at auctor nunc. Curabitur accumsan feugiat felis ut pretium.
-                                Praesent semper semper nisi, eu cursus augue.</p>
+                                Praesent semper semper nisi, eu cursus augue.
+                            </p>
+
+                            <h2 class="additional-info-title">Дополнительная информация</h2>
+                            <hr class="additional-info">
+                            <table class="table table-condensed table-additional-info">
+                                <tr>
+                                    <th>Тип жилья</th>
+                                    <th>Дополнительно</th>
+                                </tr>
+                                <tr>
+                                    <td>Квартира</td>
+                                    <td>Стиральная машина</td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">Тип размещения</th>
+                                    <th>Минимальная стоимость бронирования</th>
+                                </tr>
+                                <tr>
+                                    <td>Общая комната</td>
+                                    <td>1</td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">Вмещает гостей</th>
+                                    <th>Количество комнат</th>
+                                </tr>
+                                <tr>
+                                    <td>Гостей <span>20+</span></td>
+                                    <td>4</td>
+                                </tr>
+                            </table>
                         </div>
                     </div>
                 </div>
+
                 <div id="tab-2">
                     <div class="row">
                         <div class="col-lg-8">
@@ -228,6 +257,85 @@
                         </div>
                     </div>
                 </div>
+
+
+
+
+                <!-- Виджет, который появ-ся при экране < 1650px (начало) -->
+                <div class="container container-widget container-widget-small">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 col-xs-12 col-tab">
+                            <div href="#" class="thumbnail thumbnail-custom">
+                                <div class="col-md-12 col-xs-12 col-person">
+                                    <img class="thumbnail-avatar" src="http://i.imgur.com/Hw1dyoP.png" alt="Generic placeholder thumbnail" />
+                                    <ul class="person-name">
+                                        <li class="owner-name">Ильфат</li>
+                                        <li class="owner-status">(частное лицо)</li>
+                                        <li class="li-all-variants">
+                                            <a class="show-all-variants" href="#">Посмотреть все варианты хозяина</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-12 col-xs-12">
+                                    <p class="price-per-day">Цена за сутки: <span class="price-digits">18 000</span></p>
+                                </div>
+                                <div class="col-md-12 col-xs-12">
+                                    <p class="owner-phone-number">+7 9373000000</p>
+                                    <a class="show-owners-phone" href="#" data-toggle="modal" data-target="#show-phone-number">Показать номер</a>
+                                </div>
+                                <div class="col-md-12 col-xs-12">
+                                    <div class="input-group spinner input-group-custom">
+                                        <label for="" class="label-guests-number">Гостей</label>
+                                        <input type="number" class="form-control form-control-guests-number" value="1" min="0" max="30">
+                                    </div>
+                                    <div class="date-container date-container-guests">
+                                        <!--<div class="calendar calendar-flat"></div>-->
+                                        <div class="block-date-inputs">
+                                            <form action="" method="">
+                                                <div class="calendar-date"></div>
+                                                <label for="" class="dates-label">Дата:</label>
+                                                <div class="date-inputs date-inputs-flat">
+                                                    <input name="" type="date" id="" class="form-control form-control-date input-in input-in-date" aria-describedby="helpBlock">
+                                                    <input name="" type="date" id="" class="form-control form-control-date input-in input-in-date" aria-describedby="helpBlock">
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12 col-xs-12">
+                                    <p>
+                                        <button type="button" class="btn btn-primary btn-lg btn-block book">Забронировать</button>
+                                    </p>
+                                    <p>
+                                        <button type="button" class="btn btn-warning btn-lg btn-block write" data-toggle="modal" data-target=".bs-example-modal-sm-two">Написать</button>
+                                    </p>
+                                    <p>
+                                        <button type="button" class="btn btn-warning btn-lg btn-block btn-order-call" data-toggle="modal" data-target=".bs-example-modal-sm">Заказать звонок</button>
+                                    </p>
+                                    <p class="bottom-btns-block">
+                                    </p>
+                                    <p class="text-center answer-time">Среднее время ответа хозяина 15 минут</p>
+                                </div>
+                                <div class="warranty-footer">
+                                    <i class="fa fa-shield fa-3 media-shield" aria-hidden="true"></i>
+                                    <h4 class="media-heading media-heading-warranty">Гарантия безопасной сделки</h4>
+                                    <ul class="warranty-list">
+                                        <li><i class="fa fa-check-square-o fa-1" aria-hidden="true"></i> Проверка фотографий на уникальность</li>
+                                        <li><i class="fa fa-check-square-o fa-1" aria-hidden="true"></i> Ваш платеж на сайте <a href="#">застрахован</a></li>
+                                        <li><i class="fa fa-check-square-o fa-1" aria-hidden="true"></i> Защита покупателей 24/7</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Виджет, который появ-ся при экране < 1650px (конец) -->
+
+
+
+
+
             </div>
         </div>
     </div>

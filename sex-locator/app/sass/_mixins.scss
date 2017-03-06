@@ -21,6 +21,7 @@ $large-desktop-xs: 1500px;
 $large-desktop-sm: 1600px;
 $large-desktop-lg: 1700px;
 $btn-search: 1880px;
+$desktop: 1920px;
 
 @mixin timer {
   @media (max-width: #{$timer + 1px}) {
@@ -150,6 +151,11 @@ $btn-search: 1880px;
 }
 @mixin btn-search {
   @media (max-width: #{$btn-search - 1px}) {
+    @content;
+  }
+}
+@mixin desktop {
+  @media (max-width: #{$desktop + 1px}) {
     @content;
   }
 }

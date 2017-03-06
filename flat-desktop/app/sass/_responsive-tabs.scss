@@ -25,11 +25,11 @@
 /* Accordion responsive breakpoint */
 @media only screen and (max-width: 768px) {
   .r-tabs .r-tabs-nav {
-    display: none;
+    //display: none;
   }
 
   .r-tabs .r-tabs-accordion-title {
-    display: block;
+    //display: block;
   }
 }
 
@@ -57,12 +57,17 @@
 .r-tabs .r-tabs-nav .r-tabs-anchor {
   display: inline-block;
   padding: 10px 12px;
-
+  font-family: Roboto, Arial, sans-serif;
   text-decoration: none;
   //text-shadow: 0 1px rgba(0, 0, 0, 0.4);
-  font-size: 14px;
+  font-size: 20px;
   font-weight: bold;
-  //color: $orange;
+  @include phone-lg {
+    font-size: 17px;
+  }
+  @include phone {
+    font-size: 13px;
+  }
 }
 
 /* Disabled tab */
@@ -168,23 +173,43 @@
 
 
 /* ------------------ MY STYLES ------------------*/
-ul.r-tabs-nav {
-
+#responsiveTabsDemo {
+  border-top: 2px solid transparent;
 }
-li.r-tabs-state-active {
+.block-tabs {
+  border-top: 2px solid $grey;
+}
+.r-tabs ul.r-tabs-nav {
+  max-width: 646px;
+  height: 67px;
+  padding-top: 17px;
+  background: url('../img/bg-tab.png') no-repeat;
+  background-position: 118px;
+}
+.r-tabs li.r-tabs-state-active {
+  margin-top: -2px;
   border: {
     top: 1px solid $grey;
     right: 1px solid $grey;
     left: 1px solid $grey;
   }
-
   background-color: white;
-  border-top-left-radius: 15px;
-  border: 1px solid red;
-  border-top-right-radius: 15px;
+  border-top-left-radius: 7px;
+  border: 2px solid $grey;
+  border-bottom: 2px solid transparent;
+  border-top-right-radius: 7px;
+  @include phone-lg {
+    margin-top: -1px;
+  }
 }
-
 .r-tabs .r-tabs-nav .r-tabs-state-active .r-tabs-anchor {
-  border-radius: 13px;
+  border-radius: 7px;
   color: $orange;
+}
+.r-tabs .r-tabs-nav .r-tabs-state-default a.r-tabs-anchor .underlined {
+  //text-decoration: underline;
+  text-decoration: none;
+  border-bottom: 2px solid $main;
+  line-height: 0;
+  color: $main;
 }

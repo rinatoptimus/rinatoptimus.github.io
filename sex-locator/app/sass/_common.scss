@@ -29,10 +29,17 @@
   padding-bottom: 20%;
     p {
       position: absolute;
-      font-size: 2.6vw;
+      //font-size: 2.6vw;
+      font-size: 52px;
       font-family: "CenturyGothicRegular";
-      top: 10.75vw;
-      left: 0.5em;
+      //top: 10.75vw;
+      //left: 0.5em;
+      top: 175px;
+      left: 10px;
+      @include desktop {
+        top: 10.75vw;
+        font-size: 2.6vw;
+      }
       @include phone-lg {
         left: 0;
         font-size: 3vw;

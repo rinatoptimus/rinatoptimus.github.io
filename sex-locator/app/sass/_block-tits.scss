@@ -26,10 +26,19 @@
 }
 .number-badoo {
   position: absolute;
-  top: 8vw;
-  left: 24.2vw;
-  font-size: 4.3vw;
+  //top: 8vw;
+  //left: 24.2vw;
+  //font-size: 4.3vw;
   color: $btn-yes-first;
+
+  top: 145px;
+  left: 465px;
+  font-size: 110px;
+  @include desktop {
+    top: 8vw;
+    left: 24.2vw;
+    font-size: 4.3vw;
+  }
   @include phone-probability-numbers {
     top: 10vw;
     left: 22vw;
@@ -37,10 +46,20 @@
 }
 .number-here {
   position: absolute;
-  top: 8vw;
-  right: 35vw;
-  font-size: 4.3vw;
+  //top: 8vw;
+  //right: 35vw;
+  //font-size: 4.3vw;
   color: $btn-yes-first;
+
+  top: 130px;
+  right: 660px;
+  font-size: 110px;
+  @include desktop {
+    top: 8vw;
+    right: 35vw;
+    font-size: 4.3vw;
+    font-size: 4.3vw;
+  }
   @include phone-probability-numbers {
     top: 9vw;
     right: 34vw;
@@ -86,10 +105,19 @@
 }
 .number-badoo-man {
   position: absolute;
-  top: 21vw;
-  left: 29.6vw;
-  font-size: 4.3vw;
+  //top: 21vw;
+  //left: 29.6vw;
+  //font-size: 4.3vw;
   color: $btn-yes-first;
+
+  top: 388px;
+  left: 565px;
+  font-size: 110px;
+  @include desktop {
+    top: 21vw;
+    left: 29.6vw;
+    font-size: 4.3vw;
+  }
   @include phone-probability-numbers {
     top: 21vw;
     left: 30vw;
@@ -97,10 +125,19 @@
 }
 .number-here-man {
   position: absolute;
-  top: 22vw;
-  right: 30vw;
-  font-size: 4.3vw;
+  //top: 22vw;
+  //right: 30vw;
+  //font-size: 4.3vw;
   color: $btn-yes-first;
+
+  top: 405px;
+  right: 555px;
+  font-size: 110px;
+  @include desktop {
+    top: 22vw;
+    right: 30vw;
+    font-size: 4.3vw;
+  }
   @include phone-probability-numbers {
     top: 22vw;
     right: 30vw;

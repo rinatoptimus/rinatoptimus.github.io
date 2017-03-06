@@ -45,11 +45,16 @@
 
 #follower{
   position: relative;
-  width: 675px;
   height: 132px;
   border-radius: 50px;
+  //width: 35vw;
 
-  width: 35vw;
+  left: 0px;
+  top: 0;
+  width: 1350px;
+  @include desktop {
+    width: 35vw;
+  }
   @include large-desktop-lg {
     width: 37vw;
   }
@@ -68,18 +73,33 @@
   position: absolute;
 }
 .left {
-  left: 0;
+  //left: 0;
   width: 141px;
   height: 140px;
   background: url('../img/pupil-left.png') no-repeat;
   background-size: 80%;
+
+  position: absolute;
+  top: 15px;
+  left: 275px;
+  @include desktop {
+    left: 0;
+  }
 }
 .right {
-  right: 0;
+  //right: 0;
   width: 141px;
   height: 140px;
   background: url('../img/pupil-right.png') no-repeat;
   background-size: 80%;
+
+
+  position: absolute;
+  top: 25px;
+  right: 400px;
+  @include desktop {
+    right: 0;
+  }
 }
 .centerdiv {
   width: 200px;
@@ -89,13 +109,25 @@
 }
 .cont {
   //width: 712px;
-  height: 165px;
   position: absolute;
-  top: 148px;
-  left: -260px;
+  //height: 165px;
+  //top: 148px;
   overflow: hidden;
-  width: 41vw;
-  left: -13vw;
+  //width: 41vw;
+  //left: -13vw;
+
+
+  height: 190px;
+  top: 125px;
+  width: 1350px;
+  left: -534px;
+
+  @include desktop {
+    height: 188px;
+    top: 112px;
+    width: 41vw;
+    left: -13vw;
+  }
   @include large-desktop-lg {
     width: 39.2vw;
     left: -12vw;

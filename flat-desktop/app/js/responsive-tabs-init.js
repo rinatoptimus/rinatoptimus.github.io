@@ -3,5 +3,5 @@
  */
 $('#responsiveTabsDemo').responsiveTabs({
     //animation: 'fade',
-    collapsible: 'tabs'
+    //collapsible: 'tabs'
 });

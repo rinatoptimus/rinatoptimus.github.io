@@ -212,4 +212,7 @@ hr.additional-info {
   padding-right: 10px;
   margin-top: 10px;
   font-family: Roboto, Arial, sans-serif;
+  @include phone-lg {
+    padding-right: 0;
+  }
 }

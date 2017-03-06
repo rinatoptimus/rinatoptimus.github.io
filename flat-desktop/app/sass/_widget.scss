@@ -1,0 +1,321 @@
+.col-tab {
+  margin-top: 10px;
+}
+.container-widget {
+  position: absolute;
+  width: 375px;
+  right: 359px;
+  z-index: 10;
+  font-family: Roboto, Arial, sans-serif;
+}
+.container-widget-large {
+  @include container-widget-hide-show {
+    display: none;
+  }
+}
+
+/* -------------- Виджет, который появ-ся при экране < 1650px (начало) -------------- */
+.container-widget-small {
+  display: none;
+  @include container-widget-hide-show {
+    position: relative;
+    display: block;
+    width: 100%;
+    right: 0;
+  }
+}
+.container-widget-small .col-person {
+  width: 100%;
+  max-width: 100%;
+}
+.container-widget-small .thumbnail-avatar {
+  width: 10%;
+  @include small-devices {
+    width: 67px;
+  }
+}
+.container-widget-small .price-per-day {
+  margin-top: 9px;
+  padding-left: 4px;
+  font-size: 24px;
+  color: $main;
+  font-weight: 600;
+  @include phone {
+    font-size: 18px;
+  }
+}
+.container-widget-small .dates-label {
+  margin-top: -3px;
+  margin-left: 17px;
+  font-size: 21px;
+  font-weight: 400;
+  color: #003789;
+  @include phone-md {
+    margin-left: 9px;
+  }
+}
+.container-widget-small .calendar-date {
+  margin-top: -1px;
+  margin-right: 4px;
+  margin-left: 9px;
+  @include phone-lg {
+    width: 61px;
+    height: 56px;
+    background-size: 100%;
+    margin-top: -5px;
+    margin-left: 9px;
+    margin-right: 10px;
+  }
+  @include phone {
+    width: 35px;
+    height: 32px;
+    margin-top: 18px;
+    background-size: 100%;
+  }
+  @include phone-md {
+    display: none;
+  }
+}
+.container-widget-small .input-group-custom {
+  @include phone-md {
+    margin-top: 20px;
+  }
+}
+.container-widget-small .book, .container-widget-small .write, .container-widget-small .btn-order-call {
+  max-width: 100%;
+  margin: -7px auto 18px;
+  padding-top: 2px;
+  padding-bottom: 3px;
+  font-size: 20px;
+  font-weight: 600;
+}
+.container-widget-small .warranty-list li {
+  float: left;
+  margin-right: 15px;
+}
+/* -------------- Виджет, который появ-ся при экране < 1650px (конец) -------------- */
+
+.thumbnail-custom {
+  display: inline-flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0;
+  border: 2px solid grey;
+  border-radius: 10px;
+}
+.col-person {
+  margin-bottom: -2px;
+
+  margin-top: 0;
+  margin-left: 0;
+  padding-top: 14px;
+  padding-bottom: 10px;
+  max-width: 341px;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+  background-color: $grey-light;
+}
+.thumbnail-avatar {
+  width: 20%;
+  float: left;
+  margin-top: 5px;
+  margin-left: 5px;
+  border: 2px solid #000;
+  -webkit-border-radius: 7px;
+  border-radius: 7px;
+}
+.person-name {
+  margin-top: 7px;
+  padding-left: 35px;
+  list-style: none;
+  color: #00398B;
+  overflow: hidden;
+  font-size: 16px;
+  line-height: 20px;
+}
+.container-widget-large .price-per-day {
+  margin-top: 9px;
+  padding-left: 23px;
+  font-size: 24px;
+  color: $main;
+  font-weight: 600;
+}
+.show-all-variants {
+  font-size: 12px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #00398B;
+}
+.li-all-variants {
+  padding-top: 8px;
+}
+.price-digits {
+  padding-left: 4px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #FFAB1F;
+}
+.owner-phone-number {
+  float: left;
+  max-width: 185px;
+  font-size: 32px;
+  white-space: nowrap;
+  overflow: hidden;
+  padding: 2px 8px 8px 13px;
+  position: relative;
+}
+.owner-phone-number::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 56px;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 204, 0, 0)), color-stop(27%, #fff));
+  background: -webkit-linear-gradient(left, rgba(255, 204, 0, 0), #fff 27%);
+  background: linear-gradient(to right, rgba(255, 204, 0, 0), #fff 27%);
+}
+.show-owners-phone {
+  display: block;
+  padding-top: 3px;
+  font-size: 15px;
+  margin-top: 9px;
+  color: $green;
+  text-decoration: underline;
+}
+.input-group-custom {
+  margin: -7px 10px 10px 9px;
+}
+.date-container-guests {
+  margin-bottom: 10px;
+}
+.date-container {
+  margin-top: 20px;
+}
+.label-guests-number {
+  margin-right: 20px;
+  margin-top: 0;
+  font-size: 18px;
+  float: left;
+  width: 60px;
+}
+.input-group .form-control-guests-number {
+  width: 45%;
+  border: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  font-size: 20px;
+  padding-top: 0;
+  margin-top: -2px;
+  margin-left: -16px;
+}
+.input-group .form-control {
+  display: table-cell;
+}
+.form-control-guests-number[type=number]::-webkit-inner-spin-button,
+.form-control-guests-number[type=number]::-webkit-outer-spin-button {
+  opacity: 1;
+}
+.form-control-guests-number[type=number]::-moz-inner-spin-button,
+.form-control-guests-number[type=number]::-webkit-outer-spin-button {
+  opacity: 1;
+}
+
+.calendar {
+  display: block;
+  width: 117px;
+  height: 108px;
+  margin-right: 15px;
+  background: url(../img/calend.png) no-repeat;
+}
+.calendar-flat {
+  width: 20%;
+  margin-top: 30px;
+}
+.block-date-inputs {
+  width: 80%;
+}
+.calendar-date {
+  float: left;
+  width: 70px;
+  height: 64px;
+  background: url(../img/calend.png) no-repeat;
+  background-size: 82%;
+}
+.container-widget-large .calendar-date {
+  margin-top: -1px;
+  margin-right: 4px;
+  margin-left: 15px;
+}
+.container-widget-large .dates-label {
+  margin-top: -3px;
+  margin-left: 17px;
+  font-size: 21px;
+  font-weight: 400;
+  color: #003789;
+}
+.date-inputs-flat {
+  display: flex;
+  margin-top: -7px;
+}
+.input-in-date {
+  margin-right: 7px;
+  margin-bottom: 15px;
+  width: 103px;
+  padding-left: 7px;
+  padding-right: 0;
+  font-size: 15px;
+  height: 25px;
+}
+.btn-block {
+  margin-top: -7px;
+  padding-top: 3px;
+  padding-bottom: 4px;
+}
+.container-widget-large .book,
+.container-widget-large .write,
+.container-widget-large .btn-order-call {
+  max-width: 284px;
+  margin: -7px auto 18px;
+  padding-top: 2px;
+  padding-bottom: 3px;
+  font-size: 20px;
+  font-weight: 600;
+}
+.book {
+  background-color: $book;
+  border-color: $book;
+}
+.write {
+  background-color: $write;
+  border-color: $write;
+}
+.btn-order-call {
+  background-color: $btn-order-call;
+  border-color: $btn-order-call;
+}
+.answer-time {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 12px;
+  color: $answer-time;
+}
+.container-widget .warranty-footer {
+  background-color: $grey-light;
+  margin-top: 20px;
+  padding: 16px 32px;
+  border-bottom-right-radius: 9px;
+  border-bottom-left-radius: 9px;
+}
+.media-shield {
+  float: left;
+  display: block;
+  width: 55px;
+  font-size: 60px;
+  color: $media-shield;
+}
+.warranty-list {
+  overflow: hidden;
+  padding-left: 0;
+  list-style: none;
+  font-size: 11px;
+}

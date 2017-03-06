@@ -172,7 +172,7 @@
 
 .block-tabs {
   border-top: 1px solid grey;
-  margin-top: 23px; }
+  margin-top: 34px; }
 
 .container-tabs {
   margin-top: -56px; }
@@ -524,7 +524,7 @@ hr.additional-info {
   float: left;
   display: block;
   width: 55px;
-  font-size: 50px;
+  font-size: 60px;
   color: #028712; }
 
 .warranty-list {
@@ -676,7 +676,8 @@ hr.additional-info {
           border-top-right-radius: 7px; }
   @media (max-width: 571px) {
     .r-tabs li.r-tabs-state-active {
-      margin-top: -1px; } }
+      margin-top: -1px;
+      padding-bottom: 1px; } }
 
 .r-tabs .r-tabs-nav .r-tabs-state-active .r-tabs-anchor {
   -webkit-border-radius: 7px;
@@ -852,7 +853,7 @@ input[type="radio"]:checked + .label-sad {
 
 .modal-window-show-number, .modal-window-order-call, .modal-window-write {
   max-width: 500px;
-  top: 50%;
+  top: 0;
   left: 48%;
   -webkit-transform: translate(-50%, 50%);
       -ms-transform: translate(-50%, 50%);

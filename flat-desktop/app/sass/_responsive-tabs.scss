@@ -159,6 +159,7 @@
   border-top-right-radius: 7px;
   @include phone-lg {
     margin-top: -1px;
+    padding-bottom: 1px;
   }
 }
 .r-tabs .r-tabs-nav .r-tabs-state-active .r-tabs-anchor {

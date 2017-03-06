@@ -279,9 +279,108 @@
             </div>
         </div>
 
+        <!-- МОДАЛЬНЫЕ ОКНА -->
+
+        <form class="modal multi-step" id="show-phone-number" action="" method="POST">
+            <div class="modal-content modal-steps text-center modal-window-show-number">
+                <div class="modal-content">
+                    <div class="modal-header modal-header-borderless">
+                        <h6 class="modal-title step-1" data-step="1">Чтобы открыть контакты, введите:</h6>
+                        <h4 class="modal-title step-2" data-step="2">Нина Леонтьева</h4>
+                        <span class="step-2 modal-phone-number" data-step="2">+7 960 036 99 17</span>
+                        <i class="fa fa-times fa-2 fa-modal-close" aria-hidden="true" data-dismiss="modal"></i>
+                    </div>
+                    <div class="border-gradient"></div>
+                    <div class="modal-body step step-1">
+                        <input class="text-center input-first-step" name="" type="text" placeholder="Имя" required>
+                        <input class="text-center input-first-step input-modal-phone" name="" type="tel" placeholder="Номер телефона" required>
+                        <p class="or">или</p>
+                        <input class="text-center input-first-step" name="" type="email" placeholder="Адрес электронной почты" required>
+                    </div>
+                    <div class="modal-body step step-2">
+                        <p>Пожалуйста, скажите, что нашли объявление на сайте MyLinker.</p>
+                        <p>Удалось дозвониться?</p>
+                        <div class="container-radio">
+                            <div class="block-radio">
+                                <input type="radio" id="happy" name="radio" />
+                                <label class="label-book label-emo label-happy" for="happy"><span class="label-span label-span-modal"></span></label>
+                                <p class="text-center">Да, все хорошо</p>
+                            </div>
+                            <div class="block-radio">
+                                <input type="radio" id="normal" name="radio" />
+                                <label class="label-book label-emo label-normal" for="normal"><span class="label-span label-span-modal"></span></label>
+                                <p class="text-center">Не удалось дозвониться</p>
+                            </div>
+                            <div class="block-radio">
+                                <input type="radio" id="sad" name="radio" />
+                                <label class="label-book label-emo label-sad" for="sad"><span class="label-span label-span-modal"></span></label>
+                                <p class="text-center">Жилье занято</p>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Отправить</button>
+                    </div>
+                    <div class="modal-footer modal-footer-contacts">
+                        <button type="button" class="btn btn-default step step-1 btn-next-step" data-step="1" onclick="sendEvent()">Далее <i class="fa fa-angle-right fa-2" aria-hidden="true"></i></button>
+                    </div>
+                </div>
+            </div>
+        </form><!-- модальное окно Показать номер-->
+
+        <form class="modal fade bs-example-modal-sm" id="require-call" action="" method="POST">
+            <div class="modal-content modal-steps text-center modal-window-order-call">
+                <div class="modal-content modal-require-call">
+                    <div class="modal-header modal-header-borderless">
+                        <h6 class="modal-title step-1" data-step="1">Чтобы заказать звонок, введите:</h6>
+                    </div>
+                    <div class="border-gradient"></div>
+                    <div class="modal-body">
+                        <input class="text-center input-first-step" name="" type="text" placeholder="Имя" required>
+                        <input class="text-center input-first-step input-modal-phone" name="" type="tel" placeholder="Номер телефона" required>
+                        <p><span class="important">Важно!</span> В телефоне укажите код страны, сам номер - без скобочек, пробелов и тире.</p>
+                        <button type="button" class="btn btn-warning btn-lg btn-order-call btn-require-call">Заказать звонок</button>
+                    </div>
+                </div>
+            </div>
+        </form><!-- модальное окно Заказать звонок-->
+
+        <form class="modal fade bs-example-modal-sm-two" id="require-call" action="" method="POST">
+            <div class="modal-content modal-steps text-center modal-window-write">
+                <div class="modal-content modal-require-call">
+                    <div class="modal-header modal-header-borderless">
+                        <h6 class="modal-title step-1" data-step="1">Чтобы написать хозяину, введите:</h6>
+                    </div>
+                    <div class="border-gradient"></div>
+                    <div class="modal-body">
+                        <input class="text-center input-first-step input-modal-phone" name="" type="tel" placeholder="Номер телефона" required>
+                        <input class="text-center input-first-step" name="" type="email" placeholder="Адрес электронной почты" required>
+                        <input class="text-center input-first-step input-name" name="" type="text" placeholder="Имя" required>
+                        <input class="text-center input-first-step" name="" type="text" placeholder="Фамилия" required>
+                        <p class="explanation">Можете указать интересующие даты:</p>
+
+                        <!--<label class="modal-datepicker-label" for=""></label>-->
+                        <!--<input type="date" id="" class="form-control modal-date-input" aria-describedby="helpBlock" required>-->
+                        <div class="datepicker-block">
+                            <label class="modal-datepicker-label" for=""></label>
+                            <input type="date" id="" class="form-control modal-date-input" aria-describedby="helpBlock" required>
+                        </div>
+
+                        <textarea class="form-control text-center modal-textarea" rows="3" placeholder="Введите сообщение"></textarea>
+                        <label class="modal-label-checkbox">
+                            <input class="modal-checkbox" type="checkbox" value="">
+                            <span class="checkbox-span">Согласен(-сна) с условиями сайта</span>
+                        </label>
+                        <button type="button" class="btn btn-warning btn-lg btn-write">Написать</button>
+                    </div>
+                </div>
+            </div>
+        </form><!-- модальное окно Написать-->
+
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
         <script src="app/js/jquery.responsiveTabs.js"></script>
         <script src="app/js/responsive-tabs-init.js"></script>
+
+        <script src="app/js/multi-step-modal.js"></script>
+        <script src="app/js/modal-show-number.js"></script>
     </body>
 </html>

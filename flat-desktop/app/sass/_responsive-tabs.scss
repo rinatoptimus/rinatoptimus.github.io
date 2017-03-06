@@ -22,44 +22,23 @@
   display: block;
 }
 
-/* Accordion responsive breakpoint */
-@media only screen and (max-width: 768px) {
-  .r-tabs .r-tabs-nav {
-    //display: none;
-  }
-
-  .r-tabs .r-tabs-accordion-title {
-    //display: block;
-  }
-}
-
 /* Tabs container */
 .r-tabs {
   position: relative;
-
-  //background-color: #00c5ad;
-
-  //border-top: 1px solid #00c5ad;
-  //border-right: 1px solid #00c5ad;
-  //border-left: 1px solid #00c5ad;
-  //border-bottom: 4px solid #00c5ad;
   border-radius: 4px;
-
 }
 
 /* Tab element */
 .r-tabs .r-tabs-nav .r-tabs-tab {
   position: relative;
-  //background-color: #00c5ad;
 }
 
 /* Tab anchor */
 .r-tabs .r-tabs-nav .r-tabs-anchor {
   display: inline-block;
-  padding: 10px 12px;
+  padding: 7px 6px;
   font-family: Roboto, Arial, sans-serif;
   text-decoration: none;
-  //text-shadow: 0 1px rgba(0, 0, 0, 0.4);
   font-size: 20px;
   font-weight: bold;
   @include phone-lg {
@@ -106,7 +85,6 @@
   color: #fff;
   font-weight: bold;
   text-decoration: none;
-  //text-shadow: 0 1px rgba(0, 0, 0, 0.4);
   font-size: 14px;
 
   border-top-right-radius: 4px;
@@ -124,31 +102,6 @@
 .r-tabs .r-tabs-accordion-title.r-tabs-state-disabled {
   opacity: 0.5;
 }
-
-/* Buttons */
-//button {
-//  display:inline-block;
-//  margin-top: 10px;
-//  margin-right: 10px;
-//  padding: 10px 20px;
-//  line-height: 100%;
-//
-//  color: #fff;
-//  font-size: 14px;
-//  text-align: center;
-//  text-shadow: 0 1px rgba(0, 0, 0, 0.3);
-//  vertical-align: middle;
-//  font-weight: bold;
-//
-//  border: 0;
-//  -webkit-border-radius: 3px;
-//  -moz-border-radius: 3px;
-//  border-radius: 3px;
-//  background-color: #00c5ad;
-//  box-shadow: 0px 3px 0px 0px #00ab94;
-//
-//  cursor: pointer;
-//}
 
 /* Info bar */
 .info {
@@ -171,7 +124,6 @@
   cursor: pointer;
 }
 
-
 /* ------------------ MY STYLES ------------------*/
 #responsiveTabsDemo {
   border-top: 2px solid transparent;
@@ -181,10 +133,17 @@
 }
 .r-tabs ul.r-tabs-nav {
   max-width: 646px;
-  height: 67px;
-  padding-top: 17px;
+  height: 54px;
+  padding-top: 10px;
+  border-bottom: 2px solid $grey;
   background: url('../img/bg-tab.png') no-repeat;
-  background-position: 118px;
+  background-position: 106px;
+  @include phone-lg {
+    background-position: 92px;
+  }
+  @include phone {
+    background-position: 74px;
+  }
 }
 .r-tabs li.r-tabs-state-active {
   margin-top: -2px;
@@ -207,7 +166,6 @@
   color: $orange;
 }
 .r-tabs .r-tabs-nav .r-tabs-state-default a.r-tabs-anchor .underlined {
-  //text-decoration: underline;
   text-decoration: none;
   border-bottom: 2px solid $main;
   line-height: 0;

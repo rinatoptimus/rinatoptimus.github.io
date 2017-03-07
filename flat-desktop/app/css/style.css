@@ -145,11 +145,20 @@
   height: 130px;
   margin-top: 12px;
   background: url(../img/bg-header.jpg) no-repeat;
-  background-size: contain; }
+  background-size: cover;
+  background-position: center;
+  color: #ffffff; }
   @media (max-width: 1249px) {
     .bg-header {
       background-size: cover;
       background-position: center; } }
+
+.bg-header-overlay {
+  background-image: -webkit-repeating-linear-gradient(left, rgba(215, 215, 215, 0) 37px, rgba(204, 207, 213, 0) 38px, #000 13px, #000 39px);
+  background-image: repeating-linear-gradient(90deg, rgba(215, 215, 215, 0) 37px, rgba(204, 207, 213, 0) 38px, #000 13px, #000 39px);
+  width: 100%;
+  height: 130px;
+  position: absolute; }
 
 .row-location {
   margin-top: 3px;

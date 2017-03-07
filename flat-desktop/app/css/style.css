@@ -81,6 +81,8 @@
   text-decoration: underline;
   -webkit-appearance: none;
   -moz-appearance: none; }
+  .top-block .select-header:hover {
+    text-decoration: none; }
   .top-block .select-header::-ms-expand {
     display: none; }
   @media (max-width: 571px) {
@@ -103,6 +105,10 @@
   width: 165px;
   height: 64px;
   background: url("../img/logo.png") no-repeat; }
+  .logo:hover {
+    opacity: 0.7;
+    -webkit-transition: 500ms;
+    transition: 500ms; }
 
 .row-location .geo-mark {
   float: left;
@@ -131,6 +137,8 @@
   text-decoration: underline;
   -webkit-appearance: none;
   -moz-appearance: none; }
+  .row-location .select-header:hover {
+    text-decoration: none; }
   .row-location .select-header::-ms-expand {
     display: none; }
   @media (max-width: 571px) {
@@ -436,6 +444,8 @@ input[type=date]::-webkit-inner-spin-button {
   margin-top: 9px;
   color: #8ABA8E;
   text-decoration: underline; }
+  .show-owners-phone:hover {
+    text-decoration: none; }
 
 .input-group-custom {
   margin: -7px 10px 10px 9px; }
@@ -735,6 +745,8 @@ input[type=date]::-webkit-inner-spin-button {
   border-bottom: 2px solid #133665;
   line-height: 0;
   color: #133665; }
+  .r-tabs .r-tabs-nav .r-tabs-state-default a.r-tabs-anchor .underlined:hover {
+    border-bottom: 2px solid transparent; }
 
 .modal-steps {
   margin: 5px 10px; }
@@ -749,6 +761,10 @@ input[type=date]::-webkit-inner-spin-button {
   font-size: 30px;
   color: grey;
   cursor: pointer; }
+  .fa-modal-close:hover {
+    opacity: 0.7;
+    -webkit-transition: 500ms;
+    transition: 500ms; }
 
 .modal-footer-contacts {
   border-top: transparent;

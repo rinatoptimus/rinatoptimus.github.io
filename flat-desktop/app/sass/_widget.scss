@@ -182,6 +182,9 @@
   margin-top: 9px;
   color: $green;
   text-decoration: underline;
+  &:hover {
+    text-decoration: none;
+  }
 }
 .input-group-custom {
   margin: -7px 10px 10px 9px;

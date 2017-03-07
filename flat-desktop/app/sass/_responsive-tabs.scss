@@ -172,4 +172,7 @@
   border-bottom: 2px solid $main;
   line-height: 0;
   color: $main;
+  &:hover {
+    border-bottom: 2px solid transparent;
+  }
 }

@@ -86,6 +86,9 @@
   text-decoration: underline;
   -webkit-appearance:none;
   -moz-appearance:none;
+  &:hover {
+    text-decoration: none;
+  }
   &::-ms-expand {
     display: none;
   }
@@ -110,6 +113,10 @@
   width: 165px;
   height:64px;
   background: url('../img/logo.png') no-repeat;
+  &:hover {
+    opacity: 0.7;
+    transition: 500ms;
+  }
 }
 .row-location .geo-mark {
   float: left;
@@ -137,6 +144,9 @@
   text-decoration: underline;
   -webkit-appearance:none;
   -moz-appearance:none;
+  &:hover {
+    text-decoration: none;
+  }
   &::-ms-expand {
     display: none;
   }

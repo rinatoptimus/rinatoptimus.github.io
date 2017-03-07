@@ -50,7 +50,7 @@
         <div class="container container-widget container-widget-large">
             <div class="row">
                 <div class="col-md-offset-2 col-md-12 col-sm-12 col-xs-12 col-tab">
-                    <div href="#" class="thumbnail thumbnail-custom">
+                    <div href="#" class="thumbnail thumbnail-custom hover-animation">
                         <div class="col-md-12 col-xs-12 col-person">
                             <img class="thumbnail-avatar" src="http://i.imgur.com/Hw1dyoP.png" alt="Generic placeholder thumbnail" />
                             <ul class="person-name">
@@ -137,7 +137,22 @@
         <div class="block-tabs">
             <div class="container container-tabs">
                 <div id="responsiveTabsDemo">
-                    <ul>
+                    <style>
+                        #landing-content {
+                            /*overflow: hidden;*/
+                            /*background-image: url(http://i.imgur.com/F2FPRMd.jpg);*/
+                            /*width: 100%;*/
+                            /*background-size: cover;*/
+                            /*background-repeat: no-repeat;*/
+                            /*max-height: 500px;*/
+                            /*border-bottom: solid;*/
+                            /*border-bottom-color: #628027;*/
+                            /*border-bottom-width: 5px;*/
+                            background-image: url('app/img/bg-tab2.jpg');
+                            transition: 500ms;
+                        }
+                    </style>
+                    <ul id="landing-content">
                         <li><a href="#tab-1"><span class="underlined">Описание</span></a></li>
                         <li><a href="#tab-2"><span class="underlined">Показать на карте</span> <span class="new">new!</span></a></li>
                     </ul>
@@ -331,6 +346,7 @@
                 <div class="modal-content modal-require-call">
                     <div class="modal-header modal-header-borderless">
                         <h6 class="modal-title step-1" data-step="1">Чтобы заказать звонок, введите:</h6>
+                        <i class="fa fa-times fa-2 fa-modal-close" aria-hidden="true" data-dismiss="modal"></i>
                     </div>
                     <div class="border-gradient"></div>
                     <div class="modal-body">
@@ -348,6 +364,7 @@
                 <div class="modal-content modal-require-call">
                     <div class="modal-header modal-header-borderless">
                         <h6 class="modal-title step-1" data-step="1">Чтобы написать хозяину, введите:</h6>
+                        <i class="fa fa-times fa-2 fa-modal-close" aria-hidden="true" data-dismiss="modal"></i>
                     </div>
                     <div class="border-gradient"></div>
                     <div class="modal-body">
@@ -379,5 +396,13 @@
 
         <script src="app/js/multi-step-modal.js"></script>
         <script src="app/js/modal-show-number.js"></script>
+
+        <script>
+            $('#landing-content').mousemove(function(e){
+                var amountMovedX = (e.pageX * -1 / 26);
+                var amountMovedY = (e.pageY * -1 / 26);
+                $(this).css('background-position', amountMovedX + 'px ' + amountMovedY + 'px');
+            });
+        </script>
     </body>
 </html>

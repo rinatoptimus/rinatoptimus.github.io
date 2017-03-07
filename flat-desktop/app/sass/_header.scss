@@ -216,3 +216,27 @@ hr.additional-info {
     padding-right: 0;
   }
 }
+
+button:active, button:focus {
+  outline: none;
+}
+button::-moz-focus-inner {
+  border: 0;
+}
+a:active, a:focus {
+  outline: none;
+}
+a::-moz-focus-inner {
+  border: 0;
+}
+input[type=date]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  display: none;
+}
+.hover-animation {
+  transition: .1s ease-in-out;
+  &:hover {
+    box-shadow: 0 15px 57px -1px rgba(0, 0, 0, 0.75);
+    transform: translateY(-1px);
+  }
+}

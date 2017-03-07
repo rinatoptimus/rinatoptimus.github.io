@@ -206,6 +206,32 @@ hr.additional-info {
     .slider-flat-description {
       padding-right: 0; } }
 
+button:active, button:focus {
+  outline: none; }
+
+button::-moz-focus-inner {
+  border: 0; }
+
+a:active, a:focus {
+  outline: none; }
+
+a::-moz-focus-inner {
+  border: 0; }
+
+input[type=date]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  display: none; }
+
+.hover-animation {
+  -webkit-transition: .1s ease-in-out;
+  transition: .1s ease-in-out; }
+  .hover-animation:hover {
+    -webkit-box-shadow: 0 15px 57px -1px rgba(0, 0, 0, 0.75);
+            box-shadow: 0 15px 57px -1px rgba(0, 0, 0, 0.75);
+    -webkit-transform: translateY(-1px);
+        -ms-transform: translateY(-1px);
+            transform: translateY(-1px); }
+
 .col-tab {
   margin-top: 10px; }
 

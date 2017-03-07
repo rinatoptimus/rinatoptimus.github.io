@@ -113,6 +113,7 @@
   width: 165px;
   height:64px;
   background: url('../img/logo.png') no-repeat;
+  transition: 500ms;
   &:hover {
     opacity: 0.7;
     transition: 500ms;

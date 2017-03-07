@@ -104,7 +104,9 @@
   float: left;
   width: 165px;
   height: 64px;
-  background: url("../img/logo.png") no-repeat; }
+  background: url("../img/logo.png") no-repeat;
+  -webkit-transition: 500ms;
+  transition: 500ms; }
   .logo:hover {
     opacity: 0.7;
     -webkit-transition: 500ms;

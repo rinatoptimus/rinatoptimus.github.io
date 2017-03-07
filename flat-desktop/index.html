@@ -137,21 +137,6 @@
         <div class="block-tabs">
             <div class="container container-tabs">
                 <div id="responsiveTabsDemo">
-                    <style>
-                        #landing-content {
-                            /*overflow: hidden;*/
-                            /*background-image: url(http://i.imgur.com/F2FPRMd.jpg);*/
-                            /*width: 100%;*/
-                            /*background-size: cover;*/
-                            /*background-repeat: no-repeat;*/
-                            /*max-height: 500px;*/
-                            /*border-bottom: solid;*/
-                            /*border-bottom-color: #628027;*/
-                            /*border-bottom-width: 5px;*/
-                            background-image: url('app/img/bg-tab2.jpg');
-                            transition: 500ms;
-                        }
-                    </style>
                     <ul id="landing-content">
                         <li><a href="#tab-1"><span class="underlined">Описание</span></a></li>
                         <li><a href="#tab-2"><span class="underlined">Показать на карте</span> <span class="new">new!</span></a></li>
@@ -397,12 +382,6 @@
         <script src="app/js/multi-step-modal.js"></script>
         <script src="app/js/modal-show-number.js"></script>
 
-        <script>
-            $('#landing-content').mousemove(function(e){
-                var amountMovedX = (e.pageX * -1 / 26);
-                var amountMovedY = (e.pageY * -1 / 26);
-                $(this).css('background-position', amountMovedX + 'px ' + amountMovedY + 'px');
-            });
-        </script>
+        <script src="app/js/tabs-background-animation.js"></script>
     </body>
 </html>

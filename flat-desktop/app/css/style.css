@@ -682,8 +682,10 @@ input[type=date]::-webkit-inner-spin-button {
   height: 54px;
   padding-top: 10px;
   border-bottom: 2px solid #979797;
-  background: url("../img/bg-tab.png") no-repeat;
-  background-position: 106px; }
+  background: url("../img/bg-tab2.jpg") no-repeat;
+  background-position: 106px;
+  -webkit-transition: 500ms;
+  transition: 500ms; }
   @media (max-width: 571px) {
     .r-tabs ul.r-tabs-nav {
       background-position: 92px; } }

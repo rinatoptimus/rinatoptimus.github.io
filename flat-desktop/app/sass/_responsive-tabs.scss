@@ -1,3 +1,4 @@
+/* ----------------------- RESPONSIVE TABS BEGIN ----------------------- */
 .r-tabs .r-tabs-nav {
   margin: 0;
   padding: 0;
@@ -58,9 +59,7 @@
 .r-tabs .r-tabs-nav .r-tabs-state-active .r-tabs-anchor {
   color: $main;
   text-shadow: none;
-
-  background-color: white;
-
+  background-color: $white;
   border-top-right-radius: 4px;
   border-top-left-radius: 4px;
 }
@@ -68,9 +67,7 @@
 /* Tab panel */
 .r-tabs .r-tabs-panel {
   background-color: white;
-
-  border-bottom: 4px solid white;
-
+  border-bottom: 4px solid $white;
   border-bottom-right-radius: 4px;
   border-bottom-left-radius: 4px;
 
@@ -80,13 +77,11 @@
 .r-tabs .r-tabs-accordion-title .r-tabs-anchor {
   display: block;
   padding: 10px;
-
   background-color: #00c5ad;
   color: #fff;
   font-weight: bold;
   text-decoration: none;
   font-size: 14px;
-
   border-top-right-radius: 4px;
   border-top-left-radius: 4px;
 }
@@ -119,12 +114,11 @@
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
-  background-color: #fff;
-
+  background-color: $white;
   cursor: pointer;
 }
 
-/* ------------------ MY STYLES ------------------*/
+/* ------------------ MY STYLES FOR RESPONSIVE TABS ------------------*/
 #responsiveTabsDemo {
   border-top: 2px solid transparent;
 }
@@ -137,8 +131,9 @@
   padding-top: 10px;
   border-bottom: 2px solid $grey;
   background: url('../img/bg-tab2.jpg') no-repeat;
-  background-position: 106px;
+  background-position: 107px;
   transition: 500ms;
+  position: relative;
   @include phone-lg {
     background-position: 92px;
   }
@@ -176,3 +171,4 @@
     border-bottom: 2px solid transparent;
   }
 }
+/* ----------------------- RESPONSIVE TABS END ----------------------- */

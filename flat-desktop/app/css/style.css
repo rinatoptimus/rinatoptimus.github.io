@@ -257,6 +257,7 @@ input[type=date]::-webkit-inner-spin-button {
         -ms-transform: translateY(-1px);
             transform: translateY(-1px); }
 
+/* ----------------------- WIDGET SIDEBAR BEGIN ----------------------- */
 .col-tab {
   margin-top: 10px; }
 
@@ -589,6 +590,8 @@ input[type=date]::-webkit-inner-spin-button {
   list-style: none;
   font-size: 11px; }
 
+/* ----------------------- WIDGET SIDEBAR END ----------------------- */
+/* ----------------------- RESPONSIVE TABS BEGIN ----------------------- */
 .r-tabs .r-tabs-nav {
   margin: 0;
   padding: 0; }
@@ -641,7 +644,7 @@ input[type=date]::-webkit-inner-spin-button {
 .r-tabs .r-tabs-nav .r-tabs-state-active .r-tabs-anchor {
   color: #133665;
   text-shadow: none;
-  background-color: white;
+  background-color: #ffffff;
   -webkit-border-top-right-radius: 4px;
           border-top-right-radius: 4px;
   -webkit-border-top-left-radius: 4px;
@@ -650,7 +653,7 @@ input[type=date]::-webkit-inner-spin-button {
 /* Tab panel */
 .r-tabs .r-tabs-panel {
   background-color: white;
-  border-bottom: 4px solid white;
+  border-bottom: 4px solid #ffffff;
   -webkit-border-bottom-right-radius: 4px;
           border-bottom-right-radius: 4px;
   -webkit-border-bottom-left-radius: 4px;
@@ -694,10 +697,10 @@ input[type=date]::-webkit-inner-spin-button {
   border: 2px solid #00ab94;
   -webkit-border-radius: 3px;
   border-radius: 3px;
-  background-color: #fff;
+  background-color: #ffffff;
   cursor: pointer; }
 
-/* ------------------ MY STYLES ------------------*/
+/* ------------------ MY STYLES FOR RESPONSIVE TABS ------------------*/
 #responsiveTabsDemo {
   border-top: 2px solid transparent; }
 
@@ -710,9 +713,10 @@ input[type=date]::-webkit-inner-spin-button {
   padding-top: 10px;
   border-bottom: 2px solid #979797;
   background: url("../img/bg-tab2.jpg") no-repeat;
-  background-position: 106px;
+  background-position: 107px;
   -webkit-transition: 500ms;
-  transition: 500ms; }
+  transition: 500ms;
+  position: relative; }
   @media (max-width: 571px) {
     .r-tabs ul.r-tabs-nav {
       background-position: 92px; } }
@@ -750,6 +754,8 @@ input[type=date]::-webkit-inner-spin-button {
   .r-tabs .r-tabs-nav .r-tabs-state-default a.r-tabs-anchor .underlined:hover {
     border-bottom: 2px solid transparent; }
 
+/* ----------------------- RESPONSIVE TABS END ----------------------- */
+/* ----------------------- MODALS BEGIN ----------------------- */
 .modal-steps {
   margin: 5px 10px; }
 
@@ -923,6 +929,8 @@ input[type="radio"]:checked + .label-sad {
       -ms-transform: translate(-50%, 50%);
           transform: translate(-50%, 50%); }
 
+/* ----------------------- MODALS END ----------------------- */
+/* ----------------------- ANIMATION STYLES BEGIN ----------------------- */
 .btn-animation {
   background: transparent;
   outline: none !important;
@@ -968,3 +976,107 @@ input[type="radio"]:checked + .label-sad {
     -webkit-transform: scale(1.04);
         -ms-transform: scale(1.04);
             transform: scale(1.04); }
+
+.header-parallax {
+  background-position: center 95%;
+  background-attachment: fixed; }
+  @media (max-width: 1249px) {
+    .header-parallax {
+      background-attachment: scroll; } }
+
+ul li#dot-wrapper {
+  display: block;
+  overflow: hidden;
+  position: absolute;
+  width: 320px;
+  height: 52px;
+  right: 0;
+  top: 0; }
+
+.dot {
+  position: absolute;
+  top: 25px;
+  right: 176px;
+  background: #00C0FF;
+  -webkit-box-shadow: 1px 0 2px 0 rgba(0, 0, 0, 0.5);
+          box-shadow: 1px 0 2px 0 rgba(0, 0, 0, 0.5);
+  height: 0;
+  width: 0;
+  padding: 4px;
+  -webkit-border-radius: 5000px;
+          border-radius: 5000px; }
+  .dot:before, .dot:after {
+    position: absolute;
+    content: " ";
+    -webkit-border-radius: inherit;
+            border-radius: inherit;
+    height: 0;
+    width: 0;
+    -webkit-box-shadow: 0 0 2px 2px #FF0000;
+            box-shadow: 0 0 2px 2px #FF0000;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    -webkit-animation: pulseInner 2s infinite ease-out;
+            animation: pulseInner 2s infinite ease-out; }
+  .dot:after {
+    height: 7px;
+    width: 7px;
+    -webkit-box-shadow: 0 0 4px 2px #FFFF00;
+            box-shadow: 0 0 4px 2px #FFFF00;
+    -webkit-animation: pulseOuter 2s infinite ease-out;
+            animation: pulseOuter 2s infinite ease-out; }
+
+@-webkit-keyframes pulseInner {
+  0% {
+    height: 0;
+    width: 0;
+    opacity: 0; }
+  20% {
+    opacity: 1; }
+  95% {
+    height: 125px;
+    width: 125px;
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+
+@keyframes pulseInner {
+  0% {
+    height: 0;
+    width: 0;
+    opacity: 0; }
+  20% {
+    opacity: 1; }
+  95% {
+    height: 125px;
+    width: 125px;
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+
+@-webkit-keyframes pulseOuter {
+  0% {
+    height: 7px;
+    width: 7px;
+    opacity: 0; }
+  20% {
+    opacity: 1; }
+  100% {
+    height: 250px;
+    width: 250px;
+    opacity: 0.1; } }
+
+@keyframes pulseOuter {
+  0% {
+    height: 7px;
+    width: 7px;
+    opacity: 0; }
+  20% {
+    opacity: 1; }
+  100% {
+    height: 250px;
+    width: 250px;
+    opacity: 0.1; } }
+
+/* ----------------------- ANIMATION STYLES END ----------------------- */

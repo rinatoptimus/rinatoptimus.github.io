@@ -920,3 +920,49 @@ input[type="radio"]:checked + .label-sad {
   -webkit-transform: translate(-50%, 50%);
       -ms-transform: translate(-50%, 50%);
           transform: translate(-50%, 50%); }
+
+.btn-animation {
+  background: transparent;
+  outline: none !important;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block; }
+
+.btn-hover {
+  border: 1px solid #ccc;
+  z-index: 1; }
+
+.btn-hover:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background: #133665;
+  -webkit-border-radius: 1px;
+          border-radius: 1px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+
+.btn-hover:hover {
+  border-color: #133665;
+  color: #ffffff; }
+
+.btn-hover:hover:after {
+  top: 0;
+  height: 100%; }
+
+.btn-hover:active {
+  top: 2px; }
+
+.btn-hover-scale {
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out; }
+  .btn-hover-scale:hover {
+    -webkit-transform: scale(1.04);
+        -ms-transform: scale(1.04);
+            transform: scale(1.04); }

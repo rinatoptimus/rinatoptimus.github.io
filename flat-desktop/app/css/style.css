@@ -230,6 +230,9 @@ a:active, a:focus {
 a::-moz-focus-inner {
   border: 0; }
 
+select:hover {
+  cursor: pointer; }
+
 input[type=date]::-webkit-inner-spin-button {
   -webkit-appearance: none;
   display: none; }
@@ -371,7 +374,7 @@ input[type=date]::-webkit-inner-spin-button {
   float: left;
   margin-top: 5px;
   margin-left: 5px;
-  border: 2px solid #000;
+  border: 2px solid #8c8c8c;
   -webkit-border-radius: 7px;
   border-radius: 7px; }
 

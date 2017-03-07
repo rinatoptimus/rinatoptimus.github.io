@@ -48,10 +48,10 @@
             </div>
         </div>
 
-        <div class="container container-widget container-widget-large">
+        <div class="scroller_anchor container container-widget container-widget-large">
             <div class="row">
                 <div class="col-md-offset-2 col-md-12 col-sm-12 col-xs-12 col-tab">
-                    <div href="#" class="thumbnail thumbnail-custom hover-animation">
+                    <div href="#" class="scroller thumbnail thumbnail-custom hover-animation">
                         <div class="col-md-12 col-xs-12 col-person">
                             <img class="thumbnail-avatar" src="https://randomuser.me/api/portraits/men/23.jpg" alt="" title="" />
                             <ul class="person-name">
@@ -62,14 +62,14 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="col-md-12 col-xs-12">
+                        <div class="col-md-12 col-xs-12 bg-white">
                             <p class="price-per-day">Цена за сутки: <span class="price-digits">18 000</span></p>
                         </div>
-                        <div class="col-md-12 col-xs-12">
+                        <div class="col-md-12 col-xs-12 bg-white">
                             <p class="owner-phone-number">+7 9373000000</p>
                             <a class="show-owners-phone" href="#" data-toggle="modal" data-target="#show-phone-number">Показать номер</a>
                         </div>
-                        <div class="col-md-12 col-xs-12">
+                        <div class="col-md-12 col-xs-12 bg-white">
                             <div class="input-group spinner input-group-custom">
                                 <label for="" class="label-guests-number">Гостей</label>
                                 <input type="number" class="form-control form-control-guests-number" value="1" min="0" max="30">
@@ -88,7 +88,7 @@
                             </div>
                         </div>
 
-                        <div class="col-md-12 col-xs-12">
+                        <div class="col-md-12 col-xs-12 bg-white">
                             <p>
                                 <button type="button" class="btn-hover-scale btn btn-primary btn-lg btn-block book">Забронировать</button>
                             </p>
@@ -102,14 +102,16 @@
                             </p>
                             <p class="text-center answer-time">Среднее время ответа хозяина 15 минут</p>
                         </div>
-                        <div class="warranty-footer">
-                            <i class="fa fa-shield fa-3 media-shield" aria-hidden="true"></i>
-                            <h4 class="media-heading media-heading-warranty">Гарантия безопасной сделки</h4>
-                            <ul class="warranty-list">
-                                <li><i class="fa fa-check-square-o fa-1" aria-hidden="true"></i> Проверка фотографий на уникальность</li>
-                                <li><i class="fa fa-check-square-o fa-1" aria-hidden="true"></i> Ваш платеж на сайте <a href="#">застрахован</a></li>
-                                <li><i class="fa fa-check-square-o fa-1" aria-hidden="true"></i> Защита покупателей 24/7</li>
-                            </ul>
+                        <div class="warranty-footer bg-white">
+                            <div>
+                                <i class="fa fa-shield fa-3 media-shield" aria-hidden="true"></i>
+                                <h4 class="media-heading media-heading-warranty">Гарантия безопасной сделки</h4>
+                                <ul class="warranty-list">
+                                    <li><i class="fa fa-check-square-o fa-1" aria-hidden="true"></i> Проверка фотографий на уникальность</li>
+                                    <li><i class="fa fa-check-square-o fa-1" aria-hidden="true"></i> Ваш платеж на сайте <a href="#">застрахован</a></li>
+                                    <li><i class="fa fa-check-square-o fa-1" aria-hidden="true"></i> Защита покупателей 24/7</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -223,14 +225,14 @@
                                             </li>
                                         </ul>
                                     </div>
-                                    <div class="col-md-12 col-xs-12">
+                                    <div class="col-md-12 col-xs-12 bg-white">
                                         <p class="price-per-day">Цена за сутки: <span class="price-digits">18 000</span></p>
                                     </div>
-                                    <div class="col-md-12 col-xs-12">
+                                    <div class="col-md-12 col-xs-12 bg-white">
                                         <p class="owner-phone-number">+7 9373000000</p>
                                         <a class="show-owners-phone" href="#" data-toggle="modal" data-target="#show-phone-number">Показать номер</a>
                                     </div>
-                                    <div class="col-md-12 col-xs-12">
+                                    <div class="col-md-12 col-xs-12 bg-white">
                                         <div class="input-group spinner input-group-custom">
                                             <label for="" class="label-guests-number">Гостей</label>
                                             <input type="number" class="form-control form-control-guests-number" value="1" min="0" max="30">
@@ -249,7 +251,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="col-md-12 col-xs-12">
+                                    <div class="col-md-12 col-xs-12 bg-white">
                                         <p>
                                             <button type="button" class="btn btn-primary btn-lg btn-block book">Забронировать</button>
                                         </p>
@@ -263,7 +265,7 @@
                                         </p>
                                         <p class="text-center answer-time">Среднее время ответа хозяина 15 минут</p>
                                     </div>
-                                    <div class="warranty-footer">
+                                    <div class="warranty-footer bg-white">
                                         <i class="fa fa-shield fa-3 media-shield" aria-hidden="true"></i>
                                         <h4 class="media-heading media-heading-warranty">Гарантия безопасной сделки</h4>
                                         <ul class="warranty-list">
@@ -387,5 +389,6 @@
         <script src="app/js/modal-show-number.js"></script>
 
         <script src="app/js/tabs-background-animation.js"></script>
+        <script src="app/js/fix-sidebar-on-scroll.js"></script>
     </body>
 </html>

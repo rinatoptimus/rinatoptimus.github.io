@@ -14,6 +14,9 @@
     display: none;
   }
 }
+.scroller.thumbnail-custom {
+  width: 345px;
+}
 
 /* -------------- Виджет, который появ-ся при экране < 1650px (начало) -------------- */
 .container-widget-small {
@@ -97,12 +100,14 @@
 /* -------------- Виджет, который появ-ся при экране < 1650px (конец) -------------- */
 
 .thumbnail-custom {
-  display: inline-flex;
-  flex-direction: column;
+  display: block;
   width: 100%;
   padding: 0;
   border: 2px solid grey;
   border-radius: 10px;
+}
+.bg-white {
+  background-color: $white;
 }
 .col-person {
   margin-bottom: -2px;
@@ -304,6 +309,7 @@
   color: $answer-time;
 }
 .container-widget .warranty-footer {
+  clear: both;
   background-color: $grey-light;
   margin-top: 20px;
   padding: 16px 32px;

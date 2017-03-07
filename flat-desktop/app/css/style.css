@@ -247,16 +247,6 @@ input[type=date]::-webkit-inner-spin-button {
   -webkit-appearance: none;
   display: none; }
 
-.hover-animation {
-  -webkit-transition: .1s ease-in-out;
-  transition: .1s ease-in-out; }
-  .hover-animation:hover {
-    -webkit-box-shadow: 0 15px 57px -1px rgba(0, 0, 0, 0.75);
-            box-shadow: 0 15px 57px -1px rgba(0, 0, 0, 0.75);
-    -webkit-transform: translateY(-1px);
-        -ms-transform: translateY(-1px);
-            transform: translateY(-1px); }
-
 /* ----------------------- WIDGET SIDEBAR BEGIN ----------------------- */
 .col-tab {
   margin-top: 10px; }
@@ -271,6 +261,9 @@ input[type=date]::-webkit-inner-spin-button {
 @media (max-width: 1651px) {
   .container-widget-large {
     display: none; } }
+
+.scroller.thumbnail-custom {
+  width: 345px; }
 
 /* -------------- Виджет, который появ-ся при экране < 1650px (начало) -------------- */
 .container-widget-small {
@@ -352,20 +345,15 @@ input[type=date]::-webkit-inner-spin-button {
 
 /* -------------- Виджет, который появ-ся при экране < 1650px (конец) -------------- */
 .thumbnail-custom {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  display: block;
   width: 100%;
   padding: 0;
   border: 2px solid grey;
   -webkit-border-radius: 10px;
           border-radius: 10px; }
+
+.bg-white {
+  background-color: #ffffff; }
 
 .col-person {
   margin-bottom: -2px;
@@ -569,6 +557,7 @@ input[type=date]::-webkit-inner-spin-button {
   color: #373737; }
 
 .container-widget .warranty-footer {
+  clear: both;
   background-color: #ededed;
   margin-top: 20px;
   padding: 16px 32px;
@@ -931,6 +920,16 @@ input[type="radio"]:checked + .label-sad {
 
 /* ----------------------- MODALS END ----------------------- */
 /* ----------------------- ANIMATION STYLES BEGIN ----------------------- */
+.hover-animation {
+  -webkit-transition: .1s ease-in-out;
+  transition: .1s ease-in-out; }
+  .hover-animation:hover {
+    -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    -webkit-transform: translateY(-1px);
+        -ms-transform: translateY(-1px);
+            transform: translateY(-1px); }
+
 .btn-animation {
   background: transparent;
   outline: none !important;

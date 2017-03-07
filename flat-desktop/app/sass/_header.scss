@@ -261,10 +261,3 @@ input[type=date]::-webkit-inner-spin-button {
   -webkit-appearance: none;
   display: none;
 }
-.hover-animation {
-  transition: .1s ease-in-out;
-  &:hover {
-    box-shadow: 0 15px 57px -1px rgba(0, 0, 0, 0.75);
-    transform: translateY(-1px);
-  }
-}

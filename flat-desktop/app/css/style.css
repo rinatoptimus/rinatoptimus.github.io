@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* ----------------------- FLAT STYLES BEGIN ----------------------- */
 .btns-phone-block {
   margin-top: 54px;
   text-align: right;
@@ -228,25 +229,40 @@ hr.additional-info {
     .slider-flat-description {
       padding-right: 0; } }
 
-button:active, button:focus {
+.book:active, .write:active, .btn-order-call:active,
+.modal-window-show-number button:active,
+.modal-window-order-call button:active,
+.modal-window-write button:active {
   outline: none; }
 
-button::-moz-focus-inner {
-  border: 0; }
-
-a:active, a:focus {
+.book:focus, .write:focus, .btn-order-call:focus,
+.modal-window-show-number button:focus,
+.modal-window-order-call button:focus,
+.modal-window-write button:focus {
   outline: none; }
 
-a::-moz-focus-inner {
-  border: 0; }
+a.logo:active, a.btn-create:active, a.btn-enter:active, a.show-all-variants:active,
+a.show-owners-phone:active, .container-tabs a:active, .thumbnail-custom a:active {
+  outline: none; }
 
-select:hover {
+a.logo:focus, a.btn-create:focus, a.btn-enter:focus, a.show-all-variants:focus,
+a.show-owners-phone:focus, .container-tabs a:focus, .thumbnail-custom a:focus {
+  outline: none; }
+
+.top-block select:active, .block-header-left select:active {
+  outline: none; }
+
+.top-block select:focus, .block-header-left select:focus {
+  outline: none; }
+
+.top-block select:hover, .block-header-left select:hover {
   cursor: pointer; }
 
-input[type=date]::-webkit-inner-spin-button {
+.block-date-inputs input[type=date]::-webkit-inner-spin-button {
   -webkit-appearance: none;
   display: none; }
 
+/* ----------------------- FLAT STYLES END ----------------------- */
 /* ----------------------- WIDGET SIDEBAR BEGIN ----------------------- */
 .col-tab {
   margin-top: 10px; }

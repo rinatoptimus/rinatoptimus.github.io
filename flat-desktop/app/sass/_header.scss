@@ -1,3 +1,4 @@
+/* ----------------------- FLAT STYLES BEGIN ----------------------- */
 .btns-phone-block {
   margin-top: 54px;
   text-align: right;
@@ -242,22 +243,40 @@ hr.additional-info {
   }
 }
 
-button:active, button:focus {
-  outline: none;
+// inputs, buttons, selects
+.book, .write, .btn-order-call,
+.modal-window-show-number button,
+.modal-window-order-call button,
+.modal-window-write button {
+  &:active {
+    outline: none;
+  }
+  &:focus {
+    outline: none;
+  }
 }
-button::-moz-focus-inner {
-  border: 0;
+a.logo, a.btn-create, a.btn-enter, a.show-all-variants,
+a.show-owners-phone, .container-tabs a, .thumbnail-custom a {
+  &:active {
+    outline: none;
+  }
+  &:focus {
+    outline: none;
+  }
 }
-a:active, a:focus {
-  outline: none;
+.top-block select, .block-header-left select {
+  &:active {
+    outline: none;
+  }
+  &:focus {
+    outline: none;
+  }
+  &:hover {
+    cursor: pointer;
+  }
 }
-a::-moz-focus-inner {
-  border: 0;
-}
-select:hover {
-  cursor: pointer;
-}
-input[type=date]::-webkit-inner-spin-button {
+.block-date-inputs input[type=date]::-webkit-inner-spin-button {
   -webkit-appearance: none;
   display: none;
 }
+/* ----------------------- FLAT STYLES END ----------------------- */

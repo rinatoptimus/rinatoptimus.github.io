@@ -81,6 +81,14 @@
             </div>
         </div> <!-- block text-under-arrow -->
 
+        <div class="block-book">
+            <div id="mybook"></div>
+        </div> <!-- block book -->
+
+        <div class="locations">
+
+        </div> <!-- block locations -->
+
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-6">
@@ -149,6 +157,31 @@
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+        <!-- scripts for book animation: -->
+        <script src="app/js/jquery.mousewheel.min.js"></script>
+        <script src="app/js/three.min.js"></script>
+        <script src="app/js/jquery.onebook3d-2.33.js"></script>
+        <script>
+            var src = [
+                'app/img/book-images/1.jpg',
+                ['app/img/book-images/2.jpg', 'Озеро. 2014 г. август.'],
+                ['app/img/book-images/3.jpg', 'Какое-то знаменитое место. 2015 г. сентябрь.'],
+                ['app/img/book-images/4.jpg', 'Какое-то выдающееся место. 2015 г. ноябрь.'],
+                ['app/img/book-images/5.jpg', 'Название места'],
+                ['app/img/book-images/2.jpg', 'Озеро. 2014 г. август.'],
+            ];
+
+            $('#mybook').onebook(src,{
+                slope: 0,
+                pageColor: '#e4e4e4',
+                language: 'ru',
+                bgLight: 'blue',
+                startPage: 2,
+                flip: 'basic',
+                skin: 'light'
+            });
+        </script>
 
     </body>
 </html>

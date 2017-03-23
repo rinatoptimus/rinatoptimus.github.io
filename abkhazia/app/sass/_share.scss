@@ -1,0 +1,56 @@
+/* -------------------- BLOCK SHARE BEGIN -------------------- */
+.share-title {
+  font-size: 2.94vw;
+  color: $main;
+  @include tablet {
+    margin-top: 5vw;
+    text-align: center;
+    font-size: 5vw;
+  }
+  @include tablet-md {
+    font-size: 6vw;
+  }
+}
+.socials-list {
+  margin-top: 3vw;
+  padding-left: 16px;
+  @include tablet {
+    margin: 0 auto;
+    display: block;
+    width: 278px;
+    padding-left: 0;
+  }
+    li {
+      float: left;
+      margin-right: 30px;
+      list-style: none;
+      @include laptop-sm {
+        margin-right: 15px;
+      }
+      @include tablet {
+        margin-right: 8px;
+      }
+    }
+}
+.block-icon {
+  width: 84px;
+  height: 84px;
+  display: inline-block;
+  text-align: center;
+}
+.bg-ok {
+  background: $soc-orange;
+}
+.bg-vk {
+  background: $soc-blue;
+}
+.bg-fb {
+  background: $soc-dark-blue;
+}
+.fa {
+  display: inline-block;
+  font-size: 55px;
+  color: $white;
+  line-height: 83px;
+}
+/* -------------------- BLOCK SHARE END -------------------- */

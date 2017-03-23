@@ -42,10 +42,22 @@
   }
 }
 .picture {
-  max-width: 523px;
-  height: 672px;
+  width: 27vw;
+  height: 35vw;
   margin: 0 auto;
   background: url('../img/picture.jpg') no-repeat;
   background-size: contain;
+  @include desktop-sm {
+    width: 32vw;
+  }
+  @include laptop-sm {
+    width: 35vw;
+    height: 45vw;
+  }
+  @include tablet {
+    //max-width: 523px;
+    width: 290px;
+    height: 373px;
+  }
 }
 /* -------------------- BLOCK TEXT-WITH-PICTURE END -------------------- */

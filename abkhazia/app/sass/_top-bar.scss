@@ -1,6 +1,111 @@
+/* -------------------- BLOCK TOP-BAR BEGIN -------------------- */
+.top-bar {
+  padding-top: 1vw;
+  padding-bottom: 1.3vw;
+}
+.logo-block {
+  margin-left: 0.45vw;
+}
 .logo {
   display: block;
-  width: 263px;
-  height: 87px;
+  width: 13.7vw;
+  height: 4.5vw;
   background: url('../img/logo.png') no-repeat;
+  background-size: cover;
+  @include tablet {
+    margin: 0 auto;
+    width: 90px;
+    height: 30px;
+    background-size: contain;
+  }
 }
+.block-top-bar-btns {
+  margin-top: 3vw;
+  margin-left: 0.4vw;
+  @include laptop-lg {
+    margin-top: 2.4vw;
+  }
+  @include laptop-md {
+    margin-top: 2vw;
+  }
+  @include tablet {
+    text-align: center;
+  }
+}
+.block-top-bar-btns .btn-top-bar {
+  border: 2px solid $border;
+  border-radius: 10px;
+  font-family: "Century Gothic Regular", Arial, sans-serif;
+  font-size: 0.9vw;
+  @include laptop-lg {
+    font-size: 1.4vw;
+  }
+  @include tablet {
+    font-size: 2vw;
+  }
+  @include tablet-md {
+    font-size: 4vw;
+  }
+}
+.btn-create-ad {
+  padding: 1px 10px;
+}
+.btn-top-bar-enter {
+  padding: 1px 27px;
+}
+.top-bar-links {
+  display: inline-block;
+  font-family: 'Roboto', Arial, sans-serif;
+  color: $top-bar-links;
+}
+.block-phones {
+  text-align: right;
+  @include laptop-md {
+    margin-top: 0.8vw;
+  }
+  @include tablet {
+    text-align: center;
+  }
+}
+.top-bar-link-order {
+  position: relative;
+  top: 0.7vw;
+  left: 0.4vw;
+  border-bottom: 2px solid $top-bar-links;
+  font-size: 1.3vw;
+  line-height: 1.6vw;
+  &:hover {
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+  }
+  @include tablet {
+    font-size: 2vw;
+  }
+  @include tablet-md {
+    font-size: 3vw;
+    line-height: 3vw;
+  }
+  @include mobile-lg {
+    font-size: 4vw;
+    line-height: 4vw;
+  }
+}
+.top-bar-link-phone {
+  position: relative;
+  top: 1vw;
+  left: 0.9vw;
+  font-size: 1.8vw;
+  font-weight: 900;
+  @include tablet {
+    top: 0.7vw;
+    font-size: 2vw;
+  }
+  @include tablet-md {
+    font-size: 3vw;
+  }
+  @include mobile-lg {
+    font-size: 4vw;
+  }
+}
+
+/* -------------------- BLOCK TOP-BAR END -------------------- */

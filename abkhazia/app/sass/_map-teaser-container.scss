@@ -1,3 +1,4 @@
+/* -------------------- BLOCK MAP-TEASER-CONTAINER BEGIN -------------------- */
 .map-teaser-container {
   //position: absolute;
   width: 100%;
@@ -5,9 +6,11 @@
   background: url('../img/bg-map-teaser.jpg') no-repeat;
   background-size: contain;
 
-  max-height: 861px;
+  //max-height: 861px;
   position: relative;
   margin: 0 auto;
   padding-top: 47%;
   background-position: center;
+  height: 46.7vw;
 }
+/* -------------------- BLOCK MAP-TEASER-CONTAINER END -------------------- */

@@ -1,3 +1,4 @@
+/* -------------------- BLOCK WAVE BEGIN -------------------- */
 .wave {
   margin-top: -3px;
   //position: absolute;
@@ -6,8 +7,59 @@
   background: url('../img/wave.jpg') no-repeat;
   background-size: contain;
 
-  max-height: 861px;
+  //max-height: 861px;
   position: relative;
-  padding-top: 17%;
+  //padding-top: 17%;
   background-position: center;
+  height: 16.7vw;
 }
+.block-arrow-link {
+  position: absolute;
+  top: 18.6%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  height: 3vw;
+  width: 18vw;
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+.arrow-body {
+  //width: 293px;
+  width: 15.4vw;
+  height: 6.15vw;
+  background-color: $main;
+
+  //float: left;
+    p {
+      padding-top: 0.75vw;
+      font-size: 2.3vw;
+      line-height: 2.3vw;
+      color: $white;
+    }
+}
+.triangle-right {
+  width: 0;
+  height: 0;
+  border-top: 3.55vw solid transparent;
+  border-left: 2.3vw solid $main;
+  border-bottom: 3.55vw solid transparent;
+  position: absolute;
+  right: 0.4vw;
+  top: -0.5vw;
+}
+.block-wave-title {
+  position: relative;
+  top: 9vw;
+}
+.wave-title {
+  margin-top: 0.5vw;
+  margin-left: 2.2vw;
+  font-size: 2.9vw;
+  line-height: 3.05vw;
+  color: $main;
+}
+/* -------------------- BLOCK WAVE END -------------------- */

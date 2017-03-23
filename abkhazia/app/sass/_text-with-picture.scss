@@ -1,0 +1,51 @@
+/* -------------------- BLOCK TEXT-WITH-PICTURE BEGIN -------------------- */
+.simple-text {
+  font-size: 24px;
+  font-family: "Century Gothic Regular", Arial, sans-serif;
+  @include laptop-md {
+    font-size: 1.5vw;
+  }
+  @include laptop-sm {
+    font-size: 2.5vw;
+    line-height: 4vw;
+  }
+  @include tablet-md {
+    font-size: 5vw;
+    line-height: 6vw;
+  }
+}
+.inline-logo {
+  display: inline-block;
+  width: 90px;
+  height: 30px;
+  background: url(../img/logo.png) no-repeat;
+  background-size: cover;
+  @include mobile-lg {
+    width: 80px;
+    height: 26px;
+  }
+}
+.text-primary {
+  font-size: 2.74vw;
+  color: $main;
+  @include tablet {
+    font-size: 5vw;
+  }
+  @include tablet-md {
+    font-size: 6vw;
+  }
+}
+.rest-for-free {
+  font-size: 4.3vw;
+  @include tablet-md {
+    font-size: 7vw;
+  }
+}
+.picture {
+  max-width: 523px;
+  height: 672px;
+  margin: 0 auto;
+  background: url('../img/picture.jpg') no-repeat;
+  background-size: contain;
+}
+/* -------------------- BLOCK TEXT-WITH-PICTURE END -------------------- */

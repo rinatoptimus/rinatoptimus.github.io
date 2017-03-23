@@ -1,16 +1,13 @@
 /* -------------------- BLOCK MAP-TEASER-CONTAINER BEGIN -------------------- */
 .map-teaser-container {
-  //position: absolute;
-  width: 100%;
-  //height: 899px;
-  background: url('../img/bg-map-teaser.jpg') no-repeat;
-  background-size: contain;
-
-  //max-height: 861px;
   position: relative;
   margin: 0 auto;
   padding-top: 47%;
-  background-position: center;
+  width: 100%;
   height: 46.7vw;
+  background: url('../img/bg-map-teaser.jpg') no-repeat;
+  background-size: contain;
+  background-position: center;
+  box-shadow: inset 0px 55px 48px -41px rgba(0,0,0,0.58);
 }
 /* -------------------- BLOCK MAP-TEASER-CONTAINER END -------------------- */

@@ -1,9 +1,45 @@
 /* -------------------- BLOCK DESCRIPTION-TEXT BEGIN -------------------- */
 .description-text {
-  margin-top: 2.8vw;
-  margin-left: 2.2vw;
+  margin-top: 3.3vw;
+  margin-left: 0.4vw;
   line-height: 1.9vw;
   font-family: "Century Gothic Regular", Arial, sans-serif;
   font-size: 24px;
+  @include desktop-sm {
+    margin-left: 6.2vw;
+    line-height: 2.3vw;
+  }
+  @include laptop-lg {
+    margin-left: 14vw;
+  }
+  @include laptop-md {
+    margin-left: 12vw;
+    font-size: 1.5vw;
+  }
+  @include laptop-sm {
+    font-size: 2.5vw;
+    line-height: 4vw;
+  }
+  @include tablet-md {
+    margin-top: 6vw;
+    margin-left: 0;
+    font-size: 5vw;
+    line-height: 6vw;
+  }
+  @include mobile-lg {
+    margin-top: 20vw;
+  }
 }
+.block-hexagon {
+  position: relative;
+  top: -11.8vw;
+  left: 2.4vw;
+  @include laptop-sm {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 10%);
+  }
+}
+
 /* -------------------- BLOCK DESCRIPTION-TEXT END -------------------- */

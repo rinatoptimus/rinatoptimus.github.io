@@ -12,19 +12,32 @@
   //padding-top: 17%;
   background-position: center;
   height: 16.7vw;
+  @include tablet {
+    margin-top: 0;
+    background-position: -5vw 0vw;
+  }
+  @include tablet-md {
+    background: none;
+  }
 }
 .block-arrow-link {
+  display: block;
   position: absolute;
-  top: 18.6%;
-  left: 50%;
   transform: translate(-50%, -50%);
-
   height: 3vw;
   width: 18vw;
+  top: 21.5%;
+  left: 48.3%;
+  @include tablet-md {
+    top: 28%;
+  }
   &:after {
     content: '';
     display: table;
     clear: both;
+  }
+  @include mobile-lg {
+    display: none;
   }
 }
 .arrow-body {
@@ -32,13 +45,23 @@
   width: 15.4vw;
   height: 6.15vw;
   background-color: $main;
-
-  //float: left;
+  @include tablet {
+    width: 25vw;
+    height: 9vw;
+  }
     p {
       padding-top: 0.75vw;
       font-size: 2.3vw;
       line-height: 2.3vw;
       color: $white;
+      @include tablet {
+        font-size: 3.5vw;
+        line-height: 3.5vw;
+      }
+      //@include mobile-lg {
+      //  font-size: 6vw;
+      //  line-height: 6vw;
+      //}
     }
 }
 .triangle-right {
@@ -50,10 +73,20 @@
   position: absolute;
   right: 0.4vw;
   top: -0.5vw;
+  @include tablet {
+    border-top: 5vw solid transparent;
+    border-left: 4vw solid $main;
+    border-bottom: 5vw solid transparent;
+    top: -0.4vw;
+    right: -10.9vw;
+  }
 }
 .block-wave-title {
   position: relative;
   top: 9vw;
+
+  top: 9.6vw;
+  left: -1.7vw;
 }
 .wave-title {
   margin-top: 0.5vw;
@@ -61,5 +94,71 @@
   font-size: 2.9vw;
   line-height: 3.05vw;
   color: $main;
+  @include desktop-sm {
+    margin-left: 8vw;
+  }
+  @include laptop-lg {
+    margin-left: 16vw;
+  }
+  @include laptop-md {
+    margin-left: 14vw;
+    font-size: 2vw;
+  }
+  @include laptop-sm {
+    margin-top: 3vw;
+    font-size: 3.5vw;
+  }
+  @include tablet-md {
+    margin-top: 6vw;
+    margin-left: 2vw;
+    font-size: 6vw;
+  }
+  @include mobile-lg {
+    margin-top: -3vw;
+  }
+}
+
+.arrow-hidden-for-lg-screens {
+  display: none;
+  position: relative;
+  padding: 5px 5px 5px 10px;
+  margin: 20px;
+  height: 30px;
+  background-color: $main;
+  color: white;
+  white-space: nowrap;
+  width: 85vw;
+  text-align: center;
+  &:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: 0;
+    right: -15px;
+    border: 8px solid transparent;
+    border-top: 7px solid $main;
+    border-left: 7px solid $main;
+  }
+  &:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 0;
+    right: -15px;
+    border: 8px solid transparent;
+    border-bottom: 7px solid $main;
+    border-left: 7px solid $main;
+  }
+  @include mobile-lg {
+    display: inline-block;
+  }
+    p {
+      vertical-align: middle;
+      font-size: 20px;
+      margin-top: -5px;
+      display: inline-block;
+    }
 }
 /* -------------------- BLOCK WAVE END -------------------- */

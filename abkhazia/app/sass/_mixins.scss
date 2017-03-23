@@ -1,9 +1,16 @@
+$desktop-sm: 1599px;
 $laptop-lg: 1440px;
 $laptop-md: 1200px;
+$laptop-sm: 991px;
 $tablet: 768px;
 $tablet-md: 660px;
 $mobile-lg: 425px;
 
+@mixin desktop-sm {
+  @media (max-width: #{$desktop-sm + 1}) {
+    @content;
+  }
+}
 @mixin laptop-lg {
   @media (max-width: #{$laptop-lg + 1}) {
     @content;
@@ -11,6 +18,11 @@ $mobile-lg: 425px;
 }
 @mixin laptop-md {
   @media (max-width: #{$laptop-md + 1}) {
+    @content;
+  }
+}
+@mixin laptop-sm {
+  @media (max-width: #{$laptop-sm + 1}) {
     @content;
   }
 }

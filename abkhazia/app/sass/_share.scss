@@ -1,4 +1,7 @@
 /* -------------------- BLOCK SHARE BEGIN -------------------- */
+.container-share {
+  padding-bottom: 30px;
+}
 .share-title {
   font-size: 2.94vw;
   color: $main;
@@ -47,7 +50,7 @@
 .bg-fb {
   background: $soc-dark-blue;
 }
-.fa {
+.socials-list .fa {
   display: inline-block;
   font-size: 55px;
   color: $white;

@@ -1,0 +1,46 @@
+/* -------------------- BLOCK COMMENTS BEGIN -------------------- */
+.comments-list {
+  font-family: Arial, sans-serif;
+    .media {
+      overflow: initial;
+    }
+}
+.comments-list img {
+  float: left;
+  padding-right: 20px;
+}
+.comments-list .icon-filter {
+  color: grey;
+  font-size: 10px;
+  line-height: 5px;
+  margin-top: -6px;
+  vertical-align: middle;
+}
+.comment-footer {
+  list-style: none;
+  padding-left: 0;
+  color: $black;
+    li {
+      float: left;
+      padding-right: 5px;
+    }
+}
+.comment-footer .divider {
+  margin-top: 2px;
+  width: 1px;
+  height: 15px;
+  background-color: grey;
+}
+.comment-footer .fa {
+  cursor: pointer;
+}
+.comment-footer .dropdown-toggle {
+  padding: 0px 20px;
+  border: none;
+    .caret {
+      position: absolute;
+      top: 16px;
+      left: 5px;
+    }
+}
+/* -------------------- BLOCK COMMENTS END -------------------- */

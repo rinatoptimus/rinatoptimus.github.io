@@ -1,0 +1,97 @@
+/* -------------------- BLOCK FOOTER BEGIN -------------------- */
+.bg-footer {
+  padding-top: 2.8vw;
+  padding-bottom: 85px;
+  background-color: $bg-footer;
+  font-family: "Century Gothic Regular", Arial, sans-serif;
+  color: $white;
+  @include mobile-lg {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+    a {
+      color: $white;
+    }
+}
+.bg-footer .contacts-list {
+  margin-left: -1.1vw;
+  @include laptop-md {
+    padding-left: 30px;
+  }
+  @include tablet-md {
+    padding-left: 5px;
+  }
+}
+.bg-footer .contacts-list p {
+  position: relative;
+  left: 0.7vw;
+  margin-top: -3px;
+  padding-top: 12px;
+  //font-size: 1.1vw;
+  font-size: 21px;
+  @include tablet-md {
+    font-size: 15px;
+  }
+}
+.bg-footer .contacts-list li {
+  margin-bottom: 14px;
+  list-style-type:none;
+  padding-left: 20px;
+  @include tablet-md {
+    margin-bottom: 25px;
+  }
+}
+.bg-footer .contacts-list li:before {
+  margin-left: -20px;
+  vertical-align: middle;
+  transition: 300s;
+  display: inline-block;
+}
+.bg-footer .contacts-list li:hover:before {
+  transform: scale(1.15);
+}
+.bg-footer .contacts-list li.list-icon:before {
+  float: left;
+  padding-top: 5px;
+  transition: all .2s ease-in-out;
+}
+.bg-footer .contacts-list li.location:before {
+  content: url('../img/icon-location.png');
+}
+.bg-footer .contacts-list li.phone:before {
+  content: url('../img/icon-phone.png');
+}
+.bg-footer .contacts-list li.email:before {
+  content: url('../img/icon-email.png');
+}
+
+.block-about-us {
+  padding-top: 15px;
+  @include laptop-md {
+    padding-left: 35px;
+  }
+  @include tablet-md {
+    padding-left: 15px;
+  }
+    p {
+      margin-bottom: 20px;
+    }
+}
+
+.bottom-lists {
+  margin-top: 25px;
+    ul {
+      padding-left: 20px;
+      list-style: none;
+      //font-size: 0.9vw;
+      @include tablet-md {
+        padding-left: 0;
+      }
+        li {
+          a {
+            font-size: 16px;
+          }
+        }
+    }
+}
+/* -------------------- BLOCK FOOTER END -------------------- */

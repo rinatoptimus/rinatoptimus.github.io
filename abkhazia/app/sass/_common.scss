@@ -1,3 +1,9 @@
 body {
   font-family: 'AG_Souvenir Bold', arial, sans-serif;
 }
+.fade-on-hover {
+  transition: 200ms;
+  &:hover {
+    opacity: 0.6;
+  }
+}

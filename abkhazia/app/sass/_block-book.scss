@@ -5,4 +5,12 @@
 .OneBook3d_613049_spread_title p span {
   font-family: "Century Gothic Regular", Arial, sans-serif;
 }
+.block-book .add-photo {
+  margin-top: 2vw;
+  font-size: 31px;
+  color: $add-photo;
+  &:hover {
+    cursor: pointer;
+  }
+}
 /* -------------------- BLOCK BOOK END -------------------- */

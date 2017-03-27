@@ -9,206 +9,202 @@
   background-size: contain;
   background-position: center;
   box-shadow: inset 0px 55px 48px -41px rgba(0,0,0,0.58);
+    .hexagon {
+      position: absolute;
+      width: 200px;
+      height: 400px;
+      overflow: hidden;
+      visibility: hidden;
+      transform: rotate(120deg);
+      cursor: pointer;
+    }
+    .hexagon-in1 {
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+      transform: rotate(-60deg);
+    }
+    .hexagon-in2 {
+      width: 100%;
+      height: 100%;
+      visibility: visible;
+      transform: rotate(-60deg);
+      //background: url("http://lorempixel.com/g/250/350/people");
+      //background-repeat: no-repeat;
+      //background-position: 50%;
+    }
+    .hexagon-plane {
+      left: -4.4vw;
+      top: 1.2vw;
+      width: 19.4vw;
+      height: 25vw;
+    }
+    .plane {
+      width: 18vw;
+      height: 15vw;
+      background: url('../img/bg-hexagons/plane.png') no-repeat;
+      background-size: contain;
+    }
+
+    .hexagon-station {
+      left: 10.1vw;
+      top: 2vw;
+      width: 15vw;
+      height: 23vw;
+    }
+    .station {
+      width: 26vw;
+      height: 11.5vw;
+      background: url('../img/bg-hexagons/station.png') no-repeat;
+      background-size: contain;
+    }
+
+    .hexagon-dom {
+      left: 15.6vw;
+      top: 2.3vw;
+      width: 13vw;
+      height: 28vw;
+    }
+    .dom {
+      width: 24vw;
+      height: 8.5vw;
+      background: url('../img/bg-hexagons/dom.png') no-repeat;
+      background-size: contain;
+    }
+
+    .hexagon-waterfall {
+      left: 16.5vw;
+      top: 10vw;
+      width: 13vw;
+      height: 28vw;
+    }
+    .waterfall {
+      width: 24vw;
+      height: 8.5vw;
+      background: url('../img/bg-hexagons/waterfall.png') no-repeat;
+      background-size: contain;
+    }
+
+    .hexagon-waterfall-one {
+      left: 18vw;
+      top: 7.4vw;
+      width: 17vw;
+      height: 21vw;
+    }
+    .waterfall-one {
+      width: 12vw;
+      height: 5vw;
+      background: url('../img/bg-hexagons/waterfall-one.png') no-repeat;
+      background-size: contain;
+    }
+
+    .hexagon-big-empty {
+      left: 24.8vw;
+      top: -1vw;
+      width: 17vw;
+      height: 21vw;
+    }
+    .big-empty {
+      width: 15vw;
+      height: 13vw;
+      background: url('../img/bg-hexagons/big-empty.png') no-repeat;
+      background-size: contain;
+    }
+
+    .hexagon-test-one {
+      left: 18.5vw;
+      top: 13.8vw;
+      width: 21vw;
+      height: 24vw;
+    }
+    .test-one {
+      width: 17vw;
+      height: 5.9vw;
+      background: url('../img/bg-hexagons/test-one.png') no-repeat;
+      background-size: contain;
+    }
+
+    .hexagon-test-two {
+      left: 22vw;
+      top: 7.7vw;
+      width: 21vw;
+      height: 24vw;
+    }
+    .test-two {
+      width: 19vw;
+      height: 9vw;
+      background: url('../img/bg-hexagons/test-two.png') no-repeat;
+      background-size: contain;
+    }
+
+    .hexagon-cave {
+      left: 32.4vw;
+      top: 15.4vw;
+      width: 21vw;
+      height: 24vw;
+    }
+    .cave {
+      width: 14vw;
+      height: 8.4vw;
+      background: url('../img/bg-hexagons/cave.png') no-repeat;
+      background-size: contain;
+    }
+
+    .hexagon-fortress {
+      left: 39.5vw;
+      top: 11.6vw;
+      width: 21vw;
+      height: 24vw;
+    }
+    .fortress {
+      width: 16vw;
+      height: 9.9vw;
+      background: url('../img/bg-hexagons/fortress.png') no-repeat;
+      background-size: contain;
+    }
+
+    .hexagon-monastery {
+      right: 7.4vw;
+      top: 14.3vw;
+      width: 15vw;
+      height: 24vw;
+    }
+    .monastery {
+      width: 20vw;
+      height: 13.7vw;
+      background: url('../img/bg-hexagons/monastery.png') no-repeat;
+      background-size: contain;
+    }
+
+    .hexagon-nursery-garden {
+      left: 54.2vw;
+      top: 19.9vw;
+      width: 21vw;
+      height: 24vw;
+    }
+    .nursery-garden {
+      width: 20vw;
+      height: 11.6vw;
+      background: url('../img/bg-hexagons/nursery-garden.png') no-repeat;
+      background-size: contain;
+    }
+
+    .hexagon-train {
+      position: absolute;
+      right: 1.5vw;
+      top: 29.7vw;
+      width: 14vw;
+      height: 17vw;
+    }
+    .train {
+      width: 14vw;
+      height: 16.5vw;
+      background: url('../img/bg-hexagons/train.png') no-repeat;
+      background-size: contain;
+    }
 }
 
-.map-teaser-container {
-  .hexagon {
-    position: absolute;
-    width: 200px;
-    height: 400px;
-    overflow: hidden;
-    visibility: hidden;
-    transform: rotate(120deg);
-    cursor: pointer;
-  }
-  .hexagon-in1 {
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
-    transform: rotate(-60deg);
-  }
-  .hexagon-in2 {
-    width: 100%;
-    height: 100%;
-    visibility: visible;
-    transform: rotate(-60deg);
-    //background: url("http://lorempixel.com/g/250/350/people");
-    //background-repeat: no-repeat;
-    //background-position: 50%;
-  }
 
-
-
-  .hexagon-plane {
-    left: -4.4vw;
-    top: 1.2vw;
-    width: 19.4vw;
-    height: 25vw;
-  }
-  .plane {
-    width: 18vw;
-    height: 15vw;
-    background: url('../img/bg-hexagons/plane.png') no-repeat;
-    background-size: contain;
-  }
-
-  .hexagon-station {
-    left: 10.1vw;
-    top: 2vw;
-    width: 15vw;
-    height: 23vw;
-  }
-  .station {
-    width: 26vw;
-    height: 11.5vw;
-    background: url('../img/bg-hexagons/station.png') no-repeat;
-    background-size: contain;
-  }
-
-  .hexagon-dom {
-    left: 15.6vw;
-    top: 2.3vw;
-    width: 13vw;
-    height: 28vw;
-  }
-  .dom {
-    width: 24vw;
-    height: 8.5vw;
-    background: url('../img/bg-hexagons/dom.png') no-repeat;
-    background-size: contain;
-  }
-
-  .hexagon-waterfall {
-    left: 16.5vw;
-    top: 10vw;
-    width: 13vw;
-    height: 28vw;
-  }
-  .waterfall {
-    width: 24vw;
-    height: 8.5vw;
-    background: url('../img/bg-hexagons/waterfall.png') no-repeat;
-    background-size: contain;
-  }
-
-  .hexagon-waterfall-one {
-    left: 18vw;
-    top: 7.4vw;
-    width: 17vw;
-    height: 21vw;
-  }
-  .waterfall-one {
-    width: 12vw;
-    height: 5vw;
-    background: url('../img/bg-hexagons/waterfall-one.png') no-repeat;
-    background-size: contain;
-  }
-
-  .hexagon-big-empty {
-    left: 24.8vw;
-    top: -1vw;
-    width: 17vw;
-    height: 21vw;
-  }
-  .big-empty {
-    width: 15vw;
-    height: 13vw;
-    background: url('../img/bg-hexagons/big-empty.png') no-repeat;
-    background-size: contain;
-  }
-
-  .hexagon-test-one {
-    left: 18.5vw;
-    top: 13.8vw;
-    width: 21vw;
-    height: 24vw;
-  }
-  .test-one {
-    width: 17vw;
-    height: 5.9vw;
-    background: url('../img/bg-hexagons/test-one.png') no-repeat;
-    background-size: contain;
-  }
-
-  .hexagon-test-two {
-    left: 22vw;
-    top: 7.7vw;
-    width: 21vw;
-    height: 24vw;
-  }
-  .test-two {
-    width: 19vw;
-    height: 9vw;
-    background: url('../img/bg-hexagons/test-two.png') no-repeat;
-    background-size: contain;
-  }
-
-  .hexagon-cave {
-    left: 32.4vw;
-    top: 15.4vw;
-    width: 21vw;
-    height: 24vw;
-  }
-  .cave {
-    width: 14vw;
-    height: 8.4vw;
-    background: url('../img/bg-hexagons/cave.png') no-repeat;
-    background-size: contain;
-  }
-
-  .hexagon-fortress {
-    left: 39.5vw;
-    top: 11.6vw;
-    width: 21vw;
-    height: 24vw;
-  }
-  .fortress {
-    width: 16vw;
-    height: 9.9vw;
-    background: url('../img/bg-hexagons/fortress.png') no-repeat;
-    background-size: contain;
-  }
-
-  .hexagon-monastery {
-    right: 7.4vw;
-    top: 14.3vw;
-    width: 15vw;
-    height: 24vw;
-  }
-  .monastery {
-    width: 20vw;
-    height: 13.7vw;
-    background: url('../img/bg-hexagons/monastery.png') no-repeat;
-    background-size: contain;
-  }
-
-  .hexagon-nursery-garden {
-    left: 54.2vw;
-    top: 19.9vw;
-    width: 21vw;
-    height: 24vw;
-  }
-  .nursery-garden {
-    width: 20vw;
-    height: 11.6vw;
-    background: url('../img/bg-hexagons/nursery-garden.png') no-repeat;
-    background-size: contain;
-  }
-
-  .hexagon-train {
-    position: absolute;
-    right: 1.5vw;
-    top: 29.7vw;
-    width: 14vw;
-    height: 17vw;
-  }
-  .train {
-    width: 14vw;
-    height: 16.5vw;
-    background: url('../img/bg-hexagons/train.png') no-repeat;
-    background-size: contain;
-  }
-}
 
 // bubbles
 .bubble-adler {

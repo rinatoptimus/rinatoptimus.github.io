@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
         <link rel="stylesheet" href="app/css/style.css">
     </head>
     <body>
@@ -65,19 +66,19 @@
             <div class="bubble-gulrypsh"></div>
             <div class="bubble-ochamchyra"></div>
 
-            <div class="hexagon hexagon-station">
+            <div class="hexagon hexagon-station" data-slide="0">
                 <div class="hexagon-in1">
                     <div class="hexagon-in2 station"></div>
                 </div>
             </div>
 
-            <div class="hexagon hexagon-dom">
+            <div class="hexagon hexagon-dom" data-slide="1">
                 <div class="hexagon-in1">
                     <div class="hexagon-in2 dom"></div>
                 </div>
             </div>
 
-            <div class="hexagon hexagon-waterfall">
+            <div class="hexagon hexagon-waterfall" data-slide="2">
                 <div class="hexagon-in1">
                     <div class="hexagon-in2 waterfall"></div>
                 </div>
@@ -166,12 +167,17 @@
                         Сухум не принимает. Поэтому прилететь в Абхазию нельзя, нужно взять билет до Сочи и
                         уже оттуда добраться до курортов Абхазии</p>
                 </div>
-                <!--<div class="block-hexagon">-->
-                    <!--<img class="img-responsive" src="app/img/hexagons/peschera.png" alt="" title="">-->
+                <!-- ORIGINAL <div class="block-hexagon">-->
+                <!--<img class="img-responsive" src="app/img/hexagons/peschera.png" alt="" title="">-->
                 <!--</div>-->
+
                 <div class="col-lg-6 col-md-6 col-sm-12">
                     <div class="block-hexagon">
-                        <img class="img-responsive" src="app/img/hexagons/peschera.png" alt="" title="">
+                        <div class="slider">
+                            <img class="img-responsive" src="app/img/hexagons/peschera.png" alt="" title="">
+                            <img class="img-responsive" src="app/img/hexagons/vodopad.png" alt="" title="">
+                            <img class="img-responsive" src="app/img/hexagons/restaurant-gagripsh.png" alt="" title="">
+                        </div>
                     </div>
                 </div>
 
@@ -397,5 +403,44 @@
             //$('.dropdown-toggle').dropdown();
         </script>
 
+        <!-- для слайдера переключателя достопримечательностей -->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+        <script>
+            /*$('.slider-for').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false,
+                fade: true,
+                asNavFor: '.slider-nav'
+            });
+            $('.slider-nav').slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                asNavFor: '.slider-for',
+                dots: true,
+                centerMode: true,
+                focusOnSelect: true
+            });*/
+
+            /*$(document).ready(function(){
+                $('.your-class').slick({
+                    autoplay: true
+                });
+            });*/
+
+            $('.slider').slick({
+                arrows: false
+            });
+            /*$('.wrapp div').each( function( i ) {
+                $('.slide-' + i).click(function(){
+                    $('.slider').slickGoTo(i);
+                })
+            })*/
+
+            $('.hexagon').bind('click',function () {
+                $('.slider').slick('slickGoTo', $(this).data("slide"));
+            });
+            //Use $( ".rps-slider" ).slick('slickGoTo', parseInt(slideIndex));
+        </script>
     </body>
 </html>

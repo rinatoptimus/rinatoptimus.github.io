@@ -1,4 +1,9 @@
 /* -------------------- BLOCK DESCRIPTION-TEXT BEGIN -------------------- */
+.container-descr {
+  @include mobile-lg {
+    margin-top: 12vw;
+  }
+}
 .description-text {
   margin-top: 3.3vw;
   margin-left: 0.4vw;

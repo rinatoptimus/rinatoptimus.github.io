@@ -9,6 +9,11 @@
   background-size: contain;
   background-position: center;
   box-shadow: inset 0px 55px 48px -41px rgba(0,0,0,0.58);
+  @include mobile-lg {
+    & > * {
+      display: none;
+    }
+  }
     .hexagon {
       position: absolute;
       width: 200px;

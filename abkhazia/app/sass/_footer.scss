@@ -94,4 +94,9 @@
         }
     }
 }
+.bottom-lists .footer-column {
+  @include tablet {
+    margin-bottom: 30px;
+  }
+}
 /* -------------------- BLOCK FOOTER END -------------------- */

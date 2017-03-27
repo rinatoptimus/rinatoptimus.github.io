@@ -152,20 +152,40 @@
             </a>
 
             <div class="container block-wave-title">
+                <!--ORIGINAL <div class="row">-->
+                    <!--<div class="col-lg-4">-->
+                        <!--<h1 class="wave-title">Новоафонская пещера</h1>-->
+                    <!--</div>-->
+                <!--</div>-->
+
                 <div class="row">
-                    <div class="col-lg-4">
-                        <h1 class="wave-title">Новоафонская пещера</h1>
+                    <div class="col-lg-6">
+                        <div class="slick-slider slider-title">
+                            <h1 class="wave-title">Новоафонская пещера</h1>
+                            <h1 class="wave-title">Водопад</h1>
+                            <h1 class="wave-title">Ресторан</h1>
+                        </div>
                     </div>
                 </div>
+
             </div>
         </div> <!-- block wave -->
 
-        <div class="container">
+        <div class="container container-descr">
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-12">
-                    <p class="description-text">Билеты на самолёт стоят от 3000 рублей. Регулярных гражданских рейсов аэропорт города
-                        Сухум не принимает. Поэтому прилететь в Абхазию нельзя, нужно взять билет до Сочи и
-                        уже оттуда добраться до курортов Абхазии</p>
+                    <div class="slick-slider slider-description">
+                        <p class="description-text">Билеты на самолёт стоят от 3000 рублей. Регулярных гражданских рейсов аэропорт города
+                            Сухум не принимает. Поэтому прилететь в Абхазию нельзя, нужно взять билет до Сочи и
+                            уже оттуда добраться до курортов Абхазии</p>
+                        <p class="description-text">Unfortunately, having infinite: false this in the option breaks the
+                            .slick('slickGoTo', index); function. Unfortunately, having infinite: false this in the option breaks the
+                            .slick('slickGoTo', index); function.</p>
+                        <p class="description-text">but if you jump to number column 2, that is the third, and want to
+                            slide left i think that the slide doesn't see the 3 slides required to slide back so it
+                            doesn't slide, instead if it jump to slide 3 (that is the fourth) and want to slide back it
+                            will work cause it sees the 3 slides required to slide.</p>
+                    </div>
                 </div>
                 <!-- ORIGINAL <div class="block-hexagon">-->
                 <!--<img class="img-responsive" src="app/img/hexagons/peschera.png" alt="" title="">-->
@@ -173,7 +193,7 @@
 
                 <div class="col-lg-6 col-md-6 col-sm-12">
                     <div class="block-hexagon">
-                        <div class="slider">
+                        <div class="slick-slider slider">
                             <img class="img-responsive" src="app/img/hexagons/peschera.png" alt="" title="">
                             <img class="img-responsive" src="app/img/hexagons/vodopad.png" alt="" title="">
                             <img class="img-responsive" src="app/img/hexagons/restaurant-gagripsh.png" alt="" title="">
@@ -322,7 +342,7 @@
 
             <div class="container bottom-lists">
                 <div class="row">
-                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 footer-column">
                         <ul>
                             <li>
                                 <a href="#">Для собственников жилья</a>
@@ -341,7 +361,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 footer-column">
                         <ul>
                             <li>
                                 <a href="#">О компании</a>
@@ -363,7 +383,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 footer-column">
                         <ul>
                             <li>
                                 <a href="#">Блог</a>
@@ -405,42 +425,6 @@
 
         <!-- для слайдера переключателя достопримечательностей -->
         <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
-        <script>
-            /*$('.slider-for').slick({
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                arrows: false,
-                fade: true,
-                asNavFor: '.slider-nav'
-            });
-            $('.slider-nav').slick({
-                slidesToShow: 3,
-                slidesToScroll: 1,
-                asNavFor: '.slider-for',
-                dots: true,
-                centerMode: true,
-                focusOnSelect: true
-            });*/
-
-            /*$(document).ready(function(){
-                $('.your-class').slick({
-                    autoplay: true
-                });
-            });*/
-
-            $('.slider').slick({
-                arrows: false
-            });
-            /*$('.wrapp div').each( function( i ) {
-                $('.slide-' + i).click(function(){
-                    $('.slider').slickGoTo(i);
-                })
-            })*/
-
-            $('.hexagon').bind('click',function () {
-                $('.slider').slick('slickGoTo', $(this).data("slide"));
-            });
-            //Use $( ".rps-slider" ).slick('slickGoTo', parseInt(slideIndex));
-        </script>
+        <script src="app/js/slick-slider-custom.js"></script>
     </body>
 </html>

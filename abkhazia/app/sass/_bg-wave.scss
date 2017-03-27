@@ -83,10 +83,17 @@
 }
 .block-wave-title {
   position: relative;
-  top: 9vw;
+  //top: 9vw;
 
   top: 9.6vw;
   left: -1.7vw;
+}
+.slider-title {
+  //width: 25vw;
+  width: 100%;
+  @include mobile-lg {
+    width: 100%;
+  }
 }
 .wave-title {
   margin-top: 0.5vw;
@@ -114,7 +121,10 @@
     font-size: 6vw;
   }
   @include mobile-lg {
-    margin-top: -3vw;
+    //margin-top: -3vw;
+
+    line-height: 30px; // 1111
+    margin-top: 2vw;
   }
 }
 

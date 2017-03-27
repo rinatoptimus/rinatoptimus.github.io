@@ -37,6 +37,7 @@
     }
 }
 .block-icon {
+  position: relative;
   width: 84px;
   height: 84px;
   display: inline-block;
@@ -44,12 +45,24 @@
 }
 .bg-ok {
   background: $soc-orange;
+  transition: 200ms;
+  &:hover {
+    border-radius: 50%;
+  }
 }
 .bg-vk {
   background: $soc-blue;
+  transition: 200ms;
+  &:hover {
+    border-radius: 50%;
+  }
 }
 .bg-fb {
   background: $soc-dark-blue;
+  transition: 200ms;
+  &:hover {
+    border-radius: 50%;
+  }
 }
 .socials-list .fa {
   display: inline-block;

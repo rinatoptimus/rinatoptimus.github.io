@@ -220,8 +220,10 @@
             </div>
         </div> <!-- block book -->
 
+        <div class="shadow"></div>
         <div class="locations">
-            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ad35ff9326fa835ec57255e4cdece57f72f58adc5fd7cb698ad6a0d63e71f3422&amp;width=100%25&amp;height=570&amp;lang=ru_RU&amp;scroll=true"></script>
+            <!--<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ad35ff9326fa835ec57255e4cdece57f72f58adc5fd7cb698ad6a0d63e71f3422&amp;width=100%25&amp;height=570&amp;lang=ru_RU&amp;scroll=true"></script>-->
+            <div id="place"></div>
         </div> <!-- block locations -->
 
         <div class="container">
@@ -247,18 +249,25 @@
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-6">
                     <ul class="socials-list">
+                        <!--<li>-->
+                            <!--<a class="block-icon bg-ok" href="#">-->
+                                <!--<i class="fa fa-odnoklassniki" aria-hidden="true"></i>-->
+                            <!--</a>-->
+                        <!--</li>-->
+
                         <li>
-                            <a class="block-icon bg-ok" href="#">
+                            <a class="block-icon bg-ok" href="javascript:void(0)">
                                 <i class="fa fa-odnoklassniki" aria-hidden="true"></i>
                             </a>
                         </li>
+
                         <li>
-                            <a class="block-icon bg-vk" href="#">
+                            <a class="block-icon bg-vk" href="javascript:void(0)">
                                 <i class="fa fa-vk" aria-hidden="true"></i>
                             </a>
                         </li>
                         <li>
-                            <a class="block-icon bg-fb" href="#">
+                            <a class="block-icon bg-fb" href="javascript:void(0)">
                                 <i class="fa fa-facebook" aria-hidden="true"></i>
                             </a>
                         </li>
@@ -438,5 +447,11 @@
         <!-- для слайдера переключателя достопримечательностей -->
         <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
         <script src="app/js/slick-slider-custom.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mo-js/0.288.1/mo.min.js"></script>
+        <script src="app/js/social-icons-animation.js"></script>
+
+        <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+        <script src="app/js/locations.js"></script>
     </body>
 </html>

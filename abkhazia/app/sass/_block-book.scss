@@ -8,9 +8,18 @@
 .block-book .add-photo {
   margin-top: 2vw;
   font-size: 31px;
-  color: $add-photo;
   &:hover {
     cursor: pointer;
   }
+    span, a {
+      color: $add-photo;
+    }
+}
+
+.block-book #upload_link {
+  text-decoration: none;
+}
+.block-book #upload {
+  display: none
 }
 /* -------------------- BLOCK BOOK END -------------------- */

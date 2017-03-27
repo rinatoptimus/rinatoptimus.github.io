@@ -61,78 +61,78 @@
             <div class="bubble-ochamchyra"></div>
 
             <div class="hexagon hexagon-plane" data-slide="0">
-                <div class="hexagon-in1">
+                <div class="hexagon-in1 fade-on-hover">
                     <div class="hexagon-in2 plane"></div>
                 </div>
             </div>
 
-            <div class="hexagon hexagon-station" data-slide="1">
+            <div class="hexagon hexagon-station fade-on-hover" data-slide="1">
                 <div class="hexagon-in1">
                     <div class="hexagon-in2 station"></div>
                 </div>
             </div>
 
-            <div class="hexagon hexagon-dom" data-slide="2">
+            <div class="hexagon hexagon-dom fade-on-hover" data-slide="2">
                 <div class="hexagon-in1">
                     <div class="hexagon-in2 dom"></div>
                 </div>
             </div>
 
-            <div class="hexagon hexagon-waterfall">
+            <div class="hexagon hexagon-waterfall fade-on-hover">
                 <div class="hexagon-in1">
                     <div class="hexagon-in2 waterfall"></div>
                 </div>
             </div>
 
-            <div class="hexagon hexagon-waterfall-one">
+            <div class="hexagon hexagon-waterfall-one fade-on-hover">
                 <div class="hexagon-in1">
                     <div class="hexagon-in2 waterfall-one"></div>
                 </div>
             </div>
 
-            <div class="hexagon hexagon-big-empty">
+            <div class="hexagon hexagon-big-empty fade-on-hover">
                 <div class="hexagon-in1">
                     <div class="hexagon-in2 big-empty"></div>
                 </div>
             </div>
 
-            <div class="hexagon hexagon-test-one">
+            <div class="hexagon hexagon-test-one fade-on-hover">
                 <div class="hexagon-in1">
                     <div class="hexagon-in2 test-one"></div>
                 </div>
             </div>
 
-            <div class="hexagon hexagon-test-two">
+            <div class="hexagon hexagon-test-two fade-on-hover">
                 <div class="hexagon-in1">
                     <div class="hexagon-in2 test-two"></div>
                 </div>
             </div>
 
-            <div class="hexagon hexagon-cave">
+            <div class="hexagon hexagon-cave fade-on-hover">
                 <div class="hexagon-in1">
                     <div class="hexagon-in2 cave"></div>
                 </div>
             </div>
 
-            <div class="hexagon hexagon-fortress">
+            <div class="hexagon hexagon-fortress fade-on-hover">
                 <div class="hexagon-in1">
                     <div class="hexagon-in2 fortress"></div>
                 </div>
             </div>
 
-            <div class="hexagon hexagon-monastery">
+            <div class="hexagon hexagon-monastery fade-on-hover">
                 <div class="hexagon-in1">
                     <div class="hexagon-in2 monastery"></div>
                 </div>
             </div>
 
-            <div class="hexagon hexagon-nursery-garden">
+            <div class="hexagon hexagon-nursery-garden fade-on-hover">
                 <div class="hexagon-in1">
                     <div class="hexagon-in2 nursery-garden"></div>
                 </div>
             </div>
 
-            <div class="hexagon-train">
+            <div class="hexagon-train fade-on-hover">
                 <div class="train"></div>
             </div>
 
@@ -210,10 +210,13 @@
                 <div class="roe">
                     <div class="col-lg-12">
                         <p class="text-right add-photo fade-on-hover">
+                            <input id="upload" type="file"/>
                             <span>
                                 <i class="fa fa-plus" aria-hidden="true"></i>
                             </span>
-                            <span>Предложить свое фото</span>
+                            <span>
+                                <a href="" id="upload_link">Предложить свое фото</a>
+                            </span>
                         </p>
                     </div>
                 </div>
@@ -453,5 +456,7 @@
 
         <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
         <script src="app/js/locations.js"></script>
+
+        <script src="app/js/upload-btn.js"></script>
     </body>
 </html>

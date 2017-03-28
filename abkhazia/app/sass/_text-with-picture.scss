@@ -42,6 +42,7 @@
   }
 }
 .picture {
+  overflow: hidden;
   width: 27vw;
   height: 35vw;
   margin: 0 auto;
@@ -58,6 +59,36 @@
     //max-width: 523px;
     width: 290px;
     height: 373px;
+  }
+}
+
+.plane {
+  width: 5.75vw;
+  height: 2.3vw;
+  background: url('../img/plane.png') no-repeat;
+  background-size: contain;
+  animation-name: fly;
+  @include tablet {
+    width: 8.9vw;
+    height: 4.3vw;
+  }
+}
+#animate {
+  position: relative;
+  top: 0.5vw;
+  left: -6vw;
+  animation: move 15s linear infinite;
+  @include tablet {
+    top: 1vw;
+    left: -9vw;
+  }
+}
+@keyframes move {
+  50% {
+    transform: translate(0px);
+  }
+  100% {
+    transform: translate(650px);
   }
 }
 /* -------------------- BLOCK TEXT-WITH-PICTURE END -------------------- */

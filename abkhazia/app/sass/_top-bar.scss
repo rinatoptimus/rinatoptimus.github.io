@@ -49,9 +49,15 @@
 }
 .btn-create-ad {
   padding: 1px 10px;
+  @include tablet {
+    padding: 1px 10px;
+  }
 }
 .btn-top-bar-enter {
   padding: 1px 27px;
+  @include tablet {
+    padding: 1px 20px;
+  }
 }
 .top-bar-links {
   display: inline-block;

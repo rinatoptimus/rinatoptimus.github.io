@@ -54,6 +54,9 @@
   float: left;
   padding-top: 5px;
   transition: all .2s ease-in-out;
+  @include tablet {
+    margin-right: 10px;
+  }
 }
 .bg-footer .contacts-list li.location:before {
   content: url('../img/icon-location.png');

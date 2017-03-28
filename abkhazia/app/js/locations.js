@@ -12,53 +12,151 @@ function init(){
     });
 
     // Абхазия, Гагрский район, поселок городского типа Гячрыпш
+    // myplacemark1 = new ymaps.GeoObject({
+    //     geometry: {
+    //         type: "Point",
+    //         coordinates: [43.39241432009251,40.021383499999914]
+    //     }});
+
+    // Абхазия, Гагрский район, поселок городского типа Гячрыпш
     myplacemark1 = new ymaps.GeoObject({
         geometry: {
             type: "Point",
             coordinates: [43.39241432009251,40.021383499999914]
-        }});
+        }},
+        {
+            iconLayout: 'default#image',
+            // Своё изображение иконки метки.
+            iconImageHref: 'app/img/pin.png',
+            // Размеры метки.
+            iconImageSize: [60, 40],
+            // Смещение левого верхнего угла иконки относительно
+            // её "ножки" (точки привязки).
+            iconImageOffset: [-50, -65]
+        });
+    //
 
     // Абхазия, Абхазская железная дорога, станция Цандрыпш
+    // myplacemark2 = new ymaps.GeoObject({
+    //     geometry: {
+    //         type: "Point",
+    //         coordinates: [43.3729387992313,40.093625499999895]
+    //     }});
+
+    //
     myplacemark2 = new ymaps.GeoObject({
         geometry: {
             type: "Point",
             coordinates: [43.3729387992313,40.093625499999895]
-        }});
+        }},
+        {
+            iconLayout: 'default#image',
+            iconImageHref: 'app/img/pin.png',
+            iconImageSize: [60, 40],
+            iconImageOffset: [-50, -65]
+        });
+    //
+
+    // Абхазия, Гагрский район, село Багрипш
+    // myplacemark3 = new ymaps.GeoObject({
+    //     geometry: {
+    //         type: "Point",
+    //         coordinates: [43.36269558429597,40.12289699999998]
+    //     }});
 
     // Абхазия, Гагрский район, село Багрипш
     myplacemark3 = new ymaps.GeoObject({
         geometry: {
             type: "Point",
             coordinates: [43.36269558429597,40.12289699999998]
-        }});
+        }},
+        {
+            iconLayout: 'default#image',
+            iconImageHref: 'app/img/pin.png',
+            iconImageSize: [60, 40],
+            iconImageOffset: [-45, -62]
+        });
+    //
+
+    // Абхазия, Абхазская железная дорога, станция Гагра
+    // myplacemark4 = new ymaps.GeoObject({
+    //     geometry: {
+    //         type: "Point",
+    //         coordinates: [43.26235179917832,40.28383499999999]
+    //     }});
 
     // Абхазия, Абхазская железная дорога, станция Гагра
     myplacemark4 = new ymaps.GeoObject({
         geometry: {
             type: "Point",
             coordinates: [43.26235179917832,40.28383499999999]
-        }});
+        }},
+        {
+            iconLayout: 'default#image',
+            iconImageHref: 'app/img/pin.png',
+            iconImageSize: [60, 40],
+            iconImageOffset: [-5, -20]
+        });
+
+    // Абхазия, Гагрский район, село Алахадзы
+    // myplacemark5 = new ymaps.GeoObject({
+    //     geometry: {
+    //         type: "Point",
+    //         coordinates: [43.21991682986255,40.30296949999988]
+    //     }});
 
     // Абхазия, Гагрский район, село Алахадзы
     myplacemark5 = new ymaps.GeoObject({
         geometry: {
             type: "Point",
             coordinates: [43.21991682986255,40.30296949999988]
-        }});
+        }},
+        {
+            iconLayout: 'default#image',
+            iconImageHref: 'app/img/pin.png',
+            iconImageSize: [60, 40],
+            iconImageOffset: [-50, -80]
+        });
+
+    // Абхазия, Гагрский район, Пицунда
+    // myplacemark6 = new ymaps.GeoObject({
+    //     geometry: {
+    //         type: "Point",
+    //         coordinates: [43.158165761242785,40.33911299999999]
+    //     }});
 
     // Абхазия, Гагрский район, Пицунда
     myplacemark6 = new ymaps.GeoObject({
         geometry: {
             type: "Point",
             coordinates: [43.158165761242785,40.33911299999999]
-        }});
+        }},
+        {
+            iconLayout: 'default#image',
+            iconImageHref: 'app/img/pin.png',
+            iconImageSize: [60, 40],
+            iconImageOffset: [-40, -70]
+        });
+
+    // Абхазия, Гагрский район, село Лдзаа
+    // myplacemark7 = new ymaps.GeoObject({
+    //     geometry: {
+    //         type: "Point",
+    //         coordinates: [43.17930218732599,40.3770215]
+    //     }});
 
     // Абхазия, Гагрский район, село Лдзаа
     myplacemark7 = new ymaps.GeoObject({
         geometry: {
             type: "Point",
             coordinates: [43.17930218732599,40.3770215]
-        }});
+        }},
+        {
+            iconLayout: 'default#image',
+            iconImageHref: 'app/img/pin.png',
+            iconImageSize: [60, 40],
+            iconImageOffset: [-60, -80]
+        });
 
     // Абхазия, Абхазская железная дорога, станция Новый Афон
     myplacemark8 = new ymaps.GeoObject({

@@ -528,7 +528,7 @@ var OneBook3D = {
 		styles += zoomContent+' .zoom_pages td{padding:0px;}\n';		
 		styles += zoomTitleSpread+'{border-top:1px solid white;}\n';		
 		styles += zoomTitleSpread+' p{font:14px arial;color:black;line-height:140%;margin:0px;}\n';
-		styles += zoomTitleSpread+' p span{font:bold 14px arial;color:gray;margin-right:8px;}\n';								
+		styles += zoomTitleSpread+' p span{font:bold 14px arial;color:gray;margin-right:8px;}\n';
 		
 		styles += saveMenu+' h1{font:16px arial;color:white;}\n';
 		styles += saveMenu+' p{font:16px arial;color:white;}\n';
@@ -666,7 +666,7 @@ var OneBook3D = {
 		styles += bookHelpLayer + ' p.middleSize {padding:10px 10px 10px 0px;}';
 		styles += bookHelpLayer + ' p.middleSize span{margin-top:5px;}';		
 		styles += bookHelpLayer + ' .hlpLeftSide p.middleSize span[name=click_to_open] a{font:16px arial;}';
-		styles += bookHelpLayer + ' .hlpRightSide p.middleSize span[name=goto_start] a{font:14px arial;}';		
+		styles += bookHelpLayer + ' .hlpRightSide p.middleSize span[name=goto_start] a{font:14px arial;}';
 
 		styles += bookHelpLayer + '.light .hlpLeftSide {border:1px solid #bfbfbf;border-right:none;}\n';
 		styles += bookHelpLayer + '.light .hlpRightSide {border:1px solid #bfbfbf;border-left:none;}\n'; 
@@ -702,13 +702,14 @@ var OneBook3D = {
 			'top:0px;left:0px;text-align:center;',
 			'z-index:'+zIndex.bookIconsPanel+';}\n'
 		].join('');		
-		
-		styles += bookIconsPanel+' '+bookSpreadTitle+' p{font:14px arial;color:#aaaaaa;line-height:140%;margin:0px;}\n';
+
+		// подсказка: подписи к фотографиям
+		styles += bookIconsPanel+' '+bookSpreadTitle+' p{font:14px arial;color:#aaaaaa;line-height:90%;margin:0px;}\n';
 		styles += bookIconsPanel+' '+bookSpreadTitle+' span{font:bold 14px arial;color:#ffffff;margin-right:8px;}\n';
-		styles += bookIconsPanel+'.light '+bookSpreadTitle+' p{color:#000000;}\n';
+		styles += bookIconsPanel+'.light '+bookSpreadTitle+' p{color:#000000;font-family:"AlexandraScriptRegular";font-size: 50px;}\n';
 		styles += bookIconsPanel+'.light '+bookSpreadTitle+' span{color:#888888;}\n';
 		styles += bookIconsPanel+' .btn_title{font:12px arial;color:#ffffff;padding:5px;white-space:nowrap;}\n';
-		styles += bookIconsPanel+'.light .btn_title{color:black;}\n';				
+		styles += bookIconsPanel+'.light .btn_title{color:black;}\n';
 					
 		styles += [
 			'.unselectable{',
@@ -1123,7 +1124,8 @@ var OneBook3D = {
 					return $container = $([
 						'<table cellpadding="0" cellspacing="0" width="100%" align="center" border=0>',
 						'<tr><td height="'+heightTitleSection+'px" class="'+bookSpreadTitle+'">&nbsp;</td></tr>',
-						'<tr><td><div class="'+bookIconsContainer+'" style="position:relative;"></div></td></tr>',
+						// подсказка: блок с элементами управления
+						'<tr style="height:60px;"><td><div class="'+bookIconsContainer+'" style="position:relative;"></div></td></tr>',
 						'</table>'
 						].join(''));		
 				};

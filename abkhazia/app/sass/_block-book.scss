@@ -6,8 +6,25 @@
   font-family: "Century Gothic Regular", Arial, sans-serif;
 }
 .block-book .add-photo {
-  margin-top: 2vw;
+  margin-top: 6vw;
   font-size: 31px;
+  @include laptop-lg {
+    margin-top: 10vw;
+  }
+  @include laptop-md {
+    margin-top: 12vw;
+  }
+  @include tablet {
+    margin-top: 15vw;
+  }
+  @include tablet-md {
+    margin-top: 110px;
+    font-size: 20px;
+  }
+  @include mobile-lg {
+    margin-top: 200px;
+    font-size: 17px;
+  }
   &:hover {
     cursor: pointer;
   }

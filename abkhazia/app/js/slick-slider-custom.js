@@ -14,7 +14,8 @@ $(function() {
         fade: true,
         asNavFor: '.slick-slider'
     });
-    $('.hexagon').bind('mouseenter',function () {
+    //$('.hexagon').bind('mouseenter',function () {
+    $('.switcher').bind('mouseenter',function () {
         $('.slider').slick('slickGoTo', $(this).data("slide"));
     });
 });

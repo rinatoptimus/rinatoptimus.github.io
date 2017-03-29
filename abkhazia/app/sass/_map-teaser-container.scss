@@ -17,199 +17,268 @@
   @include tablet {
     margin-top: 15px;
   }
-    .hexagon {
-      position: absolute;
-      width: 200px;
-      height: 400px;
-      overflow: hidden;
-      visibility: hidden;
-      transform: rotate(120deg);
-      cursor: pointer;
-      transition: none;
-    }
-    .hexagon-in1 {
-      overflow: hidden;
-      width: 100%;
-      height: 100%;
-      transform: rotate(-60deg);
-    }
-    .hexagon-in2 {
-      width: 100%;
-      height: 100%;
-      visibility: visible;
-      transform: rotate(-60deg);
-      //background: url("http://lorempixel.com/g/250/350/people");
-      //background-repeat: no-repeat;
-      //background-position: 50%;
-    }
-    .hexagon-plane {
-      left: -4.4vw;
-      top: 1.2vw;
-      width: 19.4vw;
-      height: 25vw;
-    }
+    //.hexagon {
+    //  position: absolute;
+    //  width: 200px;
+    //  height: 400px;
+    //  overflow: hidden;
+    //  visibility: hidden;
+    //  transform: rotate(120deg);
+    //  cursor: pointer;
+    //  transition: none;
+    //}
+    //.hexagon-in1 {
+    //  overflow: hidden;
+    //  width: 100%;
+    //  height: 100%;
+    //  transform: rotate(-60deg);
+    //}
+    //.hexagon-in2 {
+    //  width: 100%;
+    //  height: 100%;
+    //  visibility: visible;
+    //  transform: rotate(-60deg);
+    //}
+    //.hexagon-plane {
+    //  left: -4.4vw;
+    //  top: 1.2vw;
+    //  width: 19.4vw;
+    //  height: 25vw;
+    //}
+
+
     .plane {
-      width: 18vw;
+      //width: 18vw;
       height: 15vw;
       background: url('../img/bg-hexagons/plane.png') no-repeat;
       background-size: contain;
+
+      position: absolute;
+      width: 13vw;
+      top: 3vw;
     }
 
-    .hexagon-station {
-      left: 10.1vw;
-      top: 2vw;
-      width: 15vw;
-      height: 23vw;
-    }
+    //.hexagon-station {
+    //  left: 10.1vw;
+    //  top: 2vw;
+    //  width: 15vw;
+    //  height: 23vw;
+    //}
     .station {
-      width: 26vw;
+      //width: 26vw;
       height: 11.5vw;
       background: url('../img/bg-hexagons/station.png') no-repeat;
       background-size: contain;
+
+      position: absolute;
+      width: 10vw;
+      top: 9vw;
+      left: 12.3vw;
     }
 
-    .hexagon-dom {
-      left: 15.6vw;
-      top: 2.3vw;
-      width: 13vw;
-      height: 28vw;
-    }
+    //.hexagon-dom {
+    //  left: 15.6vw;
+    //  top: 2.3vw;
+    //  width: 13vw;
+    //  height: 28vw;
+    //}
     .dom {
-      width: 24vw;
+      //width: 24vw;
       height: 8.5vw;
       background: url('../img/bg-hexagons/dom.png') no-repeat;
       background-size: contain;
+
+      position: absolute;
+      width: 7.6vw;
+      left: 21.3vw;
+      top: 11.3vw;
     }
 
-    .hexagon-waterfall {
-      left: 16.5vw;
-      top: 10vw;
-      width: 13vw;
-      height: 28vw;
-    }
+    //.hexagon-waterfall {
+    //  left: 16.5vw;
+    //  top: 10vw;
+    //  width: 13vw;
+    //  height: 28vw;
+    //}
     .waterfall {
-      width: 24vw;
+      //width: 24vw;
       height: 8.5vw;
       background: url('../img/bg-hexagons/waterfall.png') no-repeat;
       background-size: contain;
+
+      position: absolute;
+      width: 7.6vw;
+      left: 22vw;
+      top: 19.3vw;
     }
 
-    .hexagon-waterfall-one {
-      left: 18vw;
-      top: 7.4vw;
-      width: 17vw;
-      height: 21vw;
-    }
+    //.hexagon-waterfall-one {
+    //  left: 18vw;
+    //  top: 7.4vw;
+    //  width: 17vw;
+    //  height: 21vw;
+    //}
     .waterfall-one {
-      width: 12vw;
+      //width: 12vw;
       height: 5vw;
       background: url('../img/bg-hexagons/waterfall-one.png') no-repeat;
       background-size: contain;
+
+      position: absolute;
+      width: 4.6vw;
+      left: 26vw;
+      top: 8.8vw;
     }
 
-    .hexagon-big-empty {
-      left: 24.8vw;
-      top: -1vw;
-      width: 17vw;
-      height: 21vw;
-    }
+    //.hexagon-big-empty {
+    //  left: 24.8vw;
+    //  top: -1vw;
+    //  width: 17vw;
+    //  height: 21vw;
+    //}
     .big-empty {
-      width: 15vw;
-      height: 13vw;
+      //width: 15vw;
+      //height: 13vw;
       background: url('../img/bg-hexagons/big-empty.png') no-repeat;
       background-size: contain;
+
+      position: absolute;
+      width: 9vw;
+      height: 11.2vw;
+      left: 30vw;
+      top: 0;
     }
 
-    .hexagon-test-one {
-      left: 18.5vw;
-      top: 13.8vw;
-      width: 21vw;
-      height: 24vw;
-    }
+    //.hexagon-test-one {
+    //  left: 18.5vw;
+    //  top: 13.8vw;
+    //  width: 21vw;
+    //  height: 24vw;
+    //}
     .test-one {
-      width: 17vw;
+      //width: 17vw;
       height: 5.9vw;
       background: url('../img/bg-hexagons/test-one.png') no-repeat;
       background-size: contain;
+
+      position: absolute;
+      width: 5.1vw;
+      left: 32vw;
+      top: 19vw;
     }
 
-    .hexagon-test-two {
-      left: 22vw;
-      top: 7.7vw;
-      width: 21vw;
-      height: 24vw;
-    }
+    //.hexagon-test-two {
+    //  left: 22vw;
+    //  top: 7.7vw;
+    //  width: 21vw;
+    //  height: 24vw;
+    //}
     .test-two {
-      width: 19vw;
-      height: 9vw;
+      //width: 19vw;
+      //height: 9vw;
       background: url('../img/bg-hexagons/test-two.png') no-repeat;
       background-size: contain;
+
+      position: absolute;
+      width: 8.9vw;
+      left: 28.9vw;
+      top: 9.8vw;
+      height: 9.6vw;
     }
 
-    .hexagon-cave {
-      left: 32.4vw;
-      top: 15.4vw;
-      width: 21vw;
-      height: 24vw;
-    }
+    //.hexagon-cave {
+    //  left: 32.4vw;
+    //  top: 15.4vw;
+    //  width: 21vw;
+    //  height: 24vw;
+    //}
     .cave {
-      width: 14vw;
+      //width: 14vw;
       height: 8.4vw;
       background: url('../img/bg-hexagons/cave.png') no-repeat;
       background-size: contain;
+
+      position: absolute;
+      width: 6.7vw;
+      left: 40.3vw;
+      top: 16.5vw;
     }
 
-    .hexagon-fortress {
-      left: 39.5vw;
-      top: 11.6vw;
-      width: 21vw;
-      height: 24vw;
-    }
+    //.hexagon-fortress {
+    //  left: 39.5vw;
+    //  top: 11.6vw;
+    //  width: 21vw;
+    //  height: 24vw;
+    //}
     .fortress {
-      width: 16vw;
-      height: 9.9vw;
+      //width: 16vw;
+      //height: 9.9vw;
       background: url('../img/bg-hexagons/fortress.png') no-repeat;
       background-size: contain;
+
+      position: absolute;
+      width: 9vw;
+      height: 11.2vw;
+      left: 46.5vw;
+      top: 12vw;
     }
 
-    .hexagon-monastery {
-      right: 7.4vw;
-      top: 14.3vw;
-      width: 15vw;
-      height: 24vw;
-    }
+    //.hexagon-monastery {
+    //  right: 7.4vw;
+    //  top: 14.3vw;
+    //  width: 15vw;
+    //  height: 24vw;
+    //}
     .monastery {
-      width: 20vw;
-      height: 13.7vw;
+      //width: 20vw;
+      //height: 13.7vw;
       background: url('../img/bg-hexagons/monastery.png') no-repeat;
       background-size: contain;
+
+      position: absolute;
+      width: 9vw;
+      height: 11vw;
+      left: 81.9vw;
+      top: 19.8vw;
     }
 
-    .hexagon-nursery-garden {
-      left: 54.2vw;
-      top: 19.9vw;
-      width: 21vw;
-      height: 24vw;
-    }
+    //.hexagon-nursery-garden {
+    //  left: 54.2vw;
+    //  top: 19.9vw;
+    //  width: 21vw;
+    //  height: 24vw;
+    //}
     .nursery-garden {
-      width: 20vw;
-      height: 11.6vw;
+      //width: 20vw;
+      //height: 11.6vw;
       background: url('../img/bg-hexagons/nursery-garden.png') no-repeat;
       background-size: contain;
+
+      position: absolute;
+      width: 9vw;
+      height: 11.5vw;
+      left: 59vw;
+      top: 22vw;
     }
 
-    .hexagon-train {
-      position: absolute;
-      right: 1.5vw;
-      top: 29.7vw;
-      width: 14vw;
-      height: 17vw;
-    }
+    //.hexagon-train {
+    //  position: absolute;
+    //  right: 1.5vw;
+    //  top: 29.7vw;
+    //  width: 14vw;
+    //  height: 17vw;
+    //}
     .train {
-      width: 14vw;
-      height: 16.5vw;
+      //width: 14vw;
+      //height: 16.5vw;
       background: url('../img/bg-hexagons/train.png') no-repeat;
       background-size: contain;
+
+      position: absolute;
+      width: 14vw;
+      height: 17vw;
+      left: 82.3vw;
+      top: 30vw;
     }
 }
 
